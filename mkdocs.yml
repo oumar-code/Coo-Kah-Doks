@@ -1,0 +1,99 @@
+site_name: Coo-Kah-Doks — Project Coo-Cah Blueprint
+site_description: Master orchestrating repository and blueprint documentation for Coo-Cah Technologies Holdings
+site_author: Coo-Cah Technologies Holdings
+site_url: https://oumar-code.github.io/Coo-Kah-Doks/
+repo_url: https://github.com/oumar-code/Coo-Kah-Doks
+repo_name: oumar-code/Coo-Kah-Doks
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep-orange
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep-orange
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+nav:
+  - Home: index.md
+  - Vision & Strategy:
+    - Overview: 00-vision/index.md
+    - Corporate Structure: 01-corporate-structure/index.md
+    - Energy Strategy: 02-energy-strategy/index.md
+    - Finance: 10-finance/index.md
+  - Factory Blueprints:
+    - All Factories: 03-factories/index.md
+    - Template: ../factories/_template/README.md
+  - Technology:
+    - Semiconductor (Baobab): 04-semiconductor/index.md
+    - Smart Factory Core: 05-smart-factory-core/index.md
+    - Automation Phases: 06-automation-phases/index.md
+    - AI Platform: 08-ai-platform/index.md
+    - Supply Chain: 07-supply-chain/index.md
+  - Compliance:
+    - Regulatory Overview: 09-compliance-regulatory/index.md
+  - Architecture Decisions:
+    - ADR Index: adrs/README.md
+    - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
+    - ADR-002 MES Platform: adrs/ADR-002-mes-platform-selection.md
+  - Reference:
+    - Glossary: glossary.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oumar-code/Coo-Kah-Doks
+  generator: false
+
+copyright: Copyright &copy; 2025 Coo-Cah Technologies Holdings
