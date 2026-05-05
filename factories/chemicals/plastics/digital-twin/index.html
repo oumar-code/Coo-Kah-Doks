@@ -2372,10 +2372,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-primary-process-assets" class="md-nav__link">
+  <a href="#31-polymer-reaction-compounding-assets" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.1 Primary Process Assets
+        3.1 Polymer Reaction &amp; Compounding Assets
       
     </span>
   </a>
@@ -2383,10 +2383,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#32-safety-environmental-assets" class="md-nav__link">
+  <a href="#32-plastics-converting-lines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2 Safety + Environmental Assets
+        3.2 Plastics Converting Lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-bagging-filling-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Bagging &amp; Filling Lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-material-handling-logistics-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Material Handling &amp; Logistics Assets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-environmental-safety-assets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Environmental &amp; Safety Assets
       
     </span>
   </a>
@@ -2443,6 +2476,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#44-emissions-compliance-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Emissions Compliance Simulation
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2453,6 +2497,17 @@
     <span class="md-ellipsis">
       
         5. Data Retention Policy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sensor-coverage-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Sensor Coverage Map
       
     </span>
   </a>
@@ -2523,7 +2578,7 @@
 </code></pre></div>
 <hr />
 <h2 id="3-asset-registry">3. Asset Registry<a class="headerlink" href="#3-asset-registry" title="Permanent link">&para;</a></h2>
-<h3 id="31-primary-process-assets">3.1 Primary Process Assets<a class="headerlink" href="#31-primary-process-assets" title="Permanent link">&para;</a></h3>
+<h3 id="31-polymer-reaction-compounding-assets">3.1 Polymer Reaction &amp; Compounding Assets<a class="headerlink" href="#31-polymer-reaction-compounding-assets" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -2536,50 +2591,205 @@
 </thead>
 <tbody>
 <tr>
-<td>DT-CHM-PR-001</td>
+<td>DT-PLS-PR-001</td>
 <td>Reactor / Reaction Vessel #1</td>
 <td>Process + Thermal</td>
 <td>20–40</td>
 <td>OPC-UA</td>
 </tr>
 <tr>
-<td>DT-CHM-PR-002</td>
+<td>DT-PLS-PR-002</td>
 <td>Reactor / Reaction Vessel #2</td>
 <td>Process + Thermal</td>
 <td>20–40</td>
 <td>OPC-UA</td>
 </tr>
 <tr>
-<td>DT-CHM-HE-001</td>
+<td>DT-PLS-PR-003</td>
+<td>Reactor / Reaction Vessel #3 (opt.)</td>
+<td>Process + Thermal</td>
+<td>20–40</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-HE-001</td>
 <td>Heat Exchanger Train (primary)</td>
 <td>Thermal Degradation</td>
 <td>12–18</td>
 <td>OPC-UA</td>
 </tr>
 <tr>
-<td>DT-CHM-DC-001</td>
-<td>Distillation Column(s)</td>
+<td>DT-PLS-HE-002</td>
+<td>Heat Exchanger Train (secondary)</td>
+<td>Thermal Degradation</td>
+<td>12–18</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-DC-001</td>
+<td>Distillation / Devolatilisation Column #1</td>
 <td>Mass Transfer Model</td>
 <td>18–30</td>
 <td>OPC-UA</td>
 </tr>
 <tr>
-<td>DT-CHM-PM-001</td>
-<td>Process Pumps (critical, all)</td>
+<td>DT-PLS-DC-002</td>
+<td>Distillation Column #2 (opt.)</td>
+<td>Mass Transfer Model</td>
+<td>18–30</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-PM-001</td>
+<td>Process Pumps — Grundfos / Flowserve (all critical)</td>
 <td>Vibration + Process</td>
 <td>4 per pump</td>
 <td>MQTT</td>
 </tr>
 <tr>
-<td>DT-CHM-CP-001</td>
-<td>Compressors (all critical)</td>
+<td>DT-PLS-CP-001</td>
+<td>Compressors — Atlas Copco / Ingersoll-Rand (all)</td>
 <td>Vibration + Thermal</td>
 <td>6 per unit</td>
 <td>OPC-UA</td>
 </tr>
+<tr>
+<td>DT-PLS-CS-001</td>
+<td>Cooling Tower + Chiller System</td>
+<td>Thermal + Flow</td>
+<td>10–14</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-NT-001</td>
+<td>PSA Nitrogen Generator</td>
+<td>Process State</td>
+<td>6</td>
+<td>MQTT</td>
+</tr>
 </tbody>
 </table>
-<h3 id="32-safety-environmental-assets">3.2 Safety + Environmental Assets<a class="headerlink" href="#32-safety-environmental-assets" title="Permanent link">&para;</a></h3>
+<h3 id="32-plastics-converting-lines">3.2 Plastics Converting Lines<a class="headerlink" href="#32-plastics-converting-lines" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>DT Asset ID</th>
+<th>Physical Asset</th>
+<th>DT Model Type</th>
+<th>Sensor Count</th>
+<th>Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DT-PLS-EX-001</td>
+<td>Single-Screw Extrusion Line #1</td>
+<td>Thermal + Kinematic</td>
+<td>14–20</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-EX-002</td>
+<td>Single-Screw Extrusion Line #2</td>
+<td>Thermal + Kinematic</td>
+<td>14–20</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-EX-003</td>
+<td>Twin-Screw Compounding Extruder</td>
+<td>Thermal + Kinematic</td>
+<td>18–24</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-IM-001</td>
+<td>Injection Moulding Machine #1</td>
+<td>Thermal + Kinematic</td>
+<td>16–22</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-IM-002</td>
+<td>Injection Moulding Machine #2</td>
+<td>Thermal + Kinematic</td>
+<td>16–22</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-BM-001</td>
+<td>Blow Moulding Machine #1</td>
+<td>Thermal + Pressure</td>
+<td>12–16</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-BM-002</td>
+<td>Blow Moulding Machine #2</td>
+<td>Thermal + Pressure</td>
+<td>12–16</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-FI-001</td>
+<td>Filtration / Separation Unit #1</td>
+<td>Process + Flow</td>
+<td>8–12</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-FI-002</td>
+<td>Filtration / Separation Unit #2</td>
+<td>Process + Flow</td>
+<td>8–12</td>
+<td>OPC-UA</td>
+</tr>
+</tbody>
+</table>
+<p>Each converting line DT model tracks barrel zone temperatures, screw torque, melt pressure, and throughput in real time. Deviations from recipe set-points trigger operator alerts before product quality falls out of specification.</p>
+<h3 id="33-bagging-filling-lines">3.3 Bagging &amp; Filling Lines<a class="headerlink" href="#33-bagging-filling-lines" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>DT Asset ID</th>
+<th>Physical Asset</th>
+<th>DT Model Type</th>
+<th>Sensor Count</th>
+<th>Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DT-PLS-BF-001</td>
+<td>Bagging / Filling Line #1 (bulk)</td>
+<td>Mass Flow + Weigh</td>
+<td>8</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-BF-002</td>
+<td>Bagging / Filling Line #2</td>
+<td>Mass Flow + Weigh</td>
+<td>8</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-BF-003</td>
+<td>Bagging / Filling Line #3 (opt.)</td>
+<td>Mass Flow + Weigh</td>
+<td>8</td>
+<td>OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-BF-004</td>
+<td>Bagging / Filling Line #4 (opt.)</td>
+<td>Mass Flow + Weigh</td>
+<td>8</td>
+<td>OPC-UA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-material-handling-logistics-assets">3.4 Material Handling &amp; Logistics Assets<a class="headerlink" href="#34-material-handling-logistics-assets" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -2592,21 +2802,84 @@
 </thead>
 <tbody>
 <tr>
-<td>DT-CHM-GS-001</td>
-<td>Gas Detection Array</td>
+<td>DT-PLS-AMR-001</td>
+<td>Electric Counterbalance Forklift #1</td>
+<td>Position + State</td>
+<td>5 sec</td>
+<td>RFID + MQTT</td>
+</tr>
+<tr>
+<td>DT-PLS-AMR-002</td>
+<td>Electric Counterbalance Forklift #2</td>
+<td>Position + State</td>
+<td>5 sec</td>
+<td>RFID + MQTT</td>
+</tr>
+<tr>
+<td>DT-PLS-CV-001</td>
+<td>Belt Conveyor — Z2 to Z4 transfer</td>
+<td>State + Speed</td>
+<td>10 sec</td>
+<td>MQTT</td>
+</tr>
+<tr>
+<td>DT-PLS-CV-002</td>
+<td>Belt Conveyor — Z4 bagging line feed</td>
+<td>State + Speed</td>
+<td>10 sec</td>
+<td>MQTT</td>
+</tr>
+<tr>
+<td>DT-PLS-TK-001</td>
+<td>Raw Material Storage Tanks (Z1/Z5, all)</td>
+<td>Level + Temp</td>
+<td>1 min</td>
+<td>OPC-UA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="35-environmental-safety-assets">3.5 Environmental &amp; Safety Assets<a class="headerlink" href="#35-environmental-safety-assets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>DT Asset ID</th>
+<th>Physical Asset</th>
+<th>DT Model Type</th>
+<th>Update Freq.</th>
+<th>Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DT-PLS-GS-001</td>
+<td>Gas Detection Array (all hazard zones)</td>
 <td>Concentration Map</td>
 <td>10 sec</td>
 <td>DCS OPC-UA</td>
 </tr>
 <tr>
-<td>DT-CHM-ETP-001</td>
+<td>DT-PLS-ETP-001</td>
 <td>Effluent Treatment Plant</td>
 <td>Process + Chemistry</td>
 <td>5 min</td>
 <td>SCADA MQTT</td>
 </tr>
 <tr>
-<td>DT-CHM-EN-001</td>
+<td>DT-PLS-ST-001</td>
+<td>Stack Emissions Monitor (CEMS)</td>
+<td>Continuous Emissions</td>
+<td>1 min</td>
+<td>DCS OPC-UA</td>
+</tr>
+<tr>
+<td>DT-PLS-CT-001</td>
+<td>Cooling Tower (Z6)</td>
+<td>Thermal + Water Chem</td>
+<td>5 min</td>
+<td>MQTT</td>
+</tr>
+<tr>
+<td>DT-PLS-EN-001</td>
 <td>Solar PV + BESS System</td>
 <td>Power Curve</td>
 <td>30 sec</td>
@@ -2682,6 +2955,39 @@
 </tr>
 </tbody>
 </table>
+<h3 id="44-emissions-compliance-simulation">4.4 Emissions Compliance Simulation<a class="headerlink" href="#44-emissions-compliance-simulation" title="Permanent link">&para;</a></h3>
+<p><strong>Use Case:</strong> Continuously compare CEMS (Continuous Emissions Monitoring System) stack readings and ETP effluent discharge values against NESREA permit limits, generating pre-emptive alerts before a consent breach occurs and producing regulatory reports automatically.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Output</th>
+<th>Trigger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CEMS SO₂, NOₓ, VOC, PM readings</td>
+<td>% of permit limit consumed (real-time)</td>
+<td>Every 1 min; alert if &gt; 80% of limit</td>
+</tr>
+<tr>
+<td>ETP effluent COD, BOD, pH, TSS</td>
+<td>Predicted consent breach within 4 hours</td>
+<td>Every 5 min; alert if trend to limit</td>
+</tr>
+<tr>
+<td>Production schedule + recipe</td>
+<td>Forecasted emission load for next 24 hours</td>
+<td>Daily; updated on recipe change</td>
+</tr>
+<tr>
+<td>Incident history</td>
+<td>Exceedance probability score by process step</td>
+<td>Weekly AI analysis; NESREA reporting</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="5-data-retention-policy">5. Data Retention Policy<a class="headerlink" href="#5-data-retention-policy" title="Permanent link">&para;</a></h2>
 <table>
@@ -2727,6 +3033,105 @@
 </tbody>
 </table>
 <hr />
+<h2 id="6-sensor-coverage-map">6. Sensor Coverage Map<a class="headerlink" href="#6-sensor-coverage-map" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Zone</th>
+<th>Temp / Pressure</th>
+<th>Flow / Level</th>
+<th>Vibration</th>
+<th>Gas / Emissions</th>
+<th>Position / State</th>
+<th>Total (approx.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Z1 — Raw Material Storage</td>
+<td>10</td>
+<td>20</td>
+<td>—</td>
+<td>6</td>
+<td>4</td>
+<td>~40</td>
+</tr>
+<tr>
+<td>Z2 — Reaction &amp; Compounding</td>
+<td>60</td>
+<td>30</td>
+<td>20</td>
+<td>12</td>
+<td>8</td>
+<td>~130</td>
+</tr>
+<tr>
+<td>Z3 — Separation &amp; Filtration</td>
+<td>20</td>
+<td>20</td>
+<td>8</td>
+<td>4</td>
+<td>4</td>
+<td>~56</td>
+</tr>
+<tr>
+<td>Z4 — Converting Lines (extrusion / moulding)</td>
+<td>60</td>
+<td>16</td>
+<td>12</td>
+<td>4</td>
+<td>8</td>
+<td>~100</td>
+</tr>
+<tr>
+<td>Z4 — Bagging &amp; Filling Lines</td>
+<td>4</td>
+<td>16</td>
+<td>4</td>
+<td>2</td>
+<td>4</td>
+<td>~30</td>
+</tr>
+<tr>
+<td>Z5 — Product Tank Farm</td>
+<td>10</td>
+<td>20</td>
+<td>—</td>
+<td>8</td>
+<td>4</td>
+<td>~42</td>
+</tr>
+<tr>
+<td>Z6 — Utilities (cooling, N₂, steam)</td>
+<td>20</td>
+<td>16</td>
+<td>8</td>
+<td>2</td>
+<td>4</td>
+<td>~50</td>
+</tr>
+<tr>
+<td>Z7 — ETP + Stack</td>
+<td>12</td>
+<td>14</td>
+<td>4</td>
+<td>16</td>
+<td>2</td>
+<td>~48</td>
+</tr>
+<tr>
+<td><strong>Total (approx.)</strong></td>
+<td><strong>196</strong></td>
+<td><strong>152</strong></td>
+<td><strong>56</strong></td>
+<td><strong>54</strong></td>
+<td><strong>38</strong></td>
+<td><strong>~496</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Sensor counts are indicative. Final counts confirmed at FEED / detail engineering stage.</em></p>
+<hr />
 <p><em>Refer to <a href="../mes-integration/"><code>mes-integration.md</code></a> for MES-DCS integration.</em>
 <em>Refer to <a href="../machinery/"><code>machinery.md</code></a> for full equipment register.</em></p>
 
@@ -2751,7 +3156,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 05:03:43 UTC">May 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 18:04:57 UTC">May 5, 2026</span>
   </span>
 
     
