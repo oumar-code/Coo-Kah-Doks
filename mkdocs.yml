@@ -110,6 +110,7 @@ nav:
   - Compliance:
     - Regulatory Overview: 09-compliance-regulatory/index.md
     - Factory Status Registry: orchestration/factory-status-registry.md
+    - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
