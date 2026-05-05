@@ -4,6 +4,8 @@
 > **Vertical:** Chemicals — Steel processing, aluminium rolling, copper drawing | **Location:** Warri / Ovwian-Aladja Steel Corridor, Delta State, Nigeria | **Phase:** Phase 2
 > **Document Version:** 1.0 | **Status:** In Development
 
+> 📁 **Dedicated Repository:** Full engineering blueprints, operational docs, and AI-integration specs for this factory live in the dedicated repo — **[oumar-code/coo-cah-factory-chemicals-metallurgical](https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical)**. This document is the master-repo executive summary; the dedicated repo is the authoritative source for all factory-level detail.
+
 ---
 
 ## 1. Factory Overview
