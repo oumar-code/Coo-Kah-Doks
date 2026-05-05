@@ -1,7 +1,8 @@
 {
   "ignorePatterns": [
     { "pattern": "^https://github.com/oumar-code/Coo-Kah-Doks/issues/" },
-    { "pattern": "^https://github.com/oumar-code/Coo-Kah-Doks/sessions/" }
+    { "pattern": "^https://github.com/oumar-code/Coo-Kah-Doks/sessions/" },
+    { "pattern": "^https://oumar-code.github.io/Coo-Kah-Doks" }
   ],
   "timeout": "20s",
   "retryOn429": true,
