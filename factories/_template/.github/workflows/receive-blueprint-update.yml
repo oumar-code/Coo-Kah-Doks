@@ -16,12 +16,12 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const payload  = context.payload.client_payload;
+            const payload     = context.payload.client_payload;
             const sourceRepo  = payload.source_repo  || 'oumar-code/Coo-Kah-Doks';
-            const commitSha   = payload.ref           || 'unknown';
-            const actor       = payload.actor         || 'unknown';
-            const reason      = payload.reason        || 'Blueprint template updated';
-            const triggeredAt = payload.triggered_at  || new Date().toISOString();
+            const commitSha   = payload.ref          || 'unknown';
+            const actor       = payload.actor        || 'unknown';
+            const reason      = payload.reason       || 'Blueprint template updated';
+            const triggeredAt = payload.triggered_at || new Date().toISOString();
             const shortSha    = commitSha.substring(0, 7);
 
             const body = [
