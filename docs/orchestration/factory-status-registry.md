@@ -29,7 +29,7 @@ This registry tracks the commissioning status of every Coo-Cah factory across al
 | Factory | Location | Current Status | Phase 1 Start (Target) | Phase 2 Start (Target) | Phase 3 Start (Target) | Notes |
 |---------|----------|---------------|----------------------|----------------------|----------------------|-------|
 | Kitchen Electronics | Lagos, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q3 2031 | Phase 1 priority |
-| Garage/Power Electronics | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q3 2028 | Q3 2031 | Phase 1 priority; energy-critical |
+| [Garage/Power Electronics](https://github.com/oumar-code/coo-cah-factory-electronics-power) | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q3 2028 | Q3 2031 | Phase 1 priority; energy-critical · **Dedicated repo live** |
 | Personal Electronics | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q2 2031 | Phase 1 priority; SMT lines |
 | Smart Home & Office | Lagos, Nigeria | `PLANNED` | Q4 2026 | Q4 2028 | Q4 2031 | Dual SMT lines |
 | Security Electronics | Lagos, Nigeria | `PLANNED` | Q3 2026 | Q1 2029 | Q1 2032 | NCC type approval required |
@@ -41,11 +41,11 @@ This registry tracks the commissioning status of every Coo-Cah factory across al
 
 | Factory | Location | Current Status | Phase 1 Start (Target) | Phase 2 Start (Target) | Phase 3 Start (Target) | Notes |
 |---------|----------|---------------|----------------------|----------------------|----------------------|-------|
-| Plastics & Polymers | Ogun State, Nigeria | `PLANNED` | Q3 2026 | Q1 2029 | Q1 2032 | Tier 1 — feeds all other factories |
+| [Plastics & Polymers](https://github.com/oumar-code/coo-cah-factory-chemicals-plastics) | Ogun State, Nigeria | `PLANNED` | Q3 2026 | Q1 2029 | Q1 2032 | Tier 1 — feeds all other factories · **Dedicated repo live** |
 | Heavy Chemicals | Delta State, Nigeria | `PLANNED` | Q2 2027 | Q2 2030 | Q2 2033 | Tier 3 — long-cycle |
 | Fine Chemicals | Lagos, Nigeria | `PLANNED` | Q2 2027 | Q2 2030 | Q2 2033 | Tier 3; specialty chemicals |
 | Fertilizer | Delta State, Nigeria | `PLANNED` | Q4 2027 | Q4 2030 | Q4 2033 | Tier 3; large capex |
-| Metallurgical & Minerals | Delta State, Nigeria | `PLANNED` | Q4 2027 | Q4 2030 | Q4 2033 | Tier 1 for metals; Tier 3 for full ops |
+| [Metallurgical & Minerals](https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical) | Delta State, Nigeria | `PLANNED` | Q4 2027 | Q4 2030 | Q4 2033 | Tier 1 for metals; Tier 3 for full ops · **Dedicated repo live** |
 
 ---
 

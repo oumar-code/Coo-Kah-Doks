@@ -4,6 +4,8 @@
 > **Vertical:** Chemicals — Injection moulded plastics, extruded profiles, blown film | **Location:** Agbara Industrial Estate, Lagos State / Sagamu, Ogun State, Nigeria | **Phase:** Phase 1 (Priority — supplies all Coo-Cah factories)
 > **Document Version:** 1.0 | **Status:** In Development
 
+> 📁 **Dedicated Repository:** Full engineering blueprints, operational docs, and AI-integration specs for this factory live in the dedicated repo — **[oumar-code/coo-cah-factory-chemicals-plastics](https://github.com/oumar-code/coo-cah-factory-chemicals-plastics)**. This document is the master-repo executive summary; the dedicated repo is the authoritative source for all factory-level detail.
+
 ---
 
 ## 1. Factory Overview

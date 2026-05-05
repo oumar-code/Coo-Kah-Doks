@@ -4,6 +4,8 @@
 > **Vertical:** Electronics — Power & Energy Solutions | **Location:** Sagamu Industrial Estate, Ogun State, Nigeria | **Phase:** Phase 1 (Priority)
 > **Document Version:** 1.0 | **Status:** In Development
 
+> 📁 **Dedicated Repository:** Full engineering blueprints, operational docs, and AI-integration specs for this factory live in the dedicated repo — **[oumar-code/coo-cah-factory-electronics-power](https://github.com/oumar-code/coo-cah-factory-electronics-power)**. This document is the master-repo executive summary; the dedicated repo is the authoritative source for all factory-level detail.
+
 ---
 
 ## 1. Factory Overview

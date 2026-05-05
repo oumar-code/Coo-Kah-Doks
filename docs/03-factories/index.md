@@ -51,24 +51,24 @@ Long-cycle, capital-intensive operations that provide strategic vertical integra
 
 ### Electronics Vertical
 
-| Factory | Location | Phase | Key Products |
-|---------|----------|-------|-------------|
-| [Kitchen Electronics](../factories/electronics/kitchen-electronics/README.md) | Lagos, Nigeria | Phase 1 | Fridges, microwaves, cookers, kettles |
-| [Garage/Power Electronics](../factories/electronics/garage-power-electronics/README.md) | Ogun State, Nigeria | Phase 1 | Inverters, solar systems, power strips |
-| [Personal Electronics](../factories/electronics/personal-electronics/README.md) | Lagos, Nigeria | Phase 1 | Smartphones, power banks, headphones |
-| [Smart Estate/City](../factories/electronics/smart-estate-city/README.md) | Kigali, Rwanda | Phase 2 | IoT sensors, smart street lighting |
-| [Smart Home/Office](../factories/electronics/smart-home-office/README.md) | Lagos, Nigeria | Phase 2 | Smart plugs, thermostats, voice assistants |
-| [Security Electronics](../factories/electronics/security-electronics/README.md) | Lagos, Nigeria | Phase 2 | CCTV, alarms, biometric locks |
+| Factory | Location | Phase | Key Products | Dedicated Repo |
+|---------|----------|-------|-------------|----------------|
+| [Kitchen Electronics](../factories/electronics/kitchen-electronics/README.md) | Lagos, Nigeria | Phase 1 | Fridges, microwaves, cookers, kettles | — |
+| [Garage/Power Electronics](../factories/electronics/garage-power-electronics/README.md) | Ogun State, Nigeria | Phase 1 | Inverters, solar systems, power strips | [coo-cah-factory-electronics-power](https://github.com/oumar-code/coo-cah-factory-electronics-power) |
+| [Personal Electronics](../factories/electronics/personal-electronics/README.md) | Lagos, Nigeria | Phase 1 | Smartphones, power banks, headphones | — |
+| [Smart Estate/City](../factories/electronics/smart-estate-city/README.md) | Kigali, Rwanda | Phase 2 | IoT sensors, smart street lighting | — |
+| [Smart Home/Office](../factories/electronics/smart-home-office/README.md) | Lagos, Nigeria | Phase 2 | Smart plugs, thermostats, voice assistants | — |
+| [Security Electronics](../factories/electronics/security-electronics/README.md) | Lagos, Nigeria | Phase 2 | CCTV, alarms, biometric locks | — |
 
 ### Chemicals Vertical
 
-| Factory | Location | Phase | Key Products |
-|---------|----------|-------|-------------|
-| [Plastics](../factories/chemicals/plastics/README.md) | Ogun State, Nigeria | Phase 1 | Casings, packaging, structural parts |
-| [Heavy Chemicals](../factories/chemicals/heavy-chemicals/README.md) | Delta State, Nigeria | Phase 2 | Solvents, acids, industrial chemicals |
-| [Fine Chemicals](../factories/chemicals/fine-chemicals/README.md) | Lagos, Nigeria | Phase 2 | Specialty chemicals, pigments |
-| [Fertilizer](../factories/chemicals/fertilizer/README.md) | Delta State, Nigeria | Phase 3 | NPK, urea, compound fertilizers |
-| [Metallurgical](../factories/chemicals/metallurgical/README.md) | Delta State, Nigeria | Phase 3 | Steel, aluminum processing |
+| Factory | Location | Phase | Key Products | Dedicated Repo |
+|---------|----------|-------|-------------|----------------|
+| [Plastics](../factories/chemicals/plastics/README.md) | Ogun State, Nigeria | Phase 1 | Casings, packaging, structural parts | [coo-cah-factory-chemicals-plastics](https://github.com/oumar-code/coo-cah-factory-chemicals-plastics) |
+| [Heavy Chemicals](../factories/chemicals/heavy-chemicals/README.md) | Delta State, Nigeria | Phase 2 | Solvents, acids, industrial chemicals | — |
+| [Fine Chemicals](../factories/chemicals/fine-chemicals/README.md) | Lagos, Nigeria | Phase 2 | Specialty chemicals, pigments | — |
+| [Fertilizer](../factories/chemicals/fertilizer/README.md) | Delta State, Nigeria | Phase 3 | NPK, urea, compound fertilizers | — |
+| [Metallurgical](../factories/chemicals/metallurgical/README.md) | Delta State, Nigeria | Phase 3 | Steel, aluminum processing | [coo-cah-factory-chemicals-metallurgical](https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical) |
 
 ### Consumer Goods Vertical
 
