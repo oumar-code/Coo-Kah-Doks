@@ -53,39 +53,39 @@ Long-cycle, capital-intensive operations that provide strategic vertical integra
 
 | Factory | Location | Phase | Key Products |
 |---------|----------|-------|-------------|
-| [Kitchen Electronics](../../factories/electronics/kitchen-electronics/README.md) | Lagos, Nigeria | Phase 1 | Fridges, microwaves, cookers, kettles |
-| [Garage/Power Electronics](../../factories/electronics/garage-power-electronics/README.md) | Ogun State, Nigeria | Phase 1 | Inverters, solar systems, power strips |
-| [Personal Electronics](../../factories/electronics/personal-electronics/README.md) | Lagos, Nigeria | Phase 1 | Smartphones, power banks, headphones |
-| [Smart Estate/City](../../factories/electronics/smart-estate-city/README.md) | Kigali, Rwanda | Phase 2 | IoT sensors, smart street lighting |
-| [Smart Home/Office](../../factories/electronics/smart-home-office/README.md) | Lagos, Nigeria | Phase 2 | Smart plugs, thermostats, voice assistants |
-| [Security Electronics](../../factories/electronics/security-electronics/README.md) | Lagos, Nigeria | Phase 2 | CCTV, alarms, biometric locks |
+| [Kitchen Electronics](../factories/electronics/kitchen-electronics/README.md) | Lagos, Nigeria | Phase 1 | Fridges, microwaves, cookers, kettles |
+| [Garage/Power Electronics](../factories/electronics/garage-power-electronics/README.md) | Ogun State, Nigeria | Phase 1 | Inverters, solar systems, power strips |
+| [Personal Electronics](../factories/electronics/personal-electronics/README.md) | Lagos, Nigeria | Phase 1 | Smartphones, power banks, headphones |
+| [Smart Estate/City](../factories/electronics/smart-estate-city/README.md) | Kigali, Rwanda | Phase 2 | IoT sensors, smart street lighting |
+| [Smart Home/Office](../factories/electronics/smart-home-office/README.md) | Lagos, Nigeria | Phase 2 | Smart plugs, thermostats, voice assistants |
+| [Security Electronics](../factories/electronics/security-electronics/README.md) | Lagos, Nigeria | Phase 2 | CCTV, alarms, biometric locks |
 
 ### Chemicals Vertical
 
 | Factory | Location | Phase | Key Products |
 |---------|----------|-------|-------------|
-| [Plastics](../../factories/chemicals/plastics/README.md) | Ogun State, Nigeria | Phase 1 | Casings, packaging, structural parts |
-| [Heavy Chemicals](../../factories/chemicals/heavy-chemicals/README.md) | Delta State, Nigeria | Phase 2 | Solvents, acids, industrial chemicals |
-| [Fine Chemicals](../../factories/chemicals/fine-chemicals/README.md) | Lagos, Nigeria | Phase 2 | Specialty chemicals, pigments |
-| [Fertilizer](../../factories/chemicals/fertilizer/README.md) | Delta State, Nigeria | Phase 3 | NPK, urea, compound fertilizers |
-| [Metallurgical](../../factories/chemicals/metallurgical/README.md) | Delta State, Nigeria | Phase 3 | Steel, aluminum processing |
+| [Plastics](../factories/chemicals/plastics/README.md) | Ogun State, Nigeria | Phase 1 | Casings, packaging, structural parts |
+| [Heavy Chemicals](../factories/chemicals/heavy-chemicals/README.md) | Delta State, Nigeria | Phase 2 | Solvents, acids, industrial chemicals |
+| [Fine Chemicals](../factories/chemicals/fine-chemicals/README.md) | Lagos, Nigeria | Phase 2 | Specialty chemicals, pigments |
+| [Fertilizer](../factories/chemicals/fertilizer/README.md) | Delta State, Nigeria | Phase 3 | NPK, urea, compound fertilizers |
+| [Metallurgical](../factories/chemicals/metallurgical/README.md) | Delta State, Nigeria | Phase 3 | Steel, aluminum processing |
 
 ### Consumer Goods Vertical
 
 | Factory | Location | Phase | Key Products |
 |---------|----------|-------|-------------|
-| [Food & Beverages](../../factories/consumer-goods/food-and-beverages/README.md) | Abuja, Nigeria | Phase 2 | Packaged food, beverages |
-| [Soap & Detergent](../../factories/consumer-goods/soap-and-detergent/README.md) | Lagos, Nigeria | Phase 2 | Soaps, detergents, cleaners |
-| [Cosmetics](../../factories/consumer-goods/cosmetics/README.md) | Lagos, Nigeria | Phase 2 | Personal care, skincare |
-| [Paint & Coatings](../../factories/consumer-goods/paint-and-coatings/README.md) | Lagos, Nigeria | Phase 2 | Decorative and industrial paints |
-| [Glass & Ceramic](../../factories/consumer-goods/glass-and-ceramic/README.md) | Abuja, Nigeria | Phase 3 | Glass products, ceramics |
+| [Food & Beverages](../factories/consumer-goods/food-beverages/README.md) | Abuja, Nigeria | Phase 1 | Packaged food, beverages |
+| [Personal Care](../factories/consumer-goods/personal-care/README.md) | Lagos, Nigeria | Phase 1 | Skin care, hair care, oral hygiene |
+| [Household Cleaning](../factories/consumer-goods/household-cleaning/README.md) | Lagos, Nigeria | Phase 1 | Detergents, disinfectants, bleach |
+| [Packaged Water](../factories/consumer-goods/packaged-water/README.md) | Lagos, Nigeria | Phase 1 | Sachet water, 50cl–5L bottles |
+| [Baby & Infant Products](../factories/consumer-goods/baby-products/README.md) | Lagos, Nigeria | Phase 2 | Diapers, wipes, baby care |
 
 ### Lifestyle Vertical
 
 | Factory | Location | Phase | Key Products |
 |---------|----------|-------|-------------|
-| [Furniture](../../factories/lifestyle/furniture/README.md) | Abuja, Nigeria | Phase 2 | Office, home, industrial furniture |
-| [Sport & Apparel](../../factories/lifestyle/sport-and-apparel/README.md) | Lagos, Nigeria | Phase 2 | Football kits, clothing, uniforms |
+| [Fashion & Apparel](../factories/lifestyle/fashion-apparel/README.md) | Lagos, Nigeria | Phase 2 | Clothing, uniforms, sportswear |
+| [Furniture & Home Décor](../factories/lifestyle/furniture-decor/README.md) | Abuja, Nigeria | Phase 2 | Office, home, and industrial furniture |
 
 ---
 
@@ -105,13 +105,12 @@ graph TD
     HEAVY_CHEM["Heavy Chemicals\n(Solvents, Acids)"]
     FINE_CHEM["Fine Chemicals\n(Pigments, Specialty)"]
 
-    SOAP["Soap & Detergent"]
-    COSM["Cosmetics"]
-    PAINT["Paint & Coatings"]
+    SOAP["Household Cleaning\n(Detergents, Bleach)"]
+    COSM["Personal Care\n(Skin/Hair Care)"]
     FOOD["Food & Beverages"]
 
-    FURN["Furniture"]
-    APPAREL["Sport & Apparel"]
+    FURN["Furniture & Décor"]
+    APPAREL["Fashion & Apparel"]
 
     PLASTIC -->|"Casings"| KITCHEN
     PLASTIC -->|"Casings"| PERSONAL
@@ -119,7 +118,6 @@ graph TD
     PLASTIC -->|"Enclosures"| SECURITY
     PLASTIC -->|"Bottles, packaging"| SOAP
     PLASTIC -->|"Bottles, packaging"| COSM
-    PLASTIC -->|"Cans"| PAINT
     PLASTIC -->|"Packaging"| FOOD
 
     METAL -->|"Frames"| KITCHEN
@@ -129,11 +127,9 @@ graph TD
     POWER -->|"Energy systems"| KITCHEN
     POWER -->|"Energy systems"| PERSONAL
 
-    HEAVY_CHEM -->|"Solvents"| PAINT
     HEAVY_CHEM -->|"Surfactants"| SOAP
     HEAVY_CHEM -->|"Inputs"| FINE_CHEM
 
-    FINE_CHEM -->|"Pigments"| PAINT
     FINE_CHEM -->|"Active ingredients"| COSM
     FINE_CHEM -->|"Food additives"| FOOD
 ```
@@ -154,7 +150,7 @@ All Coo-Cah factories must comply with these group-wide standards regardless of 
 
 ## Factory Status Registry
 
-Factory commissioning status is tracked in [orchestration/factory-status-registry.md](../../orchestration/factory-status-registry.md).
+Factory commissioning status is tracked in [orchestration/factory-status-registry.md](../orchestration/factory-status-registry.md).
 
 Status codes used:
 - `PLANNED` — Feasibility/design phase
@@ -166,4 +162,4 @@ Status codes used:
 
 ---
 
-*See [Factory Template](../../factories/_template/README.md) for the standard blueprint format used by all factory repos.*
+*See [Factory Template](../factories/_template/README.md) for the standard blueprint format used by all factory repos.*

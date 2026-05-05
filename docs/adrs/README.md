@@ -30,7 +30,7 @@ You do **not** need an ADR for:
 
 ### How to Propose an ADR
 
-1. **Open a GitHub issue** using the [ADR Proposal template](../../.github/ISSUE_TEMPLATE/adr-proposal.md)
+1. **Open a GitHub issue** using the [ADR Proposal template](../../.github/ISSUE_TEMPLATE/adr-proposal.yml)
 2. **Draft the ADR** using the [ADR template](#adr-template) below
 3. **Submit a Pull Request** to add the ADR to `docs/adrs/`
 4. **Review period:** Minimum 5 business days; all relevant stakeholders must review
