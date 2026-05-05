@@ -1,6 +1,6 @@
 # Corporate Structure & Governance
 
-> See also: [CORPORATE_STRUCTURE.md](../../CORPORATE_STRUCTURE.md) for the full legal entity document.
+> See also: [CORPORATE_STRUCTURE.md](../CORPORATE_STRUCTURE.md) for the full legal entity document.
 
 ## Holdings + OpCo Model
 
@@ -115,4 +115,4 @@ Annual ESG report published by Holdings covering:
 
 ---
 
-*For full legal entity details, see [CORPORATE_STRUCTURE.md](../../CORPORATE_STRUCTURE.md)*
+*For full legal entity details, see [CORPORATE_STRUCTURE.md](../CORPORATE_STRUCTURE.md)*

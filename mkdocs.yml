@@ -71,31 +71,36 @@ nav:
     - Overview: 00-vision/index.md
     - Corporate Structure: 01-corporate-structure/index.md
     - Energy Strategy: 02-energy-strategy/index.md
+    - Energy Infrastructure:
+      - Solar Power Bank: energy/solar-power-bank/README.md
+      - Wind Power Bank: energy/wind-power-bank/README.md
+      - Hybrid Systems: energy/hybrid-systems/README.md
     - Finance: 10-finance/index.md
   - Factory Blueprints:
     - All Factories: 03-factories/index.md
     - Electronics Vertical:
-      - Personal Electronics: ../factories/electronics/personal-electronics/README.md
-      - Kitchen Electronics: ../factories/electronics/kitchen-electronics/README.md
-      - Garage & Power Electronics: ../factories/electronics/garage-power-electronics/README.md
-      - Smart Home & Office: ../factories/electronics/smart-home-office/README.md
-      - Security Electronics: ../factories/electronics/security-electronics/README.md
+      - Personal Electronics: factories/electronics/personal-electronics/README.md
+      - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
+      - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
+      - Smart Home & Office: factories/electronics/smart-home-office/README.md
+      - Security Electronics: factories/electronics/security-electronics/README.md
+      - Smart Estate & City: factories/electronics/smart-estate-city/README.md
     - Chemicals Vertical:
-      - Heavy Chemicals: ../factories/chemicals/heavy-chemicals/README.md
-      - Fine Chemicals: ../factories/chemicals/fine-chemicals/README.md
-      - Fertilizer: ../factories/chemicals/fertilizer/README.md
-      - Plastics & Polymers: ../factories/chemicals/plastics/README.md
-      - Metallurgical & Minerals: ../factories/chemicals/metallurgical/README.md
+      - Heavy Chemicals: factories/chemicals/heavy-chemicals/README.md
+      - Fine Chemicals: factories/chemicals/fine-chemicals/README.md
+      - Fertilizer: factories/chemicals/fertilizer/README.md
+      - Plastics & Polymers: factories/chemicals/plastics/README.md
+      - Metallurgical & Minerals: factories/chemicals/metallurgical/README.md
     - Consumer Goods Vertical:
-      - Food & Beverages: ../factories/consumer-goods/food-beverages/README.md
-      - Personal Care: ../factories/consumer-goods/personal-care/README.md
-      - Household Cleaning: ../factories/consumer-goods/household-cleaning/README.md
-      - Packaged Water: ../factories/consumer-goods/packaged-water/README.md
-      - Baby & Infant Products: ../factories/consumer-goods/baby-products/README.md
+      - Food & Beverages: factories/consumer-goods/food-beverages/README.md
+      - Personal Care: factories/consumer-goods/personal-care/README.md
+      - Household Cleaning: factories/consumer-goods/household-cleaning/README.md
+      - Packaged Water: factories/consumer-goods/packaged-water/README.md
+      - Baby & Infant Products: factories/consumer-goods/baby-products/README.md
     - Lifestyle Vertical:
-      - Fashion & Apparel: ../factories/lifestyle/fashion-apparel/README.md
-      - Furniture & Home Décor: ../factories/lifestyle/furniture-decor/README.md
-    - Template: ../factories/_template/README.md
+      - Fashion & Apparel: factories/lifestyle/fashion-apparel/README.md
+      - Furniture & Home Décor: factories/lifestyle/furniture-decor/README.md
+    - Template: factories/_template/README.md
   - Technology:
     - Semiconductor (Baobab): 04-semiconductor/index.md
     - Smart Factory Core: 05-smart-factory-core/index.md
@@ -104,6 +109,7 @@ nav:
     - Supply Chain: 07-supply-chain/index.md
   - Compliance:
     - Regulatory Overview: 09-compliance-regulatory/index.md
+    - Factory Status Registry: orchestration/factory-status-registry.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md

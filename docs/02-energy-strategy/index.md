@@ -163,4 +163,4 @@ Holdings negotiates group-level PPAs (Power Purchase Agreements) with renewable 
 
 ---
 
-*See also: [Solar Power Bank](../../energy/solar-power-bank/README.md) | [Wind Power Bank](../../energy/wind-power-bank/README.md) | [Hybrid Systems](../../energy/hybrid-systems/README.md)*
+*See also: [Solar Power Bank](../energy/solar-power-bank/README.md) | [Wind Power Bank](../energy/wind-power-bank/README.md) | [Hybrid Systems](../energy/hybrid-systems/README.md)*
