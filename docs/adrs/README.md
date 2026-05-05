@@ -120,9 +120,10 @@ What constraints do we operate under (technical, financial, regulatory, operatio
 |-----|-------|--------|------|--------|
 | [ADR-001](ADR-001-energy-source-selection.md) | Energy Source Selection for Coo-Cah Factories | ACCEPTED | 2025-01-15 | Energy |
 | [ADR-002](ADR-002-mes-platform-selection.md) | MES Platform Selection | ACCEPTED | 2025-02-10 | Manufacturing |
-| ADR-003 | AI Platform Cloud vs On-Premise Strategy | PROPOSED | 2025-03-01 | AI / Infrastructure |
-| ADR-004 | AMR Platform Standardisation | PROPOSED | 2025-04-15 | Automation |
-| ADR-005 | ERP Platform Selection | PROPOSED | 2025-05-01 | Enterprise IT |
+| [ADR-003](ADR-003-digital-twin-platform.md) | Digital Twin Platform Selection | ACCEPTED | 2025-03-05 | Digital Twin |
+| [ADR-004](ADR-004-amr-fleet-platform.md) | AMR Fleet Platform Selection | ACCEPTED | 2025-03-18 | Automation |
+| [ADR-005](ADR-005-erp-platform.md) | ERP Platform Selection | ACCEPTED | 2025-04-01 | Enterprise IT |
+| [ADR-006](ADR-006-ai-platform-architecture.md) | Central AI Platform Architecture | ACCEPTED | 2025-04-15 | AI / Infrastructure |
 
 ---
 

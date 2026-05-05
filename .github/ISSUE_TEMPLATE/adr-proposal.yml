@@ -1,0 +1,48 @@
+name: ADR Proposal
+description: Propose a new Architecture Decision Record
+title: "[ADR] "
+labels: ["architecture", "adr"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Decision Title
+      placeholder: "e.g. Cloud Provider for Coo-Cah AI Platform"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What is the background and why is this decision needed now?
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Options Being Considered
+      description: List the options under consideration (minimum 3)
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Decision Requirements / Constraints
+      description: What are the non-negotiable requirements this decision must satisfy?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Decision Urgency
+      options:
+        - Blocking a factory build or technology programme
+        - Required for Phase 1 completion
+        - Required for Phase 2 planning
+        - Non-urgent — strategic planning
+    validations:
+      required: true

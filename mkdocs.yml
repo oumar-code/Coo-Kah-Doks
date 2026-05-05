@@ -74,6 +74,27 @@ nav:
     - Finance: 10-finance/index.md
   - Factory Blueprints:
     - All Factories: 03-factories/index.md
+    - Electronics Vertical:
+      - Personal Electronics: ../factories/electronics/personal-electronics/README.md
+      - Kitchen Electronics: ../factories/electronics/kitchen-electronics/README.md
+      - Garage & Power Electronics: ../factories/electronics/garage-power-electronics/README.md
+      - Smart Home & Office: ../factories/electronics/smart-home-office/README.md
+      - Security Electronics: ../factories/electronics/security-electronics/README.md
+    - Chemicals Vertical:
+      - Heavy Chemicals: ../factories/chemicals/heavy-chemicals/README.md
+      - Fine Chemicals: ../factories/chemicals/fine-chemicals/README.md
+      - Fertilizer: ../factories/chemicals/fertilizer/README.md
+      - Plastics & Polymers: ../factories/chemicals/plastics/README.md
+      - Metallurgical & Minerals: ../factories/chemicals/metallurgical/README.md
+    - Consumer Goods Vertical:
+      - Food & Beverages: ../factories/consumer-goods/food-beverages/README.md
+      - Personal Care: ../factories/consumer-goods/personal-care/README.md
+      - Household Cleaning: ../factories/consumer-goods/household-cleaning/README.md
+      - Packaged Water: ../factories/consumer-goods/packaged-water/README.md
+      - Baby & Infant Products: ../factories/consumer-goods/baby-products/README.md
+    - Lifestyle Vertical:
+      - Fashion & Apparel: ../factories/lifestyle/fashion-apparel/README.md
+      - Furniture & Home Décor: ../factories/lifestyle/furniture-decor/README.md
     - Template: ../factories/_template/README.md
   - Technology:
     - Semiconductor (Baobab): 04-semiconductor/index.md
@@ -87,6 +108,10 @@ nav:
     - ADR Index: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
     - ADR-002 MES Platform: adrs/ADR-002-mes-platform-selection.md
+    - ADR-003 Digital Twin Platform: adrs/ADR-003-digital-twin-platform.md
+    - ADR-004 AMR Fleet Platform: adrs/ADR-004-amr-fleet-platform.md
+    - ADR-005 ERP Platform: adrs/ADR-005-erp-platform.md
+    - ADR-006 AI Platform Architecture: adrs/ADR-006-ai-platform-architecture.md
   - Reference:
     - Glossary: glossary.md
 
