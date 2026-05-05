@@ -1,0 +1,63 @@
+name: Factory Blueprint Update
+description: Request an update or addition to a factory blueprint document
+title: "[Blueprint] "
+labels: ["documentation", "blueprint"]
+body:
+  - type: dropdown
+    id: vertical
+    attributes:
+      label: Factory Vertical
+      description: Which Coo-Cah vertical does this factory belong to?
+      options:
+        - Electronics
+        - Chemicals
+        - Consumer Goods
+        - Lifestyle
+        - Semiconductor (Baobab)
+        - Cross-vertical / Orchestration
+    validations:
+      required: true
+
+  - type: input
+    id: factory
+    attributes:
+      label: Factory Name
+      description: Which specific factory blueprint needs updating?
+      placeholder: "e.g. Coo-Cah Kitchen Electronics Factory"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: document
+    attributes:
+      label: Document to Update
+      options:
+        - README.md (Executive Summary)
+        - machinery.md
+        - energy-profile.md
+        - floor-plan.md
+        - automation-roadmap.md
+        - supply-chain.md
+        - regulatory.md
+        - capex-opex.md
+        - digital-twin.md
+        - mes-integration.md
+        - New document (specify below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Change
+      description: What needs to be added, updated, or corrected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification / Source
+      description: What is the source of this change? (e.g., design review decision, regulatory change, vendor change)
+    validations:
+      required: false
