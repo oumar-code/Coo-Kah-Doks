@@ -83,6 +83,36 @@ Every inverter and solar charge controller manufactured is registered as a produ
 | DT-GAR-EN-003    | Sungrow Hybrid Inverters ×2 | State Machine     | 30 sec       | EMS Modbus TCP  |
 | DT-GAR-EN-004    | Grid Connection Meter       | State + Load      | 30 sec       | Smart Meter     |
 
+### 3.5 Power Tool Assembly Line
+
+| DT Asset ID      | Physical Asset                       | DT Model Type         | Sensor Count | Integration |
+|------------------|--------------------------------------|-----------------------|--------------|-------------|
+| DT-GAR-PT-001    | Motor Assembly Station (×4)          | State + Process       | 8            | MQTT        |
+| DT-GAR-PT-002    | Gearbox Assembly Station (×3)        | State + Process       | 6            | MQTT        |
+| DT-GAR-PT-003    | Housing Assembly Station (×4)        | State                 | 4            | MQTT        |
+| DT-GAR-PT-004    | Function Test Dynamometer (×4)       | Electrical + Mech     | 16           | OPC-UA      |
+| DT-GAR-PT-005    | Hipot Safety Analyser — Chroma 19053 (×4) | Electrical State | 8            | OPC-UA      |
+| DT-GAR-PT-006    | Cordless Battery Pack Assembly (×2)  | Electrical + Thermal  | 8            | MQTT        |
+
+Each power tool function test station streams no-load RPM, stall torque, and power draw in real time. The DT engine correlates test results with upstream motor assembly torque logs to identify systematic defects by SKU.
+
+### 3.6 AMR Fleet
+
+Eight autonomous mobile robots handle material transport between SMT, inverter assembly, winding, test area, power tool line, and despatch.
+
+| DT Asset ID       | Physical Asset                     | DT Model Type          | Update Freq. | Integration  |
+|-------------------|------------------------------------|------------------------|--------------|--------------|
+| DT-GAR-AMR-001    | AMR Unit 1 — Geek+ P40 / KEENON T8 | Position + State      | 1 sec        | AMR REST API |
+| DT-GAR-AMR-002    | AMR Unit 2                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-003    | AMR Unit 3                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-004    | AMR Unit 4                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-005    | AMR Unit 5                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-006    | AMR Unit 6                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-007    | AMR Unit 7                         | Position + State       | 1 sec        | AMR REST API |
+| DT-GAR-AMR-008    | AMR Unit 8                         | Position + State       | 1 sec        | AMR REST API |
+
+The DT engine tracks fleet-level utilisation, cycle time per route, and battery state-of-charge across all eight units. Alerts are raised when an AMR is stationary on a production route for more than 3 minutes.
+
 ---
 
 ## 4. Key Simulation Use Cases
@@ -114,6 +144,17 @@ Every inverter and solar charge controller manufactured is registered as a produ
 | String current readings        | Underperforming strings flagged              | Daily AI analysis              |
 | Irradiance sensor              | Soiling ratio estimate per string            | Alert if > 5% deviation        |
 
+### 4.4 Power Tool End-of-Line Test Analytics
+
+**Use Case:** Correlate power tool function test results (no-load RPM, stall torque, power draw) with upstream motor and gearbox assembly parameters to detect systematic defects by SKU before product reaches packaging.
+
+| Input                              | Output                                            | Trigger                         |
+|------------------------------------|---------------------------------------------------|---------------------------------|
+| Function test: RPM, stall torque   | Failure pattern by SKU, by assembly station       | After every 50 units tested     |
+| Motor assembly torque log          | Correlation: assembly torque vs. RPM deviation    | Weekly AI analysis              |
+| Hipot test results                 | Insulation failure rate by model and batch        | After every 100 units tested    |
+| Battery pack voltage / IR readings | Out-of-spec pack rate vs. cell batch supplier     | Per batch incoming QC event     |
+
 ---
 
 ## 5. Data Retention Policy
@@ -125,6 +166,23 @@ Every inverter and solar charge controller manufactured is registered as a produ
 | Load bank test data   | Per test    | 3 years     | 10 years     | Warranty records 10 yrs |
 | Product twin registry | Per event   | Lifetime    | 15 years     | Product support records |
 | Solar performance     | 30 sec      | 1 year      | 10 years     | Carbon accounting       |
+
+---
+
+## 6. Sensor Coverage Map
+
+| Zone                  | Vibration | Thermal | Power / Electrical | Vision / AOI | AMR Position | Total Sensors |
+|-----------------------|-----------|---------|--------------------|--------------|--------------|---------------|
+| SMT PCB Line          | 2         | 30      | 8                  | 14           | —            | ~54           |
+| Winding Cells         | 8         | 12      | 24                 | —            | —            | ~44           |
+| Inverter Assembly Lines | 4       | 6       | 54                 | 4            | —            | ~68           |
+| Test Area (load banks + analysers) | 2 | 4  | 60                 | —            | —            | ~66           |
+| Power Tool Line       | 6         | 4       | 16                 | —            | —            | ~26           |
+| Energy Room (Solar + BESS) | —    | 8       | 16                 | —            | —            | ~24           |
+| AMR Fleet (position)  | —         | —       | 8 (SoC)            | —            | 8            | ~16           |
+| **Total (approx.)**   | **22**    | **64**  | **186**            | **18**       | **8**        | **~298**      |
+
+*Sensor counts are indicative. Final counts confirmed at detail engineering stage.*
 
 ---
 
