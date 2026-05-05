@@ -1,0 +1,50 @@
+name: Notify Factory Repos of Blueprint Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'factories/_template/**'
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual dispatch (optional)'
+        required: false
+        default: 'Manual blueprint sync trigger'
+
+jobs:
+  dispatch-to-factories:
+    name: Dispatch blueprint-update to all factory repos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    strategy:
+      matrix:
+        repo:
+          - coo-cah-factory-chemicals-plastics
+          - coo-cah-factory-electronics-power
+          - coo-cah-factory-chemicals-metallurgical
+    steps:
+      - name: Send repository_dispatch to ${{ matrix.repo }}
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.ORG_PAT }}
+          script: |
+            const repo = '${{ matrix.repo }}';
+            const reason = '${{ github.event.inputs.reason || 'Blueprint template files changed on main' }}';
+
+            await github.rest.repos.createDispatchEvent({
+              owner: 'oumar-code',
+              repo: repo,
+              event_type: 'blueprint-update',
+              client_payload: {
+                source_repo: 'oumar-code/Coo-Kah-Doks',
+                ref: '${{ github.sha }}',
+                actor: '${{ github.actor }}',
+                reason: reason,
+                template_path: 'factories/_template',
+                triggered_at: new Date().toISOString()
+              }
+            });
+
+            console.log(`✅ Dispatched blueprint-update to oumar-code/${repo}`);
