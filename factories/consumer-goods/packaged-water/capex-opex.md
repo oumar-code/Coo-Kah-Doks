@@ -40,7 +40,7 @@
 | Category                    | Annual (₦)  |
 |-----------------------------|-------------|
 | Labour (direct + indirect)  | 1.5–3.5B    |
-| Raw Materials / Ingredients | 3.5BB   |
+| Raw Materials / Ingredients | 3.5B   |
 | Packaging                   | 0.4–1.2B    |
 | Energy (residual grid)      | 0.1–0.4B    |
 | Maintenance                 | 0.2–0.6B    |
