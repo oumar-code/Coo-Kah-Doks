@@ -1,0 +1,42 @@
+/* Coo-Cah Factory Repo — MkDocs custom styles
+ * Group-wide standard defined in Coo-Kah-Doks / factories / _template / docs / stylesheets /
+ * Copy this file verbatim to docs/stylesheets/extra.css in every factory repo.
+ * Only factory-specific overrides (e.g. hazard zone colours) should be added below the divider.
+ */
+
+/* ── Wider table support ─────────────────────────────────────────────────── */
+.md-content__inner table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* ── Badge / shield image spacing ───────────────────────────────────────── */
+img[alt*="Status"],
+img[alt*="Tier"],
+img[alt*="Phase"],
+img[alt*="Location"],
+img[alt*="Master Repo"] {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ── Admonition colours for safety / hazard callouts ────────────────────── */
+/* danger  → high-voltage / chemical / fire hazard */
+.admonition.danger {
+  border-left-color: #FF5722 !important;
+}
+
+/* warning → caution / PPE required */
+.admonition.warning {
+  border-left-color: #FFC107 !important;
+}
+
+/* ── Mermaid diagram container ───────────────────────────────────────────── */
+.mermaid {
+  overflow-x: auto;
+}
+
+/* ══ FACTORY-SPECIFIC OVERRIDES — add below this line ═══════════════════════
+ * Document any deviation from the group standard with a comment.
+ * ═════════════════════════════════════════════════════════════════════════ */
