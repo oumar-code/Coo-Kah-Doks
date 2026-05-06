@@ -91,7 +91,7 @@
 | Grid Supply | ~8–12 h/day ([DISCO] DISCO) |
 | Backup Generator | 1 × Perkins [GEN_KVA] kVA diesel; [FUEL_L] L tank |
 
-See [energy-profile.md](./energy-profile.md) for full demand analysis and cost model.
+See `energy-profile.md` for full demand analysis and cost model.
 
 ---
 
@@ -134,15 +134,15 @@ See [energy-profile.md](./energy-profile.md) for full demand analysis and cost m
 | Document | Description |
 |---|---|
 | [master-repo-ref.md](./master-repo-ref.md) | Master repo traceability, version reference, group standards |
-| [machinery.md](./machinery.md) | Full equipment register |
-| [energy-profile.md](./energy-profile.md) | Power demand analysis, solar design, BESS, energy cost model |
-| [floor-plan.md](./floor-plan.md) | Factory layout with zones and flow paths |
-| [automation-roadmap.md](./automation-roadmap.md) | Phase 1→3 automation strategy |
-| [supply-chain.md](./supply-chain.md) | Component sourcing and intra-group suppliers |
-| [regulatory.md](./regulatory.md) | SON NIS, applicable IEC standards, NESREA, Pioneer Status |
-| [capex-opex.md](./capex-opex.md) | Phased CapEx, unit economics, BOM cost model, payback analysis |
-| [digital-twin.md](./digital-twin.md) | Asset registry, sensor map, simulation use cases |
-| [mes-integration.md](./mes-integration.md) | Serial traceability, OEE framework, API reference |
+| `machinery.md` | Full equipment register |
+| `energy-profile.md` | Power demand analysis, solar design, BESS, energy cost model |
+| `floor-plan.md` | Factory layout with zones and flow paths |
+| `automation-roadmap.md` | Phase 1→3 automation strategy |
+| `supply-chain.md` | Component sourcing and intra-group suppliers |
+| `regulatory.md` | SON NIS, applicable IEC standards, NESREA, Pioneer Status |
+| `capex-opex.md` | Phased CapEx, unit economics, BOM cost model, payback analysis |
+| `digital-twin.md` | Asset registry, sensor map, simulation use cases |
+| `mes-integration.md` | Serial traceability, OEE framework, API reference |
 
 ---
 
