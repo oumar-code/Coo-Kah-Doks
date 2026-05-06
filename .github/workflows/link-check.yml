@@ -19,3 +19,5 @@ jobs:
           use-quiet-mode: 'yes'
           use-verbose-mode: 'no'
           config-file: '.github/mlc_config.json'
+          folder-path: 'factories, docs'
+          file-path: './README.md, ./CORPORATE_STRUCTURE.md'
