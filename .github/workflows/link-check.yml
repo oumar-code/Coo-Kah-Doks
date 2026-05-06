@@ -19,5 +19,8 @@ jobs:
           use-quiet-mode: 'yes'
           use-verbose-mode: 'no'
           config-file: '.github/mlc_config.json'
+          # Check only content directories; .github/blueprint-alignment/ holds
+          # template files for remote repos (relative links there are intentionally
+          # unresolvable in this repo).
           folder-path: 'factories, docs'
           file-path: './README.md, ./CORPORATE_STRUCTURE.md'
