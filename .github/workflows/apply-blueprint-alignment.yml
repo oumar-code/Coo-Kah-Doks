@@ -28,7 +28,7 @@ jobs:
             const owner      = 'oumar-code';
             const repo       = 'coo-cah-factory-chemicals-plastics';
             const isDryRun   = process.env.DRY_RUN === 'true';
-            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().substring(0, 10)}`;
+            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().replace(/:/g, '-').substring(0, 19)}`;
             const tplBase    = '.github/blueprint-alignment/chemicals-plastics';
 
             // ── helpers ────────────────────────────────────────────────────────
@@ -191,7 +191,7 @@ jobs:
             const owner      = 'oumar-code';
             const repo       = 'coo-cah-factory-chemicals-metallurgical';
             const isDryRun   = process.env.DRY_RUN === 'true';
-            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().substring(0, 10)}`;
+            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().replace(/:/g, '-').substring(0, 19)}`;
             const tplBase    = '.github/blueprint-alignment/chemicals-metallurgical';
 
             // ── helpers ────────────────────────────────────────────────────────
