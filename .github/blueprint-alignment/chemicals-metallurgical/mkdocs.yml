@@ -1,0 +1,88 @@
+site_name: Coo-Cah Metallurgical & Minerals Factory
+site_description: >
+  Blueprint, operational docs & AI-integration specifications for the Coo-Cah Metallurgical &
+  Minerals Factory (Warri / Ovwian-Aladja, Delta State, Nigeria). Tier 2 Strategic Infrastructure
+  — Coo-Cah Technologies Holdings.
+site_author: Coo-Cah Technologies Holdings
+site_url: https://oumar-code.github.io/coo-cah-factory-chemicals-metallurgical/
+
+repo_name: oumar-code/coo-cah-factory-chemicals-metallurgical
+repo_url: https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep-purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep-purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mermaid2
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Home: index.md
+  - Master Repo Reference: master-repo-ref.md
+  - Factory Docs:
+    - Machinery & Equipment: machinery.md
+    - Energy Profile: energy-profile.md
+    - Floor Plan & Layout: floor-plan.md
+    - Automation Roadmap: automation-roadmap.md
+    - Supply Chain: supply-chain.md
+    - Regulatory & Compliance: regulatory.md
+    - CapEx / OpEx: capex-opex.md
+    - Digital Twin: digital-twin.md
+    - MES Integration: mes-integration.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/oumar-code/Coo-Kah-Doks
+      name: Master Repository — Coo-Kah-Doks
+
+copyright: >
+  © 2025 Coo-Cah Technologies Holdings. All rights reserved. |
+  Part of the Coo-Cah Manufacturing Ecosystem.

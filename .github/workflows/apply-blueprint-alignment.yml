@@ -1,0 +1,365 @@
+name: Apply Blueprint Alignment to Factory Repos
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — log planned changes without creating PRs'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  align-chemicals-plastics:
+    name: Align — coo-cah-factory-chemicals-plastics
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply alignment to coo-cah-factory-chemicals-plastics
+        uses: actions/github-script@v7
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const owner      = 'oumar-code';
+            const repo       = 'coo-cah-factory-chemicals-plastics';
+            const isDryRun   = process.env.DRY_RUN === 'true';
+            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().substring(0, 10)}`;
+            const tplBase    = '.github/blueprint-alignment/chemicals-plastics';
+
+            // ── helpers ────────────────────────────────────────────────────────
+            const getFile = async (r, path) => {
+              try {
+                const { data } = await github.rest.repos.getContent({ owner, repo: r, path });
+                return { content: Buffer.from(data.content, 'base64').toString('utf-8'), sha: data.sha };
+              } catch (e) {
+                if (e.status === 404) return null;
+                throw e;
+              }
+            };
+
+            const tplContent = async (relPath) => {
+              const f = await getFile(context.repo.repo, `${tplBase}/${relPath}`);
+              if (!f) throw new Error(`Template not found: ${tplBase}/${relPath}`);
+              return f.content;
+            };
+
+            // ── read current state of factory repo ─────────────────────────────
+            const readmeFile       = await getFile(repo, 'README.md');
+            const docsIndexFile    = await getFile(repo, 'docs/index.md');
+            const docsMasterRef    = await getFile(repo, 'docs/master-repo-ref.md');
+            const mkdocsFile       = await getFile(repo, 'mkdocs.yml');
+            const masterRefFile    = await getFile(repo, 'MASTER_REPO_REF.md');
+
+            // ── prepare changes ────────────────────────────────────────────────
+            const changes = [];
+
+            // docs/index.md = README.md content (factory owns its README)
+            if (!docsIndexFile && readmeFile) {
+              changes.push({ path: 'docs/index.md', content: readmeFile.content, existingSha: null });
+            }
+
+            // docs/master-repo-ref.md = new rich traceability document
+            if (!docsMasterRef) {
+              changes.push({
+                path: 'docs/master-repo-ref.md',
+                content: await tplContent('docs/master-repo-ref.md'),
+                existingSha: null,
+              });
+            }
+
+            // mkdocs.yml = fixed nav paths (remove docs/ prefix, use index.md + master-repo-ref.md)
+            {
+              const newMkdocs = await tplContent('mkdocs.yml');
+              if (!mkdocsFile || mkdocsFile.content !== newMkdocs) {
+                changes.push({ path: 'mkdocs.yml', content: newMkdocs, existingSha: mkdocsFile?.sha ?? null });
+              }
+            }
+
+            // MASTER_REPO_REF.md = upgraded format
+            {
+              const newMasterRef = await tplContent('MASTER_REPO_REF.md');
+              if (!masterRefFile || masterRefFile.content !== newMasterRef) {
+                changes.push({ path: 'MASTER_REPO_REF.md', content: newMasterRef, existingSha: masterRefFile?.sha ?? null });
+              }
+            }
+
+            if (changes.length === 0) {
+              console.log('✅ coo-cah-factory-chemicals-plastics is already aligned — no changes needed.');
+              return;
+            }
+
+            console.log(`Planned changes for ${repo}:`);
+            changes.forEach(c => console.log(`  ${c.existingSha ? 'update' : 'create'}: ${c.path}`));
+
+            if (isDryRun) {
+              console.log('DRY RUN — skipping branch/PR creation.');
+              return;
+            }
+
+            // ── get main SHA and create branch ─────────────────────────────────
+            const { data: mainRef } = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
+            const mainSha = mainRef.object.sha;
+
+            await github.rest.git.createRef({
+              owner, repo,
+              ref: `refs/heads/${branchName}`,
+              sha: mainSha,
+            });
+            console.log(`✅ Branch created: ${branchName}`);
+
+            // ── commit each changed file ───────────────────────────────────────
+            for (const change of changes) {
+              const action = change.existingSha ? 'update' : 'create';
+              await github.rest.repos.createOrUpdateFileContents({
+                owner, repo,
+                path: change.path,
+                message: `blueprint-sync: ${action} ${change.path} (template v1.0 alignment)`,
+                content: Buffer.from(change.content).toString('base64'),
+                branch: branchName,
+                ...(change.existingSha ? { sha: change.existingSha } : {}),
+              });
+              console.log(`✅ ${action}: ${change.path}`);
+            }
+
+            // ── create PR ─────────────────────────────────────────────────────
+            const changeList = changes
+              .map(c => `- **${c.existingSha ? 'update' : 'create'}** \`${c.path}\``)
+              .join('\n');
+
+            const { data: pr } = await github.rest.pulls.create({
+              owner, repo,
+              title: 'blueprint-sync: add docs/index.md, docs/master-repo-ref.md and align mkdocs.yml (template v1.0)',
+              head: branchName,
+              base: 'main',
+              body: [
+                '## Blueprint Alignment — Template v1.0',
+                '',
+                'This PR applies the alignment changes identified in the blueprint sync review.',
+                'It brings this factory repo into alignment with the group template and the',
+                '`coo-cah-factory-electronics-power` gold standard.',
+                '',
+                '### Changes',
+                changeList,
+                '',
+                '### What changed and why',
+                '',
+                '| File | Reason |',
+                '|---|---|',
+                '| `docs/index.md` | Missing — added from README.md content; required by template |',
+                '| `docs/master-repo-ref.md` | Missing — new rich traceability doc inside docs/ |',
+                '| `mkdocs.yml` | Broken nav paths (`docs/machinery.md` should be `machinery.md` when `docs_dir: docs`); Home and Master Repo Reference now point to the correct files in docs/ |',
+                '| `MASTER_REPO_REF.md` | Upgraded to richer format with compliance confirmation and related-repo cross-links |',
+                '',
+                'Closes #6',
+              ].join('\n'),
+            });
+            console.log(`✅ PR #${pr.number} created: ${pr.html_url}`);
+
+            // ── comment on tracking issue ──────────────────────────────────────
+            await github.rest.issues.createComment({
+              owner, repo,
+              issue_number: 6,
+              body: [
+                '✅ **Blueprint alignment PR created:** ' + pr.html_url,
+                '',
+                'This PR adds the missing files and fixes the issues identified during blueprint sync review.',
+                'Please review and merge to close this issue.',
+              ].join('\n'),
+            });
+            console.log('✅ Comment posted on issue #6');
+
+  align-chemicals-metallurgical:
+    name: Align — coo-cah-factory-chemicals-metallurgical
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply alignment to coo-cah-factory-chemicals-metallurgical
+        uses: actions/github-script@v7
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const owner      = 'oumar-code';
+            const repo       = 'coo-cah-factory-chemicals-metallurgical';
+            const isDryRun   = process.env.DRY_RUN === 'true';
+            const branchName = `blueprint-sync/docs-alignment-${new Date().toISOString().substring(0, 10)}`;
+            const tplBase    = '.github/blueprint-alignment/chemicals-metallurgical';
+
+            // ── helpers ────────────────────────────────────────────────────────
+            const getFile = async (r, path) => {
+              try {
+                const { data } = await github.rest.repos.getContent({ owner, repo: r, path });
+                return { content: Buffer.from(data.content, 'base64').toString('utf-8'), sha: data.sha };
+              } catch (e) {
+                if (e.status === 404) return null;
+                throw e;
+              }
+            };
+
+            const tplContent = async (relPath) => {
+              const f = await getFile(context.repo.repo, `${tplBase}/${relPath}`);
+              if (!f) throw new Error(`Template not found: ${tplBase}/${relPath}`);
+              return f.content;
+            };
+
+            // ── read current state ─────────────────────────────────────────────
+            const readmeFile    = await getFile(repo, 'README.md');
+            const docsIndexFile = await getFile(repo, 'docs/index.md');
+            const docsMasterRef = await getFile(repo, 'docs/master-repo-ref.md');
+            const mkdocsFile    = await getFile(repo, 'mkdocs.yml');
+            const masterRefFile = await getFile(repo, 'MASTER_REPO_REF.md');
+
+            // ── prepare changes ────────────────────────────────────────────────
+            const changes = [];
+
+            // README.md is wrong (contains electronics-power content) — replace with correct metallurgical content
+            {
+              const correctReadme = await tplContent('README.md');
+              const isWrong = readmeFile && (
+                readmeFile.content.includes('Coo-Cah Garage & Power Electronics Factory') ||
+                readmeFile.content.includes('coo-cah-factory-electronics-power')
+              );
+              if (isWrong || !readmeFile) {
+                changes.push({ path: 'README.md', content: correctReadme, existingSha: readmeFile?.sha ?? null });
+              }
+            }
+
+            // docs/index.md = correct metallurgical content (same as corrected README.md)
+            if (!docsIndexFile) {
+              changes.push({
+                path: 'docs/index.md',
+                content: await tplContent('docs/index.md'),
+                existingSha: null,
+              });
+            }
+
+            // docs/master-repo-ref.md = new rich traceability document
+            if (!docsMasterRef) {
+              changes.push({
+                path: 'docs/master-repo-ref.md',
+                content: await tplContent('docs/master-repo-ref.md'),
+                existingSha: null,
+              });
+            }
+
+            // mkdocs.yml = fully corrected (wrong site_name, site_url, repo_url, nav paths)
+            {
+              const newMkdocs = await tplContent('mkdocs.yml');
+              const mkdocsWrong = mkdocsFile && (
+                mkdocsFile.content.includes('coo-cah-factory-electronics-power') ||
+                mkdocsFile.content.includes('Coo-Cah Garage & Power Electronics Factory') ||
+                mkdocsFile.content.includes('../README.md')
+              );
+              if (mkdocsWrong || !mkdocsFile || mkdocsFile.content !== newMkdocs) {
+                changes.push({ path: 'mkdocs.yml', content: newMkdocs, existingSha: mkdocsFile?.sha ?? null });
+              }
+            }
+
+            // MASTER_REPO_REF.md = corrected + upgraded (currently references electronics-power)
+            {
+              const newMasterRef = await tplContent('MASTER_REPO_REF.md');
+              const masterRefWrong = masterRefFile && (
+                masterRefFile.content.includes('coo-cah-factory-electronics-power') ||
+                masterRefFile.content.includes('garage-power-electronics') ||
+                masterRefFile.content.includes('Coo-Cah Garage & Power Electronics')
+              );
+              if (masterRefWrong || !masterRefFile || masterRefFile.content !== newMasterRef) {
+                changes.push({ path: 'MASTER_REPO_REF.md', content: newMasterRef, existingSha: masterRefFile?.sha ?? null });
+              }
+            }
+
+            if (changes.length === 0) {
+              console.log('✅ coo-cah-factory-chemicals-metallurgical is already aligned — no changes needed.');
+              return;
+            }
+
+            console.log(`Planned changes for ${repo}:`);
+            changes.forEach(c => console.log(`  ${c.existingSha ? 'update' : 'create'}: ${c.path}`));
+
+            if (isDryRun) {
+              console.log('DRY RUN — skipping branch/PR creation.');
+              return;
+            }
+
+            // ── get main SHA and create branch ─────────────────────────────────
+            const { data: mainRef } = await github.rest.git.getRef({ owner, repo, ref: 'heads/main' });
+            const mainSha = mainRef.object.sha;
+
+            await github.rest.git.createRef({
+              owner, repo,
+              ref: `refs/heads/${branchName}`,
+              sha: mainSha,
+            });
+            console.log(`✅ Branch created: ${branchName}`);
+
+            // ── commit each changed file ───────────────────────────────────────
+            for (const change of changes) {
+              const action = change.existingSha ? 'update' : 'create';
+              await github.rest.repos.createOrUpdateFileContents({
+                owner, repo,
+                path: change.path,
+                message: `blueprint-sync: ${action} ${change.path} (template v1.0 alignment)`,
+                content: Buffer.from(change.content).toString('base64'),
+                branch: branchName,
+                ...(change.existingSha ? { sha: change.existingSha } : {}),
+              });
+              console.log(`✅ ${action}: ${change.path}`);
+            }
+
+            // ── create PR ─────────────────────────────────────────────────────
+            const changeList = changes
+              .map(c => `- **${c.existingSha ? 'update' : 'create'}** \`${c.path}\``)
+              .join('\n');
+
+            const { data: pr } = await github.rest.pulls.create({
+              owner, repo,
+              title: 'blueprint-sync: fix README.md, add docs/index.md, docs/master-repo-ref.md and correct mkdocs.yml (template v1.0)',
+              head: branchName,
+              base: 'main',
+              body: [
+                '## Blueprint Alignment — Template v1.0',
+                '',
+                'This PR applies the alignment changes identified in the blueprint sync review.',
+                'Several files in this repo contained incorrect content copied from',
+                '`coo-cah-factory-electronics-power` instead of this factory\'s own content.',
+                '',
+                '### Changes',
+                changeList,
+                '',
+                '### What changed and why',
+                '',
+                '| File | Reason |',
+                '|---|---|',
+                '| `README.md` | **Incorrect content** — contained `coo-cah-factory-electronics-power` content; replaced with correct metallurgical factory overview |',
+                '| `docs/index.md` | Missing — added with correct metallurgical content |',
+                '| `docs/master-repo-ref.md` | Missing — new rich traceability doc inside docs/ |',
+                '| `mkdocs.yml` | **Incorrect content** — `site_name`, `site_url`, `repo_url`, and nav paths all referenced the electronics-power factory; fully corrected |',
+                '| `MASTER_REPO_REF.md` | **Incorrect content** — referenced `factories/electronics/garage-power-electronics/` and `coo-cah-factory-electronics-power`; corrected to metallurgical factory details and upgraded to richer format |',
+                '',
+                'Closes #4',
+              ].join('\n'),
+            });
+            console.log(`✅ PR #${pr.number} created: ${pr.html_url}`);
+
+            // ── comment on tracking issue ──────────────────────────────────────
+            await github.rest.issues.createComment({
+              owner, repo,
+              issue_number: 4,
+              body: [
+                '✅ **Blueprint alignment PR created:** ' + pr.html_url,
+                '',
+                'This PR corrects the wrong factory content (copied from electronics-power) and adds the',
+                'missing files required by the blueprint template v1.0.',
+                'Please review and merge to close this issue.',
+              ].join('\n'),
+            });
+            console.log('✅ Comment posted on issue #4');
