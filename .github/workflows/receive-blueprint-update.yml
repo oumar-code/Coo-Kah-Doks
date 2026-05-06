@@ -1,0 +1,57 @@
+name: Receive Blueprint Update Request
+
+on:
+  repository_dispatch:
+    types: [blueprint-update]
+
+jobs:
+  open-sync-issue:
+    name: Open master blueprint sync tracking issue
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create tracking issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const payload     = context.payload.client_payload;
+            const sourceRepo  = payload.source_repo  || 'unknown';
+            const commitSha   = payload.ref          || 'unknown';
+            const actor       = payload.actor        || 'unknown';
+            const reason      = payload.reason       || 'Blueprint update requested';
+            const triggeredAt = payload.triggered_at || new Date().toISOString();
+            const shortSha    = commitSha !== 'unknown' ? commitSha.substring(0, 7) : 'unknown';
+
+            const body = [
+              `## 📣 Blueprint Update Request`,
+              ``,
+              `A blueprint update request was received from <a href="https://github.com/${sourceRepo}">${sourceRepo}</a>.`,
+              ``,
+              `| Field | Value |`,
+              `|-------|-------|`,
+              `| Source repo | \`${sourceRepo}\` |`,
+              `| Commit | ${shortSha !== 'unknown' ? `<a href="https://github.com/${sourceRepo}/commit/${commitSha}">\`${shortSha}\`</a>` : '`unknown`'} |`,
+              `| Triggered by | \`${actor}\` |`,
+              `| Triggered at | ${triggeredAt} |`,
+              `| Reason | ${reason} |`,
+              ``,
+              `## Checklist`,
+              ``,
+              `- [ ] Review the proposed change or update from \`${sourceRepo}\``,
+              `- [ ] Identify which sections of [\`factories/_template/\`](https://github.com/oumar-code/Coo-Kah-Doks/tree/main/factories/_template) need updating`,
+              `- [ ] Apply relevant updates to the master blueprint template`,
+              `- [ ] Re-trigger \`notify-factories\` workflow if the template changed, to sync all factory repos`,
+              `- [ ] Close this issue once the master blueprint is updated`,
+            ].join('\n');
+
+            const { data: issue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              title: `📣 Blueprint Update Request — from ${sourceRepo} (${shortSha})`,
+              body,
+              labels: ['blueprint-sync'],
+            });
+
+            console.log(`✅ Created issue #${issue.number}: ${issue.html_url}`);
