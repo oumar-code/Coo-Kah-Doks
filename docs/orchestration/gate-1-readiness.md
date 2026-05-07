@@ -74,7 +74,7 @@ Gate readiness starts only after Phase 1 core systems are stable (MES, IoT, digi
 
 ## 4) 3-Month Evidence Window (Auditable by Design)
 
-A criterion is considered met only when evidence is complete and approved for each month in a **3 consecutive month** window.
+A criterion is considered met only when evidence is complete and approved for each month across a **consecutive 3-month** window.
 
 ### Evidence pack structure (per month)
 
