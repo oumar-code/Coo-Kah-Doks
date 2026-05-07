@@ -236,7 +236,8 @@ This architecture should be reviewed if:
 | DT Data Model | [`platform/digital-twin-data-model.md`](./digital-twin-data-model.md) |
 | Cross-Factory Simulation Spec | [`platform/cross-factory-simulation-spec.md`](./cross-factory-simulation-spec.md) |
 | Data Governance Policy | [`platform/data-governance-policy.md`](./data-governance-policy.md) |
-| Factory Status Registry | [`docs/orchestration/factory-status-registry.md`](../docs/orchestration/factory-status-registry.md) |
+| Factory Status Registry (incl. DT Pilot Designation) | [`docs/orchestration/factory-status-registry.md`](../docs/orchestration/factory-status-registry.md) |
+| Gate 4 Decisions & Evidence Checklist | [`docs/orchestration/gate-4-decisions.md`](../docs/orchestration/gate-4-decisions.md) |
 
 ---
 
