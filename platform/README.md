@@ -118,3 +118,16 @@ Each factory repository must align its local implementation (`docs/digital-twin.
 - [ ] Group CTO final approval recorded.
 
 > Gate 2 should be marked complete only when all checklist items are checked.
+
+---
+
+## 9) Gate 4 Artifacts in This Directory
+
+The following `platform/` files are required Gate 4 canonical artifacts:
+
+| Gate 4 Decision | Canonical Artifact |
+|----------------|--------------------|
+| Cloud vs. on-prem / DT stack decision | [`platform/digital-twin-platform-architecture.md`](./digital-twin-platform-architecture.md) |
+| Group data governance policy (ownership / retention / access) | [`platform/data-governance-policy.md`](./data-governance-policy.md) |
+
+Gate 4 evidence checklist and closure record: [`docs/orchestration/gate-4-decisions.md`](../docs/orchestration/gate-4-decisions.md)
