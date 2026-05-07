@@ -1,0 +1,3602 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Master orchestrating repository and blueprint documentation for Coo-Cah Technologies Holdings">
+      
+      
+        <meta name="author" content="Coo-Cah Technologies Holdings">
+      
+      
+        <link rel="canonical" href="https://oumar-code.github.io/Coo-Kah-Doks/05-smart-factory-core/">
+      
+      
+        <link rel="prev" href="../04-semiconductor/">
+      
+      
+        <link rel="next" href="../06-automation-phases/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Smart Factory Core - Coo-Kah-Doks — Project Coo-Cah Blueprint</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#smart-factory-core-mes-digital-twin-amr-cobot-ai-integration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Coo-Kah-Doks — Project Coo-Cah Blueprint" class="md-header__button md-logo" aria-label="Coo-Kah-Doks — Project Coo-Cah Blueprint" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Coo-Kah-Doks — Project Coo-Cah Blueprint
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Smart Factory Core
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/oumar-code/Coo-Kah-Doks" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oumar-code/Coo-Kah-Doks
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../00-vision/" class="md-tabs__link">
+          
+  
+  
+  Vision & Strategy
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../03-factories/" class="md-tabs__link">
+          
+  
+  
+  Factory Blueprints
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../04-semiconductor/" class="md-tabs__link">
+          
+  
+  
+  Technology
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../09-compliance-regulatory/" class="md-tabs__link">
+          
+  
+  
+  Compliance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../adrs/" class="md-tabs__link">
+          
+  
+  
+  Architecture Decisions
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../glossary/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Coo-Kah-Doks — Project Coo-Cah Blueprint" class="md-nav__button md-logo" aria-label="Coo-Kah-Doks — Project Coo-Cah Blueprint" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Coo-Kah-Doks — Project Coo-Cah Blueprint
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/oumar-code/Coo-Kah-Doks" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    oumar-code/Coo-Kah-Doks
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vision & Strategy
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Vision & Strategy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-corporate-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Corporate Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-energy-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Energy Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Energy Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Energy Infrastructure
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy/solar-power-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solar Power Bank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy/wind-power-bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wind Power Bank
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../energy/hybrid-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hybrid Systems
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-finance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Factory Blueprints
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Factory Blueprints
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-factories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    All Factories
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Electronics Vertical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Electronics Vertical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/personal-electronics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personal Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/kitchen-electronics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kitchen Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/garage-power-electronics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Garage & Power Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/smart-home-office/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Home & Office
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/security-electronics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security Electronics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/electronics/smart-estate-city/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Estate & City
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chemicals Vertical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Chemicals Vertical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/chemicals/heavy-chemicals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Heavy Chemicals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/chemicals/fine-chemicals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fine Chemicals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/chemicals/fertilizer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fertilizer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/chemicals/plastics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plastics & Polymers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/chemicals/metallurgical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Metallurgical & Minerals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Consumer Goods Vertical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Consumer Goods Vertical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/consumer-goods/food-beverages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Food & Beverages
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/consumer-goods/personal-care/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Personal Care
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/consumer-goods/household-cleaning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Household Cleaning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/consumer-goods/packaged-water/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Packaged Water
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/consumer-goods/baby-products/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baby & Infant Products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lifestyle Vertical
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Lifestyle Vertical
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/lifestyle/fashion-apparel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fashion & Apparel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/lifestyle/furniture-decor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Furniture & Home Décor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../factories/_template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Template
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Technology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-semiconductor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Semiconductor (Baobab)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Factory Core
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Factory Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-manufacturing-execution-system-mes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Manufacturing Execution System (MES)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Manufacturing Execution System (MES)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-mes-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core MES Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MES Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-platform-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MES Platform Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oee-formula-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OEE Formula &amp; Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-digital-twin-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Digital Twin Platform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Digital Twin Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-digital-twin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Digital Twin?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-twin-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Twin Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-twin-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Twin Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amr-fleet-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. AMR Fleet Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. AMR Fleet Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-amrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are AMRs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-use-cases-in-coo-cah-factories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Use Cases in Coo-Cah Factories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-fleet-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Fleet Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-deployment-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Deployment Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Technical Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cobot-deployment-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cobot Deployment Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cobot Deployment Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-cobots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are Cobots?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-fleet-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot Fleet Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-to-human-ratio-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot-to-Human Ratio Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scada-iot-sensor-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. SCADA / IoT Sensor Layer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCADA / IoT Sensor Layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensor-coverage-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor Coverage Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iot-protocol-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IoT Protocol Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-automation-phases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automation Phases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-ai-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-supply-chain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supply Chain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compliance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Compliance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-compliance-regulatory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regulatory Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orchestration/factory-status-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Factory Status Registry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../orchestration/cross-repo-workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross-Repo Workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture Decisions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture Decisions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-001-energy-source-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-001 Energy Source
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-002-mes-platform-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-002 MES Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-003-digital-twin-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-003 Digital Twin Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-004-amr-fleet-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-004 AMR Fleet Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-005-erp-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-005 ERP Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adrs/ADR-006-ai-platform-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ADR-006 AI Platform Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-manufacturing-execution-system-mes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Manufacturing Execution System (MES)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Manufacturing Execution System (MES)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-mes-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core MES Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MES Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mes-platform-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MES Platform Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oee-formula-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OEE Formula &amp; Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-digital-twin-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Digital Twin Platform
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Digital Twin Platform">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-digital-twin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is a Digital Twin?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-twin-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Twin Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#digital-twin-technology-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Digital Twin Technology Stack
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-amr-fleet-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. AMR Fleet Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. AMR Fleet Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-amrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are AMRs?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-use-cases-in-coo-cah-factories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Use Cases in Coo-Cah Factories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-fleet-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Fleet Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-deployment-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Deployment Plan
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amr-technical-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AMR Technical Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-cobot-deployment-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cobot Deployment Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cobot Deployment Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-cobots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What are Cobots?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot Use Cases
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-fleet-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot Fleet Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobot-to-human-ratio-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cobot-to-Human Ratio Targets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-scada-iot-sensor-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. SCADA / IoT Sensor Layer
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. SCADA / IoT Sensor Layer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensor-coverage-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor Coverage Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iot-protocol-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IoT Protocol Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../04-semiconductor/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Technology
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="smart-factory-core-mes-digital-twin-amr-cobot-ai-integration">Smart Factory Core — MES, Digital Twin, AMR, Cobot &amp; AI Integration<a class="headerlink" href="#smart-factory-core-mes-digital-twin-amr-cobot-ai-integration" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>The Smart Factory Core is the technology stack that transforms a conventional factory into a data-driven, progressively autonomous manufacturing system. Every Coo-Cah factory deploys the same core technology stack — ensuring interoperability, shared data models, and consistent performance benchmarking across the group.</p>
+<pre class="mermaid"><code>graph TD
+    MES["🏭 Manufacturing Execution System\n(MES)"]
+    DT["🔮 Digital Twin Platform"]
+    AMR["🤖 AMR Fleet\n(Autonomous Mobile Robots)"]
+    COBOT["🦾 Cobot Fleet\n(Collaborative Robots)"]
+    AI["🧠 Central AI Platform\n(Rwanda)"]
+    EMS["⚡ Energy Management\nSystem (EMS)"]
+    QMS["✅ Quality Management\nSystem (QMS)"]
+    SCADA["📡 SCADA / IoT Layer"]
+    ERP["💼 ERP System"]
+
+    SCADA --&gt;|"Sensor data"| MES
+    SCADA --&gt;|"Asset telemetry"| DT
+    MES &lt;--&gt;|"Production orders"| ERP
+    MES --&gt;|"Work orders"| AMR
+    MES --&gt;|"Work orders"| COBOT
+    MES --&gt;|"Process data"| DT
+    MES --&gt;|"Quality data"| QMS
+    MES &lt;--&gt;|"Schedules"| AI
+    DT --&gt;|"Simulation results"| AI
+    AI --&gt;|"Optimisation commands"| MES
+    AI --&gt;|"Route optimisation"| AMR
+    EMS &lt;--&gt;|"Energy data"| AI
+    QMS --&gt;|"Inspection results"| AI</code></pre>
+<hr />
+<h2 id="1-manufacturing-execution-system-mes">1. Manufacturing Execution System (MES)<a class="headerlink" href="#1-manufacturing-execution-system-mes" title="Permanent link">&para;</a></h2>
+<h3 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h3>
+<p>The MES is the operational backbone of each factory. It bridges the gap between ERP-level business planning and shop-floor execution — translating production orders into real-time work instructions, tracking WIP (Work-in-Progress), and recording actual vs. planned performance.</p>
+<h3 id="core-mes-functions">Core MES Functions<a class="headerlink" href="#core-mes-functions" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Production Scheduling</strong></td>
+<td>Sequencing of work orders across all production lines</td>
+</tr>
+<tr>
+<td><strong>Work Order Management</strong></td>
+<td>Dispatching, tracking, and closing work orders per shift</td>
+</tr>
+<tr>
+<td><strong>Materials Management</strong></td>
+<td>BOM consumption tracking, scrap recording, inventory updates</td>
+</tr>
+<tr>
+<td><strong>Labour Management</strong></td>
+<td>Shift assignments, operator certifications, time &amp; attendance</td>
+</tr>
+<tr>
+<td><strong>Quality Management</strong></td>
+<td>In-process inspection triggers, SPC (Statistical Process Control)</td>
+</tr>
+<tr>
+<td><strong>Equipment Management</strong></td>
+<td>Machine status tracking, OEE calculation, downtime classification</td>
+</tr>
+<tr>
+<td><strong>Traceability</strong></td>
+<td>Component-level genealogy tracking from raw material to finished good</td>
+</tr>
+<tr>
+<td><strong>Document Control</strong></td>
+<td>Work instructions, standard operating procedures (SOPs), ECNs</td>
+</tr>
+<tr>
+<td><strong>Energy Monitoring</strong></td>
+<td>Per-machine energy consumption linked to production output</td>
+</tr>
+<tr>
+<td><strong>Performance Analytics</strong></td>
+<td>OEE, yield, cycle time, and first-pass yield (FPY) dashboards</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mes-architecture">MES Architecture<a class="headerlink" href="#mes-architecture" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph LR
+    subgraph "Factory Floor"
+        PLC["PLCs / CNCs\n(Machine Controllers)"]
+        SENSOR["IoT Sensors\n(Temperature, Vibration, Vision)"]
+        SCANNER["Barcode/RFID\nScanners"]
+        HMI["Operator HMIs\n(Touchscreens)"]
+    end
+
+    subgraph "MES Layer"
+        EDGE["Edge Computing\nGateway"]
+        MESCORE["MES Core\n(Production Engine)"]
+        HISTORIAN["Process Historian\n(Time-Series DB)"]
+    end
+
+    subgraph "Enterprise Layer"
+        ERP["ERP System"]
+        AI_CORE["Central AI\nPlatform"]
+        DT_CORE["Digital Twin\nPlatform"]
+    end
+
+    PLC --&gt; EDGE
+    SENSOR --&gt; EDGE
+    SCANNER --&gt; EDGE
+    HMI --&gt; MESCORE
+    EDGE --&gt; MESCORE
+    EDGE --&gt; HISTORIAN
+    MESCORE &lt;--&gt; ERP
+    HISTORIAN --&gt; AI_CORE
+    MESCORE --&gt; DT_CORE</code></pre>
+<h3 id="mes-platform-selection">MES Platform Selection<a class="headerlink" href="#mes-platform-selection" title="Permanent link">&para;</a></h3>
+<p>See <a href="../adrs/ADR-002-mes-platform-selection/">ADR-002: MES Platform Selection</a> for the full decision record. The selected platform is <strong>Siemens Opcenter</strong> (cloud-managed with on-premise edge nodes) for Phase 1 factories, with migration to a custom AI-native MES considered for Phase 3.</p>
+<h3 id="oee-formula-targets">OEE Formula &amp; Targets<a class="headerlink" href="#oee-formula-targets" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OEE = Availability × Performance × Quality
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Availability = (Planned Run Time - Downtime) / Planned Run Time
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Performance  = (Ideal Cycle Time × Total Parts) / Run Time
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Quality      = Good Parts / Total Parts
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>OEE Target</th>
+<th>Availability</th>
+<th>Performance</th>
+<th>Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>≥ 65%</td>
+<td>≥ 85%</td>
+<td>≥ 80%</td>
+<td>≥ 95%</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>≥ 78%</td>
+<td>≥ 92%</td>
+<td>≥ 88%</td>
+<td>≥ 97%</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>≥ 88%</td>
+<td>≥ 97%</td>
+<td>≥ 93%</td>
+<td>≥ 98%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-digital-twin-platform">2. Digital Twin Platform<a class="headerlink" href="#2-digital-twin-platform" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-a-digital-twin">What is a Digital Twin?<a class="headerlink" href="#what-is-a-digital-twin" title="Permanent link">&para;</a></h3>
+<p>A digital twin is a living virtual replica of a physical asset, process, or system. For Coo-Cah factories, digital twins are used at three levels:
+1. <strong>Asset-level:</strong> Individual machine modelling (CNC, injection moulder, conveyor)
+2. <strong>Line-level:</strong> Production line simulation including material flow and bottleneck analysis
+3. <strong>Factory-level:</strong> Full factory model for layout optimisation and energy simulation</p>
+<h3 id="digital-twin-use-cases">Digital Twin Use Cases<a class="headerlink" href="#digital-twin-use-cases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Predictive maintenance</td>
+<td>Detects bearing wear, motor degradation before failure</td>
+</tr>
+<tr>
+<td>Process optimisation</td>
+<td>Simulates parameter changes without disrupting live production</td>
+</tr>
+<tr>
+<td>Bottleneck analysis</td>
+<td>Identifies throughput constraints before they manifest physically</td>
+</tr>
+<tr>
+<td>Layout planning</td>
+<td>Tests new machine placements in simulation before physical move</td>
+</tr>
+<tr>
+<td>Energy optimisation</td>
+<td>Models energy demand against production schedules</td>
+</tr>
+<tr>
+<td>New product introduction</td>
+<td>Validates production process before committing to tooling</td>
+</tr>
+<tr>
+<td>Training simulation</td>
+<td>Operators train on virtual machines before touching physical equipment</td>
+</tr>
+</tbody>
+</table>
+<h3 id="digital-twin-technology-stack">Digital Twin Technology Stack<a class="headerlink" href="#digital-twin-technology-stack" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>3D Modelling:</strong> Siemens NX, Autodesk Inventor (asset-level)</li>
+<li><strong>Process Simulation:</strong> Siemens Plant Simulation, AnyLogic (line/factory-level)</li>
+<li><strong>Real-time Synchronisation:</strong> OPC-UA data bridge from SCADA to twin</li>
+<li><strong>Physics Engine:</strong> Siemens Simcenter for thermodynamic and mechanical simulation</li>
+<li><strong>Visualisation:</strong> Unity 3D (for VR walkthrough), web-based dashboard (for daily use)</li>
+</ul>
+<hr />
+<h2 id="3-amr-fleet-management">3. AMR Fleet Management<a class="headerlink" href="#3-amr-fleet-management" title="Permanent link">&para;</a></h2>
+<h3 id="what-are-amrs">What are AMRs?<a class="headerlink" href="#what-are-amrs" title="Permanent link">&para;</a></h3>
+<p>Autonomous Mobile Robots (AMRs) navigate factory floors independently using LIDAR, cameras, and AI-based path planning. Unlike traditional AGVs (Automated Guided Vehicles), AMRs do not require fixed paths or floor markings — they adapt dynamically to the environment.</p>
+<h3 id="amr-use-cases-in-coo-cah-factories">AMR Use Cases in Coo-Cah Factories<a class="headerlink" href="#amr-use-cases-in-coo-cah-factories" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Material transport</strong></td>
+<td>Moving raw materials from warehouse to production line</td>
+</tr>
+<tr>
+<td><strong>WIP transfer</strong></td>
+<td>Moving sub-assemblies between workstations</td>
+</tr>
+<tr>
+<td><strong>Finished goods staging</strong></td>
+<td>Transporting finished goods to packing/shipping area</td>
+</tr>
+<tr>
+<td><strong>Bin replenishment</strong></td>
+<td>Refilling component bins at assembly stations (kanban)</td>
+</tr>
+<tr>
+<td><strong>Waste collection</strong></td>
+<td>Collecting scrap and waste from production lines</td>
+</tr>
+<tr>
+<td><strong>Goods-to-person picking</strong></td>
+<td>Bringing shelves of components to pick stations</td>
+</tr>
+</tbody>
+</table>
+<h3 id="amr-fleet-architecture">AMR Fleet Architecture<a class="headerlink" href="#amr-fleet-architecture" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    FMS["Fleet Management System\n(FMS)"]
+    AMR1["AMR Unit 1"]
+    AMR2["AMR Unit 2"]
+    AMR3["AMR Unit N"]
+    CHARGING["Charging Stations"]
+    MES_INT["MES Integration\n(Task Source)"]
+    MAP["Factory Map\n(Dynamic SLAM)"]
+
+    MES_INT --&gt;|"Transport tasks"| FMS
+    FMS --&gt;|"Task assignment"| AMR1
+    FMS --&gt;|"Task assignment"| AMR2
+    FMS --&gt;|"Task assignment"| AMR3
+    FMS &lt;--&gt;|"Status telemetry"| AMR1
+    FMS &lt;--&gt;|"Status telemetry"| AMR2
+    FMS &lt;--&gt;|"Status telemetry"| AMR3
+    AMR1 --&gt;|"Auto-dock when low"| CHARGING
+    AMR2 --&gt;|"Auto-dock when low"| CHARGING
+    AMR3 --&gt;|"Auto-dock when low"| CHARGING
+    MAP &lt;--&gt;|"SLAM updates"| FMS</code></pre>
+<h3 id="amr-deployment-plan">AMR Deployment Plan<a class="headerlink" href="#amr-deployment-plan" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Units per Major Factory</th>
+<th>Use Cases Covered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>3–5</td>
+<td>Material delivery to lines, waste collection</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>10–20</td>
+<td>Full intra-factory logistics, kanban replenishment</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>25–50</td>
+<td>Fully autonomous factory logistics, lights-out material flow</td>
+</tr>
+</tbody>
+</table>
+<h3 id="amr-technical-requirements">AMR Technical Requirements<a class="headerlink" href="#amr-technical-requirements" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Payload capacity: 50–500 kg depending on use case</li>
+<li>Navigation: LIDAR-based SLAM + camera fusion</li>
+<li>Safety: ISO 3691-4 compliant, emergency stop, collision avoidance</li>
+<li>Fleet Management: Centralised FMS with MES/WMS integration</li>
+<li>Connectivity: Wi-Fi 6 or 5G private network</li>
+<li>Battery: LFP, 8–12 hour continuous operation, opportunity charging</li>
+</ul>
+<hr />
+<h2 id="4-cobot-deployment-strategy">4. Cobot Deployment Strategy<a class="headerlink" href="#4-cobot-deployment-strategy" title="Permanent link">&para;</a></h2>
+<h3 id="what-are-cobots">What are Cobots?<a class="headerlink" href="#what-are-cobots" title="Permanent link">&para;</a></h3>
+<p>Collaborative robots (cobots) are designed to work safely alongside humans without traditional safety fencing. They are force-limited, vision-guided, and easily reprogrammable — ideal for the Coo-Cah progressive automation strategy.</p>
+<h3 id="cobot-use-cases">Cobot Use Cases<a class="headerlink" href="#cobot-use-cases" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Use Case</th>
+<th>Product Vertical</th>
+<th>Phase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCB assembly</td>
+<td>Electronics</td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td>Screw driving &amp; fastening</td>
+<td>Electronics, Furniture</td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td>Adhesive dispensing</td>
+<td>Electronics, Furniture</td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td>Pick-and-place</td>
+<td>All verticals</td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td>Quality inspection (with vision)</td>
+<td>All verticals</td>
+<td>Phase 2</td>
+</tr>
+<tr>
+<td>Packaging &amp; palletising</td>
+<td>All verticals</td>
+<td>Phase 3</td>
+</tr>
+<tr>
+<td>Welding assistance</td>
+<td>Metallurgical, Furniture</td>
+<td>Phase 3</td>
+</tr>
+<tr>
+<td>Liquid dispensing (chemicals)</td>
+<td>Chemicals, Consumer Goods</td>
+<td>Phase 3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cobot-fleet-standards">Cobot Fleet Standards<a class="headerlink" href="#cobot-fleet-standards" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Preferred platforms:</strong> Universal Robots UR series, Fanuc CR series, KUKA LBR iiwa</li>
+<li><strong>Programming:</strong> Low-code teach pendant for Phase 1 operators; Python/ROS2 scripting for Phase 2+</li>
+<li><strong>Safety standard:</strong> ISO/TS 15066 — Robots and robotic devices: Collaborative industrial robots</li>
+<li><strong>Vision systems:</strong> Intel RealSense / Cognex In-Sight for guidance and inspection</li>
+<li><strong>Force sensing:</strong> Integrated force/torque sensor for all assembly tasks</li>
+</ul>
+<h3 id="cobot-to-human-ratio-targets">Cobot-to-Human Ratio Targets<a class="headerlink" href="#cobot-to-human-ratio-targets" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Ratio Target</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>0:1 (no cobots)</td>
+<td>Human-only; data collection mode</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>2:1 cobots per human on automated lines</td>
+<td>Cobots assist; humans supervise</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>10:1 or lights-out</td>
+<td>Humans as exception handlers only</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-scada-iot-sensor-layer">5. SCADA / IoT Sensor Layer<a class="headerlink" href="#5-scada-iot-sensor-layer" title="Permanent link">&para;</a></h2>
+<h3 id="sensor-coverage-requirements">Sensor Coverage Requirements<a class="headerlink" href="#sensor-coverage-requirements" title="Permanent link">&para;</a></h3>
+<p>All Coo-Cah factories must meet minimum sensor coverage before Phase 1 production begins:
+- <strong>Vibration sensors</strong> on all rotating machinery (motors, gearboxes, pumps)
+- <strong>Temperature sensors</strong> on all thermal processes (ovens, reactors, chillers)
+- <strong>Current/power meters</strong> on all major electrical loads (machines &gt; 1kW)
+- <strong>Vision cameras</strong> at all quality inspection stations
+- <strong>Environmental sensors</strong> (temperature, humidity, particulates) in clean rooms and sensitive areas
+- <strong>Level sensors</strong> for all liquid tanks and raw material silos
+- <strong>Pressure sensors</strong> for all pneumatic and hydraulic systems</p>
+<h3 id="iot-protocol-standards">IoT Protocol Standards<a class="headerlink" href="#iot-protocol-standards" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>OPC-UA:</strong> Primary protocol for machine-to-MES communication</li>
+<li><strong>MQTT:</strong> Lightweight IoT sensor data transmission to edge gateways</li>
+<li><strong>Modbus TCP/RTU:</strong> Legacy machine integration</li>
+<li><strong>PROFINET:</strong> Siemens PLC integration</li>
+<li><strong>REST/WebSocket:</strong> Web-based dashboard and AI platform integration</li>
+</ul>
+<hr />
+<p><em>See also: <a href="../06-automation-phases/">Automation Phases</a> | <a href="../08-ai-platform/">AI Platform</a></em></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 6, 2026 18:51:08 UTC">May 6, 2026</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 6, 2026 18:51:08 UTC">May 6, 2026</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Coo-Cah Technologies Holdings
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/oumar-code/Coo-Kah-Doks" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
