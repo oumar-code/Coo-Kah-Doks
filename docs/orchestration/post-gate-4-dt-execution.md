@@ -30,7 +30,7 @@ Convert Gate 4 closure into disciplined execution by proving Digital Twin (DT) v
 
 References:
 - [Gate 4 Decisions & Evidence](./gate-4-decisions.md)
-- [DT Platform Architecture](../../platform/digital-twin-platform-architecture.md)
+- `platform/digital-twin-platform-architecture.md`
 
 ---
 
@@ -62,10 +62,10 @@ Phase 1 delivery is complete only when all three baseline outcomes are met:
 3. **Operational resilience + security:** Edge operation continues during internet outage, secure cloud sync restored on reconnection, and required auth/TLS controls enforced.
 
 Normative standards:
-- [`/platform/asset-id-naming-convention.md`](../../platform/asset-id-naming-convention.md)
-- [`/platform/mqtt-topic-schema.md`](../../platform/mqtt-topic-schema.md)
-- [`/platform/digital-twin-data-model.md`](../../platform/digital-twin-data-model.md)
-- [`/platform/digital-twin-platform-architecture.md`](../../platform/digital-twin-platform-architecture.md)
+- `platform/asset-id-naming-convention.md`
+- `platform/mqtt-topic-schema.md`
+- `platform/digital-twin-data-model.md`
+- `platform/digital-twin-platform-architecture.md`
 
 ---
 
@@ -136,4 +136,3 @@ Until all four conditions are met, Tier 1 rollout remains blocked.
 | Version | Date | Author | Changes |
 |---|---|---|---|
 | 1.0 | 2026-05-07 | Group CTO / DT Engineering Lead | Initial post-Gate 4 execution and evidence strategy |
-
