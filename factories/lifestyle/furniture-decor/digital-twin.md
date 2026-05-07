@@ -58,3 +58,6 @@ The Coo-Cah Furniture & Home Décor Factory Digital Twin provides real-time prod
 ---
 
 *Refer to [`mes-integration.md`](./mes-integration.md) for batch record MES-DT linkage.*
+
+*For standalone sensor mapping, refer to [`docs/sensor-map.md`](./docs/sensor-map.md).*
+*For BIM/3D spatial stubs, refer to [`docs/bim/README.md`](./docs/bim/README.md).*

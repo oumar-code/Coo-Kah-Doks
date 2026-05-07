@@ -243,7 +243,8 @@ All production staff complete the Coo-Cah Manufacturing Academy 6-week onboardin
 | [`regulatory.md`](./regulatory.md)                    | NCC type approval, SON NIS, NDPR, IEC 62676, ONVIF, CE/RoHS    |
 | [`capex-opex.md`](./capex-opex.md)                    | Phase 1 CapEx ~₦19.0B, unit economics per product category      |
 | [`digital-twin.md`](./digital-twin.md)                | 105-asset digital twin registry: SMT, cameras, AMRs, energy     |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*

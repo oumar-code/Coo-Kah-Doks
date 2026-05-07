@@ -132,7 +132,8 @@ Nigeria's inverter and solar market is estimated at over 2 million units annuall
 | [`regulatory.md`](./regulatory.md)               | SON, IEC 62040, IEC 61683, R&D certifications        |
 | [`capex-opex.md`](./capex-opex.md)               | Financial model                                       |
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry, simulation use cases                  |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*

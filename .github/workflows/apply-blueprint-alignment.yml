@@ -88,6 +88,27 @@ jobs:
               }
             }
 
+            // Gate 3 docs artifacts (sensor map + BIM stubs)
+            {
+              const gate3Files = [
+                'docs/sensor-map.md',
+                'docs/bim/README.md',
+                'docs/bim/zone-boundaries.md',
+                'docs/bim/asset-anchors.md',
+              ];
+              for (const relPath of gate3Files) {
+                const existing = await getFile(repo, relPath);
+                const expected = await tplContent(relPath);
+                if (!existing || existing.content !== expected) {
+                  changes.push({
+                    path: relPath,
+                    content: expected,
+                    existingSha: existing?.sha ?? null,
+                  });
+                }
+              }
+            }
+
             if (changes.length === 0) {
               console.log('✅ coo-cah-factory-chemicals-plastics is already aligned — no changes needed.');
               return;
@@ -274,6 +295,27 @@ jobs:
               );
               if (masterRefWrong || !masterRefFile || masterRefFile.content !== newMasterRef) {
                 changes.push({ path: 'MASTER_REPO_REF.md', content: newMasterRef, existingSha: masterRefFile?.sha ?? null });
+              }
+            }
+
+            // Gate 3 docs artifacts (sensor map + BIM stubs)
+            {
+              const gate3Files = [
+                'docs/sensor-map.md',
+                'docs/bim/README.md',
+                'docs/bim/zone-boundaries.md',
+                'docs/bim/asset-anchors.md',
+              ];
+              for (const relPath of gate3Files) {
+                const existing = await getFile(repo, relPath);
+                const expected = await tplContent(relPath);
+                if (!existing || existing.content !== expected) {
+                  changes.push({
+                    path: relPath,
+                    content: expected,
+                    existingSha: existing?.sha ?? null,
+                  });
+                }
               }
             }
 

@@ -67,6 +67,8 @@ This factory integrates with the broader Coo-Cah manufacturing ecosystem: produc
 | [`regulatory.md`](./regulatory.md)                 | NESREA, DPR, SON, NIS compliance    |
 | [`capex-opex.md`](./capex-opex.md)                 | Financial model                      |
 | [`digital-twin.md`](./digital-twin.md)             | Process simulation and monitoring    |
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 | [`mes-integration.md`](./mes-integration.md)       | Process MES and SCADA integration   |
 
 ---

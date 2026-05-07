@@ -137,24 +137,12 @@ The calibration lab digital twin is a distinctive feature of this factory: real-
 
 ---
 
-## 3. Sensor Coverage Map — Zone-Level Sensor Density
+## 3. Sensor Coverage Map
 
-| Zone | Zone Name                         | Assets Monitored | Data Points | Primary Sensor Types                                          |
-|------|-----------------------------------|-----------------|-------------|---------------------------------------------------------------|
-| Z2   | SMT Line 1                        | 10              | 380         | Temperature, SECS/GEM, OPC-UA, SPI 3D volume, AOI vision    |
-| Z3   | SMT Line 2                        | 10              | 380         | Temperature, SECS/GEM, OPC-UA, SPI 3D volume, AOI vision    |
-| Z4   | Meter Assembly (Lines 1 & 2)      | 9               | 310         | OPC-UA torque, barcode scan, flash API, functional test results |
-| Z5   | Calibration Lab                   | 7               | 420         | IEC 62053 error %, ambient temp/RH, gravimetric flow, certs   |
-| Z6   | Conformal Coating & Potting       | 2               | 80          | Coating weight, UV temp, potting mix ratio, pot life         |
-| Z7   | SEH / LoRa / ESN Assembly & Test  | 9               | 280         | RF RSSI/SNR, sensor calibration (CO/NO₂/PM), IP spray test   |
-| Z8   | Smart Pole Fabrication            | 7               | 200         | Weld current/voltage, DALI-2 dimming, CCTV image quality     |
-| Z9   | Traffic Controller Assembly       | 4               | 140         | Phase timing, cellular attach, burn-in temp, relay check     |
-| Z10  | Final QC & Environmental Test     | 5               | 180         | Salt spray temp, thermal cycle, vibration freq, hipot V/I    |
-| Z11  | Packaging & FG Warehouse          | 3               | 80          | Checkweigher (g), barcode scan, AMR position, rack temp      |
-| Z1   | Goods Inwards Stores              | 3               | 80          | VLM pick count, inventory level, barcode scan, temp/RH       |
-| Site | Energy Systems                    | 14              | 470         | PV kW/kWh, BESS SoC/SoH, HVAC COP, compressor pressure      |
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-**Total (Phase 1):** ~118 assets monitored; ~3,000+ data points across all zones.
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

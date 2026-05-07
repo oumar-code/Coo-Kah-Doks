@@ -152,19 +152,10 @@ Coo-Cah DT Engine (Cloud — Rwanda HQ)
 
 ## 6. Sensor Coverage Map
 
-| Zone                              | Temp / Thermal | Force / Vibration | Flow / Level | Gas / Dust / Emissions | Electrical | Total (approx.) |
-|-----------------------------------|----------------|-------------------|--------------|------------------------|------------|-----------------|
-| Mineral Yard & Primary Crushing   | 4              | 20                | 8            | 10                     | 10         | ~52             |
-| Grinding & Classification (mills) | 10             | 28                | 24           | 4                      | 16         | ~82             |
-| Flotation & Thickening            | 8              | 10                | 36           | 6                      | 10         | ~70             |
-| EAF & Ladle Furnace               | 40             | 8                 | 10           | 20                     | 30         | ~108            |
-| Continuous Caster                 | 60             | 6                 | 20           | 4                      | 10         | ~100            |
-| Rolling Mill (roughing + finishing)| 30            | 30                | 10           | 4                      | 60         | ~134            |
-| Heat Treatment Furnace            | 24             | 4                 | 6            | 4                      | 8          | ~46             |
-| ETP + Stack (environmental)       | 10             | 4                 | 14           | 20                     | 4          | ~52             |
-| **Total (approx.)**               | **186**        | **110**           | **128**      | **72**                 | **148**    | **~644**        |
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-*Sensor counts are indicative. Final counts confirmed at FEED / detail engineering stage.*
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

@@ -1,0 +1,93 @@
+name: Gate 3 Docs Validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-gate-3-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate Gate 3 required artifacts and schema
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import sys
+
+          root = Path('.')
+          factory_dirs = [Path('factories/_template')]
+          factory_dirs.extend(
+              sorted(
+                  p.relative_to(root)
+                  for p in (root / 'factories').glob('*/*')
+                  if p.is_dir() and (p / 'README.md').exists() and (p / 'digital-twin.md').exists()
+              )
+          )
+
+          required_files = [
+              'docs/sensor-map.md',
+              'docs/bim/README.md',
+              'docs/bim/zone-boundaries.md',
+              'docs/bim/asset-anchors.md',
+          ]
+
+          required_headers = {
+              'docs/sensor-map.md': [
+                  'Sensor ID',
+                  'Sensor Model',
+                  'Sensor Type',
+                  'Location (Zone)',
+                  'Mounted On (Asset ID)',
+                  'Anchor Ref',
+                  'Protocol',
+                  'Calibration Interval',
+              ],
+              'docs/bim/zone-boundaries.md': [
+                  'Zone ID',
+                  'Zone Name',
+                  'Boundary Coordinates (x,y)',
+                  'Elevation (z min/max)',
+                  'Coordinate System',
+              ],
+              'docs/bim/asset-anchors.md': [
+                  'DT Asset ID',
+                  'Asset Name',
+                  'Zone ID',
+                  'Anchor X',
+                  'Anchor Y',
+                  'Anchor Z',
+                  'Orientation (Yaw/Pitch/Roll)',
+                  'Coordinate System',
+              ],
+          }
+
+          errors = []
+
+          for rel_dir in factory_dirs:
+              for rf in required_files:
+                  fp = root / rel_dir / rf
+                  if not fp.exists():
+                      errors.append(f"Missing required Gate 3 file: {rel_dir}/{rf}")
+
+              for rf, headers in required_headers.items():
+                  fp = root / rel_dir / rf
+                  if not fp.exists():
+                      continue
+                  txt = fp.read_text(encoding='utf-8')
+                  for h in headers:
+                      if h not in txt:
+                          errors.append(f"Missing required header '{h}' in {rel_dir}/{rf}")
+
+          if errors:
+              print('Gate 3 validation failed:')
+              for e in errors:
+                  print(f'- {e}')
+              sys.exit(1)
+
+          print(f'Gate 3 validation passed for {len(factory_dirs)} factory blueprints.')
+          PY

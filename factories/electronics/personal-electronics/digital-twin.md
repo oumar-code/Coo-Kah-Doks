@@ -103,22 +103,10 @@ The Coo-Cah Personal Electronics Factory Digital Twin is a live, synchronised vi
 
 ## 3. Sensor Coverage Map
 
-### 3.1 Zone-Level Sensor Density
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-| Zone | Zone Name             | Assets Monitored | Data Points | Primary Sensor Types                              |
-|------|-----------------------|-----------------|-------------|---------------------------------------------------|
-| Z2   | SMT Line 1            | 10              | 420         | Temperature, pressure, SECS/GEM, OPC-UA, vision  |
-| Z3   | SMT Line 2            | 10              | 420         | Temperature, pressure, SECS/GEM, OPC-UA, vision  |
-| Z4   | Phone Assembly        | 8               | 280         | Torque, vision, flash/test results, barcode scan  |
-| Z5   | TWS Assembly          | 6               | 200         | Acoustic, RF, ultrasonic weld, IPX test           |
-| Z6   | Smartwatch Assembly   | 5               | 160         | Pressure, GPS sim, OCA laminator, flash results   |
-| Z7   | Power Bank Assembly   | 6               | 200         | Spot weld energy, battery test data, safety test  |
-| Z8   | RF & NCC Lab          | 6               | 260         | RF parameters (TRP/TIS), spectrum, chamber status |
-| Z9   | Final QC              | 4               | 180         | AI vision, drop/thermal, battery cycle, safety    |
-| Z10  | Packaging             | 4               | 120         | Weight, barcode, label print, carton count        |
-| Z11  | FG Warehouse          | 4               | 80          | AMR position, pallet scan, temperature, humidity  |
-| Z1   | Stores                | 4               | 80          | VLM pick count, inventory level, temperature      |
-| Site | Energy Systems        | 12              | 400         | Power (kW/kWh), SoC, temp, generation, fuel       |
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

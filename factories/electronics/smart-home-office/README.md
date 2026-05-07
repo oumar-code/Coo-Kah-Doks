@@ -219,7 +219,8 @@ See [`energy-profile.md`](./energy-profile.md) for full analysis.
 | [`regulatory.md`](./regulatory.md)                     | SON NIS, IEC 62368-1, NCC type approval, Android CDD, RoHS, WEEE, tax incentives |
 | [`capex-opex.md`](./capex-opex.md)                     | CapEx ₦18.2bn, unit economics per product, TV panel cost sensitivity analysis |
 | [`digital-twin.md`](./digital-twin.md)                 | Asset registry (DT-SHO-*), sensor coverage, TV panel yield and acoustic simulation use cases |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*
