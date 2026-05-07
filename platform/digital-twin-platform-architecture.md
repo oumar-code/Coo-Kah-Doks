@@ -205,9 +205,9 @@ Coo-Cah AI Platform
 
 | Phase | Scope | Target |
 |-------|-------|--------|
-| **Phase 1 — Pilot Twin** | First pilot factory (Garage/Power Electronics, Sagamu) | Month 12 from DT team formation |
-| **Phase 2 — Tier 1 Fleet** | All Tier 1 factories: Power Electronics + Plastics + Metallurgical | Month 30 |
-| **Phase 3 — Full Fleet** | All 17 factories live on group DT platform | Month 48 |
+| **Phase 1 — Pilot Twin** | Personal Electronics (Sagamu) with auditable evidence gates | 90-day pilot window (Days 0–90) |
+| **Phase 2 — Tier 1 Wave 1** | Security Electronics + Kitchen Electronics | Starts only after pilot go/no-go is fully green |
+| **Phase 3 — Tier 1 Wave 2 and beyond** | Remaining electronics + selected consumer-goods factories, then full fleet | Sequenced by standards inheritance and evidence readiness |
 
 The pilot factory is designated in [`docs/orchestration/factory-status-registry.md`](../docs/orchestration/factory-status-registry.md).
 

@@ -34,19 +34,29 @@ References:
 
 ---
 
-## 2) Pilot First: Garage/Power Electronics (Sagamu)
+## 2) Pilot First: Personal Electronics (Sagamu)
 
-The Garage/Power Electronics factory is the single DT proving ground before wider rollout.
+The Personal Electronics factory is the single DT proving ground before wider rollout.
 
-| Milestone | Target | Owner | Required Exit Evidence |
-|---|---|---|---|
-| DT Engineering team formed | Month 0 | Group CTO / HR | Team roster, role ownership matrix |
-| Edge node hardware specified and ordered | Month 3 | DT Engineering Lead | Approved spec, procurement evidence |
-| OPC-UA + MQTT connectors live | Month 8 | OT/IoT Lead | Connector acceptance tests, telemetry stream validation |
-| Edge stack operational (InfluxDB + FastAPI + Grafana) | Month 10 | DT Engineering Lead | UAT sign-off, operational runbook |
-| First pilot twin fully operational | Month 12 | DT Engineering Lead | Critical asset twin acceptance checklist |
-| Cloud sync + group DT dashboard live | Month 14 | DT Engineering Lead | Sync reliability report, dashboard access validation |
-| Tier 1 rollout readiness decision | Month 16 | Group CTO / PMO | Pilot completion evidence pack + go/no-go decision memo |
+### Why this pilot starts first
+
+| Factor | Justification |
+|---|---|
+| Phase 1 priority site | Earliest practical window to prove value before fleet replication |
+| DT maturity | Most complete DT definition (asset registry, simulation use cases, maturity roadmap, governance/audit trail) |
+| Instrumentation and KPI readiness | Dense telemetry and clear KPI targets (OEE, FPY, DPPM, energy intensity, MES completeness) |
+| Cross-factory relevance | PCB and electronics learnings transfer directly to Kitchen, Security, and broader electronics cluster |
+
+### Locked value hypotheses (pre-build)
+
+| Domain | Hypothesis | Minimum Pilot Proof Threshold |
+|---|---|---|
+| Throughput/OEE | DT-guided scheduling and bottleneck controls improve line performance | Statistically valid OEE uplift vs. baseline/control |
+| Quality/FPY | DT-driven predictive controls reduce defect escape and rework | Statistically valid FPY gain and DPPM reduction vs. baseline/control |
+| Reliability | DT predictive maintenance reduces unplanned downtime | Measurable downtime reduction with significance threshold met |
+| Energy | DT load and dispatch optimisation lowers kWh per unit | Statistically valid reduction in energy intensity |
+
+All hypotheses must define locked formulas, baseline windows, confidence thresholds, and minimum effect size before intervention starts.
 
 Reference:
 - [Factory Status Registry — DT Pilot Designation](./factory-status-registry.md#digital-twin-pilot-factory-designation-gate-4-decision)
@@ -75,10 +85,11 @@ Tier 1 rollout approval requires all criteria below to be met with auditable evi
 
 | Criterion | Minimum Threshold | Evidence Artifact |
 |---|---|---|
-| Data quality | No unresolved critical schema violations on pilot-critical streams | Data quality scorecard + defect closure log |
-| Platform uptime | DT edge services meet agreed operational uptime target for pilot acceptance window | Service availability report |
-| Critical asset model coverage | 100% of designated pilot-critical assets modelled and accepted | Twin model acceptance register |
-| Business value | Demonstrated measurable impact in at least one priority domain (energy, OEE, or quality) | Baseline vs. post-pilot impact report |
+| Data quality | Data quality and completeness threshold met on pilot-critical streams | Data quality scorecard + defect closure log |
+| Business value | Statistically valid KPI improvement vs. baseline and matched-control | Baseline/control vs. intervention impact report |
+| Operational sustainability | No hidden manual rework burden and no critical operational regressions | Operations sustainability assessment + exception log |
+| Financial value | ROI threshold approved by PMO and Finance met | Benefit/cost model + signed finance validation |
+| Audit reproducibility | Independent reviewer can reproduce claims from source lineage | Signed evidence-pack reproducibility report |
 | Governance compliance | Required approvals and control records complete | Go/no-go memo signed by Group CTO + PMO |
 
 No partial approval: unresolved red criteria block Tier 1 release.
@@ -87,17 +98,27 @@ No partial approval: unresolved red criteria block Tier 1 release.
 
 ## 5) Tier 1 Replication Package (Built During Pilot)
 
-To reduce Month 16 rollout risk for Plastics and Metallurgical, produce a replication package during pilot execution:
+To reduce rollout risk, produce a replication package during pilot execution:
 
 - Standard deployment playbook (edge setup, connectors, sync, rollback)
 - Connector templates (OPC-UA and MQTT mapping patterns)
 - Security baseline (network segmentation, auth, key/cert rotation controls)
 - Factory onboarding checklist (dependencies, acceptance sequence, evidence requirements)
 - Operations runbook (incident response, support model, escalation path)
+- Pilot charter template
+- Experiment design template
+- KPI dictionary template
+- Governance checklist template
+- Go/no-go gate checklist template
 
-Target recipients:
-- Plastics & Polymers factory team
-- Metallurgical & Minerals factory team
+Tier 1 sequence:
+- **Wave 1:** Security Electronics, Kitchen Electronics
+- **Wave 2:** Remaining electronics factories and selected consumer-goods factories
+
+Rollout rule: **inherit standards + local delta only**.
+
+Reference:
+- [DT Pilot Standards and Templates](./dt-pilot-standards-and-templates.md)
 
 ---
 
@@ -118,13 +139,23 @@ DT and MES execution must be jointly governed from day one.
 
 ---
 
+## 7) 90-Day Execution Shape
+
+| Window | Primary Focus | Required Outputs |
+|---|---|---|
+| Days 0–30 | Baseline capture and KPI contract lock | Baseline pack, locked KPI formulas/thresholds, data quality hardening plan, signed pilot charter |
+| Days 31–60 | Controlled DT interventions | Intervention logs, weekly evidence reviews, standards draft v1 |
+| Days 61–90 | Independent audit and release decision | Reproducible audit pack, formal gate decision, Tier 1 playbook freeze |
+
+---
+
 ## Decision Rule
 
 Progression from pilot to Tier 1 is evidence-based:
 
 1. Pilot milestones complete.
 2. Exit criteria all green.
-3. Replication package complete and accepted by receiving Tier 1 factories.
+3. Replication package complete and accepted by Wave 1 receiving factories.
 4. Group CTO and PMO approve formal rollout memo.
 
 Until all four conditions are met, Tier 1 rollout remains blocked.
@@ -136,3 +167,4 @@ Until all four conditions are met, Tier 1 rollout remains blocked.
 | Version | Date | Author | Changes |
 |---|---|---|---|
 | 1.0 | 2026-05-07 | Group CTO / DT Engineering Lead | Initial post-Gate 4 execution and evidence strategy |
+| 1.1 | 2026-05-07 | Group CTO / DT Engineering Lead | Updated pilot designation to Personal Electronics and added auditable evidence-based rollout gates |
