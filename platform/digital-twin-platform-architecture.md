@@ -1,11 +1,11 @@
-# Coo-Cah Digital Twin Platform Architecture
+# Coo-Cah Digital Twin Platform Architecture (Gate 2 Canonical)
 
-> **Gate 4 Decision Record — Item 1 of 4**
-> **Status:** DECIDED — Hybrid Coo-Cah DT Engine
+> **Gate 2 Canonical Standard — Cross-Factory Infrastructure**
+> **Status:** ACTIVE STANDARD — Hybrid Coo-Cah DT Engine
 > **ADR Reference:** [ADR-003 — Digital Twin Platform Selection](../docs/adrs/ADR-003-digital-twin-platform.md)
 > **Decision Date:** 2025-03-05
 > **Approved by:** Group CTO, Head of Digital Twin Team, Smart Factory Core Lead, AI Platform Architect
-> **Document Version:** 1.0 | **Owner:** Group CTO / Digital Twin Engineering Team
+> **Document Version:** 1.1 | **Owner:** Group CTO / Digital Twin Engineering Team
 
 ---
 
@@ -105,6 +105,18 @@ The edge node operates **fully independently during internet outages**:
 ## 4. Factory Integration Standards
 
 Every factory repo's `docs/digital-twin.md` must conform to these group standards.
+
+### 4.0 Gate 2 Normative Dependencies
+
+This architecture is normative only when implemented with the following companion standards:
+
+1. [`/platform/asset-id-naming-convention.md`](./asset-id-naming-convention.md)
+2. [`/platform/mqtt-topic-schema.md`](./mqtt-topic-schema.md)
+3. [`/platform/digital-twin-data-model.md`](./digital-twin-data-model.md)
+4. [`/platform/cross-factory-simulation-spec.md`](./cross-factory-simulation-spec.md)
+
+Canonical package entrypoint:
+- [`/platform/README.md`](./README.md)
 
 ### 4.1 Required Sensor Integration Points
 
@@ -215,13 +227,18 @@ This architecture should be reviewed if:
 
 | Document | Location |
 |----------|----------|
+| Platform Standards Index (Gate 2) | [`platform/README.md`](./README.md) |
 | ADR-003 — Digital Twin Platform Selection | [`docs/adrs/ADR-003-digital-twin-platform.md`](../docs/adrs/ADR-003-digital-twin-platform.md) |
 | ADR-002 — MES Platform Selection | [`docs/adrs/ADR-002-mes-platform-selection.md`](../docs/adrs/ADR-002-mes-platform-selection.md) |
 | ADR-006 — AI Platform Architecture | [`docs/adrs/ADR-006-ai-platform-architecture.md`](../docs/adrs/ADR-006-ai-platform-architecture.md) |
+| Asset ID Naming Convention | [`platform/asset-id-naming-convention.md`](./asset-id-naming-convention.md) |
+| MQTT Topic Schema | [`platform/mqtt-topic-schema.md`](./mqtt-topic-schema.md) |
+| DT Data Model | [`platform/digital-twin-data-model.md`](./digital-twin-data-model.md) |
+| Cross-Factory Simulation Spec | [`platform/cross-factory-simulation-spec.md`](./cross-factory-simulation-spec.md) |
 | Data Governance Policy | [`platform/data-governance-policy.md`](./data-governance-policy.md) |
 | Factory Status Registry | [`docs/orchestration/factory-status-registry.md`](../docs/orchestration/factory-status-registry.md) |
 
 ---
 
-*This document is the authoritative group-level reference for DT platform architecture.
-All factory-level `docs/digital-twin.md` files must align with the standards defined here.*
+*This document is the authoritative group-level reference for DT platform architecture in Gate 2.
+All factory-level `docs/digital-twin.md` files must align with this architecture and its Gate 2 normative dependencies.*
