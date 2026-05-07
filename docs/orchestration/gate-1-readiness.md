@@ -8,7 +8,7 @@
 
 ## Objective
 
-Operationalize Gate 1 → 2 progression with one accountable tracker, one review cadence, and one auditable evidence model aligned with the official Phase Gate criteria in [Automation Phases](../06-automation-phases/index.md#phase-gate-1-2-criteria).
+Operationalize Gate 1 → 2 progression with one accountable tracker, one review cadence, and one auditable evidence model aligned with the official Phase Gate criteria in [Automation Phases](../06-automation-phases/index.md).
 
 ---
 
@@ -126,4 +126,3 @@ Run mock gate reviews **4–6 weeks before** official submission.
 - **Group CTO sign-off**
 
 A factory is eligible for Phase 2 only after both approvals are complete and recorded.
-
