@@ -98,11 +98,12 @@ The factory is designed as a fully MES-integrated, AI-monitored smart facility f
 
 | Phase   | Focus                                                                 | Status      |
 |---------|-----------------------------------------------------------------------|-------------|
-| Phase 1 | 2× SMT lines live, manual phone assembly, MES deployed, 16× AMR fleet, NCC type test | In Planning |
+| Phase 1 | 2× SMT lines live, manual phone assembly, MES deployed, 16× AMR fleet, NCC type test, DT pilot execution | In Planning (DT Pilot Designated) |
 | Phase 2 | Robotic phone case assembly, AI vision QC on PCBs, digital twin live, TWS auto-insertion | Planned |
 | Phase 3 | Lights-out SMT (night shift), AI scheduling, robotic smartwatch assembly | Planned  |
 
 See [`automation-roadmap.md`](./automation-roadmap.md) for full milestone tracking.
+See [`../../../orchestration/post-gate-4-dt-execution.md`](../../../orchestration/post-gate-4-dt-execution.md) for the auditable DT pilot execution and rollout gate policy.
 
 ---
 
@@ -223,6 +224,7 @@ All production staff complete the Coo-Cah Manufacturing Academy 6-week onboardin
 | [`regulatory.md`](./regulatory.md)               | NCC type approval, SON NIS, IEC 62368-1, RoHS, REACH          |
 | [`capex-opex.md`](./capex-opex.md)               | Phase 1 CapEx ~₦28B, unit economics per product category       |
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry for SMT lines, assembly robots, test equipment  |
+| [`../../../orchestration/dt-pilot-standards-and-templates.md`](../../../orchestration/dt-pilot-standards-and-templates.md) | Pilot charter, experiment design, KPI dictionary, governance and go/no-go templates |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
