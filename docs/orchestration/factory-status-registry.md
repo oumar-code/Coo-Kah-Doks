@@ -16,42 +16,47 @@ For Gate 1 → 2 execution ownership, KPI closure, and evidence governance, use 
 
 ## Digital Twin Pilot Factory Designation (Gate 4 Decision)
 
-> **Decision Date:** 2025-05-01
+> **Decision Date:** 2026-05-07
 > **Decision Authority:** Group CTO
 > **Owner:** Digital Twin Engineering Lead, Smart Factory Core Lead
 > **Status:** CONFIRMED
 
-**Designated DT Pilot Factory: Garage/Power Electronics — Ogun State (Sagamu), Nigeria**
+**Designated DT Pilot Factory: Personal Electronics — Ogun State (Sagamu), Nigeria**
 
-The Garage/Power Electronics factory is formally designated as the **Phase 1 Digital Twin pilot factory** for the Coo-Cah group. This factory will be the first to receive a fully operational Coo-Cah DT Engine deployment (InfluxDB + FastAPI + Grafana + MQTT edge stack), ahead of the broader Tier 1 fleet rollout.
+The Personal Electronics factory is formally designated as the **Phase 1 Digital Twin pilot factory** for the Coo-Cah group. This factory is the first proving ground for measurable DT value before Tier 1 rollout.
 
 ### Rationale
 
 | Factor | Justification |
 |--------|---------------|
-| Earliest Phase 1 target (Q2 2026) | Provides maximum lead time for DT engineering setup |
-| Energy-critical facility | Energy optimisation use-case provides high-value DT demonstration |
-| Dedicated factory repo already live | Blueprint and asset register are more mature than other Phase 1 factories |
-| Central dependency in Phase 1 fleet | Powers Kitchen and Personal Electronics — DT learnings transfer directly to downstream factories |
-| Aligns with DT architecture plan | Confirmed as pilot in `platform/digital-twin-platform-architecture.md` Section 6 |
+| Phase 1 priority site | Provides immediate proving ground for execution and evidence capture |
+| DT maturity | Most complete DT definition (asset registry, simulation use cases, maturity roadmap, governance/audit trail) |
+| Instrumentation density | High data-point coverage and clear KPI targets (OEE, FPY, DPPM, energy intensity, MES completeness) |
+| Cross-factory reuse potential | Electronics process learnings transfer quickly to Security and Kitchen factories |
+| Alignment with standards-first rollout | Supports auditable evidence gating before Tier 1 release |
 
 ### DT Pilot Scope and Timeline
 
 | Milestone | Target | Owner |
 |-----------|--------|-------|
-| DT Engineering team formed | Month 0 (Y1) | Group CTO / HR |
-| Edge node hardware specified and ordered | Month 3 | DT Engineering Lead |
-| OPC-UA and MQTT connectors live on factory floor | Month 8 | OT/IoT Lead |
-| InfluxDB + FastAPI + Grafana stack operational (edge) | Month 10 | DT Engineering Lead |
-| First pilot twin fully operational | Month 12 | DT Engineering Lead |
-| Cloud sync and group DT dashboard live | Month 14 | DT Engineering Lead |
-| Tier 1 fleet rollout begins (Power + Plastics + Metallurgical) | Month 16 | DT Engineering Lead |
+| Baseline capture + KPI contract lock | Days 0–30 | DT Lead + MES Product Owner + PMO |
+| Controlled DT interventions | Days 31–60 | DT Engineering Lead + OT/IoT Lead |
+| Independent audit + gate decision | Days 61–90 | Group CTO + PMO + Independent Reviewer |
+| Tier 1 Wave 1 rollout | Post-gate | DT Engineering Lead |
+| Tier 1 Wave 2 rollout | Post Wave 1 acceptance | DT Engineering Lead |
+
+### Tier 1 Rollout Sequence
+
+| Wave | Factories | Rollout Rule |
+|------|-----------|--------------|
+| Wave 1 | Security Electronics, Kitchen Electronics | Inherit pilot standards with local deltas only |
+| Wave 2 | Remaining electronics factories + selected consumer-goods factories | Inherit standards-first package; no ad hoc divergence |
 
 ### Governance
 
 - This designation is a Gate 4 decision and must not be changed without Group CTO approval and an updated ADR or formal change record.
 - Progress against milestones is reviewed monthly in the Group Programme Management review.
-- Evidence of pilot completion gates the Tier 1 fleet rollout (Month 16).
+- Evidence of pilot completion gates the Tier 1 rollout waves.
 
 ### Status Codes
 
@@ -71,9 +76,9 @@ The Garage/Power Electronics factory is formally designated as the **Phase 1 Dig
 
 | Factory | Location | Current Status | Phase 1 Start (Target) | Phase 2 Start (Target) | Phase 3 Start (Target) | Notes |
 |---------|----------|---------------|----------------------|----------------------|----------------------|-------|
-| Kitchen Electronics | Lagos, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q3 2031 | Phase 1 priority |
-| [Garage/Power Electronics](https://github.com/oumar-code/coo-cah-factory-electronics-power) | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q3 2028 | Q3 2031 | Phase 1 priority; energy-critical · **Dedicated repo live** · ⭐ **DT Pilot Factory** (Gate 4 decision — see [DT Pilot Designation](#digital-twin-pilot-factory-designation-gate-4-decision)) |
-| Personal Electronics | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q2 2031 | Phase 1 priority; SMT lines |
+| Kitchen Electronics | Lagos, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q3 2031 | Phase 1 priority; Wave 1 Tier 1 rollout target |
+| [Garage/Power Electronics](https://github.com/oumar-code/coo-cah-factory-electronics-power) | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q3 2028 | Q3 2031 | Phase 1 priority; energy-critical · **Dedicated repo live** |
+| Personal Electronics | Ogun State, Nigeria | `PLANNED` | Q2 2026 | Q2 2028 | Q2 2031 | Phase 1 priority; SMT lines · ⭐ **DT Pilot Factory** (Gate 4 decision — see [DT Pilot Designation](#digital-twin-pilot-factory-designation-gate-4-decision)) |
 | Smart Home & Office | Lagos, Nigeria | `PLANNED` | Q4 2026 | Q4 2028 | Q4 2031 | Dual SMT lines |
 | Security Electronics | Lagos, Nigeria | `PLANNED` | Q3 2026 | Q1 2029 | Q1 2032 | NCC type approval required |
 | Smart Estate/City | Kigali, Rwanda | `PLANNED` | Q3 2027 | Q1 2030 | Q1 2033 | Rwanda OpCo; IoT products |
@@ -157,6 +162,7 @@ graph TD
 |------|--------|---------|
 | 2025-05-01 | Programme Management | Initial registry — all factories set to `PLANNED` |
 | 2025-05-07 | Group CTO / Digital Twin Engineering Lead | Added Gate 4 DT Pilot Factory Designation section; Garage/Power Electronics formally confirmed as DT pilot factory |
+| 2026-05-07 | Group CTO / Digital Twin Engineering Lead | Updated DT pilot designation to Personal Electronics; added 90-day pilot execution and Tier 1 Wave 1/Wave 2 sequencing |
 
 ---
 
