@@ -2919,72 +2919,11 @@
 </table>
 <hr />
 <h2 id="4-sensor-coverage-map">4. Sensor Coverage Map<a class="headerlink" href="#4-sensor-coverage-map" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Sensor Type</th>
-<th>Quantity</th>
-<th>Primary Asset Type</th>
-<th>Protocol</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vibration Sensor</td>
-<td>32</td>
-<td>Carousel, compressor, motors</td>
-<td>MQTT</td>
-</tr>
-<tr>
-<td>Thermocouple / RTD</td>
-<td>58</td>
-<td>Reflow oven zones, foam barrel, BESS</td>
-<td>OPC-UA/MQTT</td>
-</tr>
-<tr>
-<td>Current Transducer (CT)</td>
-<td>28</td>
-<td>All major machines + foam injection</td>
-<td>Modbus TCP</td>
-</tr>
-<tr>
-<td>Pressure Transducer</td>
-<td>22</td>
-<td>Gas charging, vacuum, compressed air</td>
-<td>MQTT</td>
-</tr>
-<tr>
-<td>Gas Concentration (R600a)</td>
-<td>12</td>
-<td>Gas charging zone (Zone GAS)</td>
-<td>RS-485/MQTT</td>
-</tr>
-<tr>
-<td>Environmental (Temp/RH)</td>
-<td>18</td>
-<td>All production zones</td>
-<td>MQTT BLE</td>
-</tr>
-<tr>
-<td>Photoelectric</td>
-<td>20</td>
-<td>Conveyor lines, overhead chain conveyor</td>
-<td>OPC-UA</td>
-</tr>
-<tr>
-<td>CMOS Camera (AI Vision)</td>
-<td>16</td>
-<td>AOI, cabinet visual QC, entry points</td>
-<td>RTSP/REST</td>
-</tr>
-<tr>
-<td>GPS/LiDAR (AMR)</td>
-<td>8</td>
-<td>AMR fleet</td>
-<td>AMR API</td>
-</tr>
-</tbody>
-</table>
+<p>Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in <a href="../docs/sensor-map/"><code>docs/sensor-map.md</code></a>, while spatial references are maintained in <a href="../docs/bim/zone-boundaries/"><code>docs/bim/zone-boundaries.md</code></a> and <a href="../docs/bim/asset-anchors/"><code>docs/bim/asset-anchors.md</code></a>.</p>
+<ul>
+<li>Use <code>docs/sensor-map.md</code> for model, protocol, calibration interval, and location by sensor.</li>
+<li>Use <code>docs/bim/*</code> files for zone boundary coordinates and asset anchor points used by 3D rendering.</li>
+</ul>
 <hr />
 <h2 id="5-key-simulation-use-cases">5. Key Simulation Use Cases<a class="headerlink" href="#5-key-simulation-use-cases" title="Permanent link">&para;</a></h2>
 <h3 id="51-foam-injection-thermal-simulation">5.1 Foam Injection Thermal Simulation<a class="headerlink" href="#51-foam-injection-thermal-simulation" title="Permanent link">&para;</a></h3>
@@ -3214,7 +3153,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 5, 2026 04:49:39 UTC">May 5, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 7, 2026 19:09:04 UTC">May 7, 2026</span>
   </span>
 
     
