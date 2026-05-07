@@ -226,4 +226,4 @@ Despite the high degree of automation, Phase 3 factories are not human-free. Rem
 
 ---
 
-*See also: [Smart Factory Core](../05-smart-factory-core/index.md) | [AI Platform](../08-ai-platform/index.md)*
+*See also: [Smart Factory Core](../05-smart-factory-core/index.md) | [AI Platform](../08-ai-platform/index.md) | [Gate 1 Readiness Program](../orchestration/gate-1-readiness.md)*

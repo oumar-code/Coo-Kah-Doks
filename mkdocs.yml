@@ -110,6 +110,7 @@ nav:
   - Compliance:
     - Regulatory Overview: 09-compliance-regulatory/index.md
     - Factory Status Registry: orchestration/factory-status-registry.md
+    - Gate 1 → 2 Readiness Program: orchestration/gate-1-readiness.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
