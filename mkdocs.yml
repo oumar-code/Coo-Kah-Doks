@@ -112,6 +112,7 @@ nav:
     - Factory Status Registry: orchestration/factory-status-registry.md
     - Gate 1 → 2 Readiness Program: orchestration/gate-1-readiness.md
     - Gate 4 Decisions & Evidence: orchestration/gate-4-decisions.md
+    - Post-Gate 4 DT Execution Strategy: orchestration/post-gate-4-dt-execution.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
