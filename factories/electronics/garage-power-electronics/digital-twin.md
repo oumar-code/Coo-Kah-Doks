@@ -171,18 +171,10 @@ The DT engine tracks fleet-level utilisation, cycle time per route, and battery 
 
 ## 6. Sensor Coverage Map
 
-| Zone                  | Vibration | Thermal | Power / Electrical | Vision / AOI | AMR Position | Total Sensors |
-|-----------------------|-----------|---------|--------------------|--------------|--------------|---------------|
-| SMT PCB Line          | 2         | 30      | 8                  | 14           | —            | ~54           |
-| Winding Cells         | 8         | 12      | 24                 | —            | —            | ~44           |
-| Inverter Assembly Lines | 4       | 6       | 54                 | 4            | —            | ~68           |
-| Test Area (load banks + analysers) | 2 | 4  | 60                 | —            | —            | ~66           |
-| Power Tool Line       | 6         | 4       | 16                 | —            | —            | ~26           |
-| Energy Room (Solar + BESS) | —    | 8       | 16                 | —            | —            | ~24           |
-| AMR Fleet (position)  | —         | —       | 8 (SoC)            | —            | 8            | ~16           |
-| **Total (approx.)**   | **22**    | **64**  | **186**            | **18**       | **8**        | **~298**      |
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-*Sensor counts are indicative. Final counts confirmed at detail engineering stage.*
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

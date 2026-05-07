@@ -100,17 +100,10 @@ Coo-Cah Digital Twin Engine (Cloud / Rwanda HQ)
 
 ## 4. Sensor Coverage Map
 
-| Sensor Type               | Quantity | Primary Asset Type                        | Protocol    |
-|---------------------------|----------|-------------------------------------------|-------------|
-| Vibration Sensor          | 32       | Carousel, compressor, motors              | MQTT        |
-| Thermocouple / RTD        | 58       | Reflow oven zones, foam barrel, BESS      | OPC-UA/MQTT |
-| Current Transducer (CT)   | 28       | All major machines + foam injection       | Modbus TCP  |
-| Pressure Transducer       | 22       | Gas charging, vacuum, compressed air      | MQTT        |
-| Gas Concentration (R600a) | 12       | Gas charging zone (Zone GAS)              | RS-485/MQTT |
-| Environmental (Temp/RH)   | 18       | All production zones                      | MQTT BLE    |
-| Photoelectric             | 20       | Conveyor lines, overhead chain conveyor   | OPC-UA      |
-| CMOS Camera (AI Vision)   | 16       | AOI, cabinet visual QC, entry points      | RTSP/REST   |
-| GPS/LiDAR (AMR)           | 8        | AMR fleet                                 | AMR API     |
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
+
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

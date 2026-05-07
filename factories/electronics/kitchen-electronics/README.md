@@ -202,7 +202,8 @@ See [`energy-profile.md`](./energy-profile.md) for full analysis.
 | [`regulatory.md`](./regulatory.md)               | SON NIS certifications, IEC 60335, NESREA, R600a handling permits |
 | [`capex-opex.md`](./capex-opex.md)               | CapEx model, OpEx, unit economics per product category |
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry, sensor coverage, simulation use cases |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*

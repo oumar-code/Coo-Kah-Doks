@@ -111,34 +111,10 @@ All physical assets within [FACTORY_NAME] are registered in the Digital Twin Ass
 
 ## 4. Sensor Coverage Map
 
-### 4.1 Sensor Types Deployed
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-| Sensor Type               | Quantity | Monitored Asset Type          | Measurement          | Protocol    | Calibration Freq. |
-|---------------------------|----------|-------------------------------|----------------------|-------------|-------------------|
-| Vibration Sensor          | [N]      | Rotating machinery (motors, pumps) | RMS velocity (mm/s) | MQTT        | Annual            |
-| Thermocouple / RTD        | [N]      | Machine bearings, ovens, BESS | Temperature (°C)     | MQTT / OPC  | Annual            |
-| Current Transducer (CT)   | [N]      | All major machines            | Power (kW), current  | Modbus TCP  | Annual            |
-| Pressure Transducer       | [N]      | Compressed air system         | Pressure (bar)       | MQTT        | Annual            |
-| Ultrasonic Level Sensor   | [N]      | Diesel tank, chemical tanks   | Level (%)            | MQTT        | Annual            |
-| Environmental (Temp/RH)   | [N]      | All production zones          | Temp + Humidity      | MQTT (BLE or Wired) | Bi-annual  |
-| CO₂ Sensor                | [N]      | Production and office zones   | CO₂ (ppm)            | MQTT        | Bi-annual         |
-| Particulate (PM2.5/PM10)  | [N]      | Soldering/machining areas     | PM2.5, PM10 (µg/m³)  | MQTT        | Annual            |
-| Photoelectric (Line Speed)| [N]      | Conveyor lines                | Part count / speed   | OPC-UA      | Per maintenance   |
-| CMOS Camera (AI Vision)   | [N]      | AOI/QC stations, entry gates  | Image → AI analysis  | RTSP/REST   | Per maintenance   |
-| GPS/LiDAR (AMR)           | [N]      | AMR fleet                     | Position (x,y,θ)     | AMR API     | Per maintenance   |
-
-### 4.2 Sensor Density by Zone
-
-| Zone          | Vibration | Temp | Power | Environmental | Vision | AMR Location |
-|---------------|-----------|------|-------|---------------|--------|--------------|
-| PLA (Line A)  | [N]       | [N]  | [N]   | [N]           | [N]    | Continuous   |
-| PLB (Line B)  | [N]       | [N]  | [N]   | [N]           | [N]    | Continuous   |
-| PLC (Line C)  | [N]       | [N]  | [N]   | [N]           | [N]    | Continuous   |
-| IPQC          | [N]       | [N]  | [N]   | [N]           | [N]    | Continuous   |
-| FQC           | [N]       | [N]  | [N]   | [N]           | [N]    | Continuous   |
-| RMS (Stores)  | 0         | [N]  | 0     | [N]           | [N]    | Continuous   |
-| FGW (Warehouse)| 0        | [N]  | 0     | [N]           | [N]    | Continuous   |
-| Energy Room   | [N]       | [N]  | [N]   | [N]           | 0      | 0            |
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 

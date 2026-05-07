@@ -224,7 +224,8 @@ See [`energy-profile.md`](./energy-profile.md) for full analysis.
 | [`regulatory.md`](./regulatory.md)                   | IEC 62053/62056 smart meter certs, NCC Type Approval, NERC metering code, SON NIS, LFTZ tax incentives |
 | [`capex-opex.md`](./capex-opex.md)                   | Phase 1 CapEx ~₦14.4 bn, annual OpEx model, unit economics, payback and sensitivity analysis |
 | [`digital-twin.md`](./digital-twin.md)               | Asset registry (DT-SEC-xxx IDs), sensor coverage, simulation use cases incl. meter calibration drift prediction |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*

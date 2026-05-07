@@ -190,7 +190,8 @@ All production staff undergo the Coo-Cah Manufacturing Academy onboarding progra
 | [`regulatory.md`](./regulatory.md)            | Certifications, permits, compliance requirements      |
 | [`capex-opex.md`](./capex-opex.md)            | Financial model, CapEx, OpEx, unit economics          |
 | [`digital-twin.md`](./digital-twin.md)        | Asset registry, sensor map, simulation use cases      |
-
+| [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
+| [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
 
 ## 11. Revision History

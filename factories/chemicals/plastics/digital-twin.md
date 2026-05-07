@@ -157,19 +157,10 @@ Each converting line DT model tracks barrel zone temperatures, screw torque, mel
 
 ## 6. Sensor Coverage Map
 
-| Zone                          | Temp / Pressure | Flow / Level | Vibration | Gas / Emissions | Position / State | Total (approx.) |
-|-------------------------------|-----------------|--------------|-----------|-----------------|------------------|-----------------|
-| Z1 — Raw Material Storage     | 10              | 20           | —         | 6               | 4                | ~40             |
-| Z2 — Reaction & Compounding   | 60              | 30           | 20        | 12              | 8                | ~130            |
-| Z3 — Separation & Filtration  | 20              | 20           | 8         | 4               | 4                | ~56             |
-| Z4 — Converting Lines (extrusion / moulding) | 60 | 16    | 12        | 4               | 8                | ~100            |
-| Z4 — Bagging & Filling Lines  | 4               | 16           | 4         | 2               | 4                | ~30             |
-| Z5 — Product Tank Farm        | 10              | 20           | —         | 8               | 4                | ~42             |
-| Z6 — Utilities (cooling, N₂, steam) | 20        | 16           | 8         | 2               | 4                | ~50             |
-| Z7 — ETP + Stack              | 12              | 14           | 4         | 16              | 2                | ~48             |
-| **Total (approx.)**           | **196**         | **152**      | **56**    | **54**          | **38**           | **~496**        |
+Sensor density and high-level coverage are tracked here for operational context. The canonical sensor-level registry for Gate 3 is maintained in [`docs/sensor-map.md`](./docs/sensor-map.md), while spatial references are maintained in [`docs/bim/zone-boundaries.md`](./docs/bim/zone-boundaries.md) and [`docs/bim/asset-anchors.md`](./docs/bim/asset-anchors.md).
 
-*Sensor counts are indicative. Final counts confirmed at FEED / detail engineering stage.*
+- Use `docs/sensor-map.md` for model, protocol, calibration interval, and location by sensor.
+- Use `docs/bim/*` files for zone boundary coordinates and asset anchor points used by 3D rendering.
 
 ---
 
