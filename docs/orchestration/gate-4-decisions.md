@@ -99,6 +99,9 @@ With Gate 4 closed, the following activities are unblocked:
 4. **Data governance training** — All DT Engineering, AI Data, and Factory CTO roles to complete before any factory data is onboarded to cloud
 5. **Gate 5 preparation** — Factory-level execution: civil works, equipment installation, Phase 1 production ramp
 
+Execution baseline for these activities is defined in:
+- [Post-Gate 4 DT Execution & Evidence Strategy](./post-gate-4-dt-execution.md)
+
 ---
 
 ## Change Control
