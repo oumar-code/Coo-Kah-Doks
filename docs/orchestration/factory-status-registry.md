@@ -10,6 +10,8 @@
 
 This registry tracks the commissioning status of every Coo-Cah factory across all verticals and locations. It is the single source of truth for programme management, investor reporting, and cross-factory dependency planning.
 
+For Gate 1 → 2 execution ownership, KPI closure, and evidence governance, use the companion playbook: [Gate 1 Readiness Program](./gate-1-readiness.md).
+
 ### Status Codes
 
 | Code | Meaning |
