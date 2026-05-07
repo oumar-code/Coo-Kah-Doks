@@ -48,7 +48,7 @@ Gate readiness starts only after Phase 1 core systems are stable (MES, IoT, digi
 | Factory | Current Baseline (from registry) | Next Target Milestone | Exit Criterion for Milestone |
 |---|---|---|---|
 | Kitchen Electronics | `PLANNED` | `UNDER_CONSTRUCTION` | Civil/utilities mobilized; commissioning plan approved |
-| Garage/Power Electronics | `PLANNED` | `UNDER_CONSTRUCTION` | Core process equipment procurement + site mobilisation complete |
+| Garage/Power Electronics (single factory) | `PLANNED` | `UNDER_CONSTRUCTION` | Core process equipment procurement + site mobilization complete |
 | Personal Electronics | `PLANNED` | `UNDER_CONSTRUCTION` | SMT and assembly installation readiness signed off |
 | Plastics & Polymers | `PLANNED` | `UNDER_CONSTRUCTION` | Tier-1 dependency plan approved for downstream factories |
 
