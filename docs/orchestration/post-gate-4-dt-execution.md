@@ -9,7 +9,7 @@
 
 ## Objective
 
-Convert Gate 4 closure into disciplined execution by proving Digital Twin (DT) value in one pilot factory, codifying repeatable standards, and releasing Tier 1 rollout only on auditable evidence.
+Convert Gate 4 closure into disciplined execution by delivering an **Investor-Ready Digital Twin Proof** at one pilot factory, translating DT evidence into a clear physical-factory funding demand, and releasing Tier 1 rollout only on auditable evidence.
 
 ---
 
@@ -63,7 +63,46 @@ Reference:
 
 ---
 
-## 3) Phase 1 “Minimum Viable Twin” Outcomes
+## 3) Investor-Ready DT Proof Track (Pre-Factory Funding)
+
+The first external narrative is investor-facing and must be anchored to one pilot only: **Personal Electronics (Sagamu)**.
+
+### Required investor narrative
+
+All investor sessions must follow one auditable sequence:
+
+1. **Baseline:** Current state and locked KPI baseline window.
+2. **Simulation scenarios:** Throughput, quality, downtime, and energy simulations tied to pilot assets.
+3. **Measured outcomes:** Quantified deltas and confidence statements from controlled pilot evidence.
+
+### Required evidence pack (investor-facing)
+
+The investor package must include:
+
+- What has already been achieved (ingestion, model coverage, validated simulations, controls in place)
+- What can be simulated today (production, quality, reliability, energy)
+- What constraints remain before full physical execution (infrastructure, equipment, integration, commissioning dependencies)
+
+### Funding ask map (mandatory)
+
+Every capex demand must map to:
+
+1. A modeled bottleneck/risk in the pilot twin
+2. The KPI lift expected when the physical intervention is funded
+3. The payback logic and dependency assumptions
+
+### Investor demo cycle
+
+- **Weekly internal rehearsal:** Dry-run the investor script and evidence lineage checks.
+- **Investor sessions:** Use one approved script and metric pack, without ad hoc KPI redefinition.
+- **Audit control:** Any investor claim must be reproducible from source evidence artifacts.
+
+Reference:
+- [DT Value & Funding Demand Brief](./dt-value-funding-demand-brief.md)
+
+---
+
+## 4) Phase 1 “Minimum Viable Twin” Outcomes
 
 Phase 1 delivery is complete only when all three baseline outcomes are met:
 
@@ -79,7 +118,7 @@ Normative standards:
 
 ---
 
-## 4) Hard Pilot Exit Criteria (Go/No-Go)
+## 5) Hard Pilot Exit Criteria (Go/No-Go)
 
 Tier 1 rollout approval requires all criteria below to be met with auditable evidence:
 
@@ -96,7 +135,7 @@ No partial approval: unresolved red criteria block Tier 1 release.
 
 ---
 
-## 5) Tier 1 Replication Package (Built During Pilot)
+## 6) Tier 1 Replication Package (Built During Pilot)
 
 To reduce rollout risk, produce a replication package during pilot execution:
 
@@ -122,7 +161,7 @@ Reference:
 
 ---
 
-## 6) DT + MES as One Integrated Transformation
+## 7) DT + MES as One Integrated Transformation
 
 DT and MES execution must be jointly governed from day one.
 
@@ -139,11 +178,11 @@ DT and MES execution must be jointly governed from day one.
 
 ---
 
-## 7) 90-Day Execution Shape
+## 8) 90-Day Execution Shape
 
 | Window | Primary Focus | Required Outputs |
 |---|---|---|
-| Days 0–30 | Baseline capture and KPI contract lock | Baseline pack, locked KPI formulas/thresholds, data quality hardening plan, signed pilot charter |
+| Days 0–30 | Baseline capture and KPI contract lock | Baseline pack, locked KPI formulas/thresholds, data quality hardening plan, signed pilot charter, investor-facing DT Value & Funding Demand brief v1 |
 | Days 31–60 | Controlled DT interventions | Intervention logs, weekly evidence reviews, standards draft v1 |
 | Days 61–90 | Independent audit and release decision | Reproducible audit pack, formal gate decision, Tier 1 playbook freeze |
 
@@ -159,6 +198,7 @@ Progression from pilot to Tier 1 is evidence-based:
 4. Group CTO and PMO approve formal rollout memo.
 
 Until all four conditions are met, Tier 1 rollout remains blocked.
+No broader Tier 1 expansion claim is permitted before all hard exit criteria are green.
 
 ---
 
@@ -168,3 +208,4 @@ Until all four conditions are met, Tier 1 rollout remains blocked.
 |---|---|---|---|
 | 1.0 | 2026-05-07 | Group CTO / DT Engineering Lead | Initial post-Gate 4 execution and evidence strategy |
 | 1.1 | 2026-05-07 | Group CTO / DT Engineering Lead | Updated pilot designation to Personal Electronics and added auditable evidence-based rollout gates |
+| 1.2 | 2026-05-08 | Group CTO / DT Engineering Lead | Added investor-ready DT proof track, funding ask mapping, and investor demo cycle requirements |

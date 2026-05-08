@@ -150,7 +150,41 @@ Sensor density and high-level coverage are tracked here for operational context.
 
 ---
 
-## 5. Digital Twin Maturity Roadmap
+## 5. Investor Showcase and Simulation Evidence Pack (Pilot)
+
+Personal Electronics (Sagamu) is the designated investor showcase factory for Digital Twin value proof.
+
+### 5.1 Investor storyline (locked)
+
+All investor demos follow one sequence:
+
+1. Baseline (Day 0–30 KPI and data-quality lock)
+2. Simulation scenarios (throughput, quality, downtime, energy)
+3. Measured outcomes (pilot deltas and confidence posture)
+4. Funding demand (physical capex tied to modeled constraints)
+
+### 5.2 Investor evidence pack minimum
+
+| Evidence Theme | Minimum Content |
+|---|---|
+| Achieved so far | Live ingestion coverage, model coverage, simulation readiness, governance controls |
+| Simulation today | Demonstrable scenarios across throughput, quality, downtime, and energy |
+| Physical constraints | Infrastructure, equipment, integration, workforce, and compliance gaps to close |
+| Funding translation | Ask-by-ask mapping from modeled bottleneck/risk to KPI lift and payback logic |
+
+### 5.3 Demo cadence and controls
+
+- Weekly internal rehearsal before any external investor session
+- Single approved script and metric dictionary
+- All investor claims must be reproducible from evidence lineage
+
+Reference:
+- [DT Value & Funding Demand Brief](../../../docs/orchestration/dt-value-funding-demand-brief.md)
+- [Post-Gate 4 DT Execution & Evidence Strategy](../../../docs/orchestration/post-gate-4-dt-execution.md)
+
+---
+
+## 6. Digital Twin Maturity Roadmap
 
 | Phase | Period    | Maturity Level        | Capabilities Added                                            |
 |-------|-----------|-----------------------|---------------------------------------------------------------|
@@ -160,7 +194,7 @@ Sensor density and high-level coverage are tracked here for operational context.
 
 ---
 
-## 6. Data Governance for Digital Twin
+## 7. Data Governance for Digital Twin
 
 | Requirement                     | Implementation                                                    |
 |---------------------------------|-------------------------------------------------------------------|
