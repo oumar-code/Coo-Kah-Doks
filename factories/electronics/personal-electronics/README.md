@@ -225,6 +225,7 @@ All production staff complete the Coo-Cah Manufacturing Academy 6-week onboardin
 | [`capex-opex.md`](./capex-opex.md)               | Phase 1 CapEx ~₦28B, unit economics per product category       |
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry for SMT lines, assembly robots, test equipment  |
 | [DT Pilot Standards & Templates](https://oumar-code.github.io/Coo-Kah-Doks/orchestration/dt-pilot-standards-and-templates/) | Pilot charter, experiment design, KPI dictionary, governance and go/no-go templates |
+| [DT Value & Funding Demand Brief](https://oumar-code.github.io/Coo-Kah-Doks/orchestration/dt-value-funding-demand-brief/) | Investor-facing baseline → simulation → outcomes narrative and capex funding ask map |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
 ---
