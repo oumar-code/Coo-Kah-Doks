@@ -179,8 +179,8 @@ All investor demos follow one sequence:
 - All investor claims must be reproducible from evidence lineage
 
 Reference:
-- [DT Value & Funding Demand Brief](../../../docs/orchestration/dt-value-funding-demand-brief.md)
-- [Post-Gate 4 DT Execution & Evidence Strategy](../../../docs/orchestration/post-gate-4-dt-execution.md)
+- [DT Value & Funding Demand Brief](../../../orchestration/dt-value-funding-demand-brief.md)
+- [Post-Gate 4 DT Execution & Evidence Strategy](../../../orchestration/post-gate-4-dt-execution.md)
 
 ---
 
