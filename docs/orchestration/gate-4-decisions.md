@@ -20,7 +20,7 @@ This document is the single auditable record of Gate 4 closure. All four criteri
 | # | Gate 4 Decision | Required Canonical Location | Decision Statement | Decision Date | Decision Authority | Status |
 |---|----------------|----------------------------|--------------------|--------------|-------------------|--------|
 | 1 | Cloud vs. on-prem / DT stack selection | `platform/digital-twin-platform-architecture.md` | Coo-Cah Proprietary DT Engine (Hybrid) — InfluxDB + FastAPI + Grafana + MQTT/OPC-UA edge stack. Not Azure, not AWS, not Siemens Xcelerator. | 2025-03-05 | Group CTO, Head of DT Team, Smart Factory Core Lead, AI Platform Architect | ✅ Satisfied |
-| 2 | Phase 1 factory designated as DT pilot | `docs/orchestration/factory-status-registry.md` — DT Pilot Designation section | Garage/Power Electronics — Ogun State (Sagamu), Nigeria — formally designated as DT pilot factory. First twin operational by Month 12 from DT team formation. | 2025-05-07 | Group CTO | ✅ Satisfied |
+| 2 | Phase 1 factory designated as DT pilot | `docs/orchestration/factory-status-registry.md` — DT Pilot Designation section | Personal Electronics — Ogun State (Sagamu), Nigeria — formally designated as DT pilot factory. Pilot release is gated on auditable evidence and independent reproducibility. | 2026-05-07 | Group CTO | ✅ Satisfied |
 | 3 | Group data governance policy (ownership / retention / access) | `platform/data-governance-policy.md` | Group-level policy covering data ownership by OpCo vs. Holdings, three-tier retention (hot 90d / warm 3yr / cold 10yr), and factory-scoped access with explicit group grants. | 2025-05-07 | Group CTO, Enterprise Data Architect | ✅ Satisfied |
 | 4 | Confirmed MES vendor (group-level) | `docs/adrs/ADR-002-mes-platform-selection.md` | Siemens Opcenter as group standard MES for Phase 1 and Phase 2 factories (Opcenter Execution Discrete for electronics/lifestyle; Opcenter Execution Process for chemicals). | 2025-02-10 | Group CTO, CTO Rwanda, COO Nigeria, Head of Smart Factory Core | ✅ Satisfied |
 
@@ -44,10 +44,10 @@ Key traceability:
 
 **Canonical artifact:** [Factory Status Registry — DT Pilot Designation](./factory-status-registry.md#digital-twin-pilot-factory-designation-gate-4-decision)
 
-Garage/Power Electronics (Ogun State, Nigeria) is explicitly designated as the Phase 1 DT pilot factory in the Factory Status Registry. The designation includes:
+Personal Electronics (Ogun State, Nigeria) is explicitly designated as the Phase 1 DT pilot factory in the Factory Status Registry. The designation includes:
 - Decision date and authority (Group CTO)
-- Rationale (earliest Phase 1 target; energy-critical; dedicated repo live; central supply chain dependency)
-- 7-milestone DT rollout timeline (Month 0–16)
+- Rationale (highest DT maturity, dense instrumentation, and KPI audit-readiness)
+- 90-day execution model (baseline lock, controlled intervention, independent audit)
 - Governance: change requires Group CTO approval
 
 Cross-reference: `platform/digital-twin-platform-architecture.md` Section 6 names the same factory and links back to this registry for the formal designation.
@@ -94,7 +94,7 @@ Siemens Opcenter was selected as the group standard MES in February 2025 followi
 With Gate 4 closed, the following activities are unblocked:
 
 1. **DT Engineering team formation** — recruitment begins immediately; Month 0 clock starts on first hire
-2. **Pilot factory DT implementation** — Garage/Power Electronics (Sagamu) — see milestone table in [Factory Status Registry](./factory-status-registry.md#digital-twin-pilot-factory-designation-gate-4-decision)
+2. **Pilot factory DT implementation** — Personal Electronics (Sagamu) — see milestone table in [Factory Status Registry](./factory-status-registry.md#digital-twin-pilot-factory-designation-gate-4-decision)
 3. **MES procurement and implementation kickoff** — Siemens Opcenter partner selection in Nigeria; Phase 1 electronics cluster
 4. **Data governance training** — All DT Engineering, AI Data, and Factory CTO roles to complete before any factory data is onboarded to cloud
 5. **Gate 5 preparation** — Factory-level execution: civil works, equipment installation, Phase 1 production ramp
@@ -120,6 +120,7 @@ Reopening a closed gate requires Group CTO + Board approval.
 | Version | Date | Author | Changes |
 |---------|------|--------|---------|
 | 1.0 | 2025-05-07 | Group CTO / Programme Management | Initial Gate 4 closure record — 4/4 criteria satisfied |
+| 1.1 | 2026-05-07 | Group CTO / Programme Management | Updated DT pilot designation to Personal Electronics and aligned evidence statements |
 
 ---
 
