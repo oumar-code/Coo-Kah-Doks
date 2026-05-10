@@ -116,6 +116,7 @@ nav:
     - DT Value & Funding Demand Brief: orchestration/dt-value-funding-demand-brief.md
     - DT Pilot Standards & Templates: orchestration/dt-pilot-standards-and-templates.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
+    - Phase 2 Priority 1 Remediation: orchestration/phase-2-priority-1-remediation.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
