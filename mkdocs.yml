@@ -80,6 +80,7 @@ nav:
     - All Factories: 03-factories/index.md
     - Electronics Vertical:
       - Personal Electronics: factories/electronics/personal-electronics/README.md
+      - Personal Electronics Implementation Plan: factories/electronics/personal-electronics/implementation-plan.md
       - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
       - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
       - Smart Home & Office: factories/electronics/smart-home-office/README.md
