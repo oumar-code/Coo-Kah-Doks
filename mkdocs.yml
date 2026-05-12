@@ -81,6 +81,15 @@ nav:
     - Electronics Vertical:
       - Personal Electronics: factories/electronics/personal-electronics/README.md
       - Personal Electronics Implementation Plan: factories/electronics/personal-electronics/implementation-plan.md
+      - Personal Electronics — Factory Docs:
+        - AI Platform Status: factories/electronics/personal-electronics/docs/ai-platform-status.md
+        - Intra-Group Supply Coordination: factories/electronics/personal-electronics/docs/intragroup-supply-coordination.md
+        - Penetration Test Scoping: factories/electronics/personal-electronics/docs/pentest-scoping.md
+        - Gap Closure Report: factories/electronics/personal-electronics/docs/gap-closure-report.md
+        - Sensor Map: factories/electronics/personal-electronics/docs/sensor-map.md
+        - BIM Index: factories/electronics/personal-electronics/docs/bim/README.md
+        - BIM Zone Boundaries: factories/electronics/personal-electronics/docs/bim/zone-boundaries.md
+        - BIM Asset Anchors: factories/electronics/personal-electronics/docs/bim/asset-anchors.md
       - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
       - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
       - Smart Home & Office: factories/electronics/smart-home-office/README.md

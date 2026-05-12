@@ -345,3 +345,5 @@ The Coo-Cah AI Platform exposes REST API endpoints consumed by the MES for AI-dr
 *For digital twin architecture, refer to [`digital-twin.md`](./digital-twin.md).*
 *For regulatory data requirements, refer to [`regulatory.md`](./regulatory.md).*
 *For supply chain ERP integration, refer to [`supply-chain.md`](./supply-chain.md).*
+*For AI Platform deployment status and stub endpoint registry, refer to [`docs/ai-platform-status.md`](./docs/ai-platform-status.md).*
+*For penetration test scope and rules of engagement covering the MES and AI API surface, refer to [`docs/pentest-scoping.md`](./docs/pentest-scoping.md).*
