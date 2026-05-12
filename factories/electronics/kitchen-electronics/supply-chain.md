@@ -164,3 +164,4 @@ The Kitchen Electronics Factory supply chain is characterised by a mix of high-v
 
 *For CapEx / landed cost modelling, refer to [`capex-opex.md`](./capex-opex.md).*
 *For regulatory compliance (Form M, SON CoC), refer to [`regulatory.md`](./regulatory.md).*
+*For intra-group supply volumes and coordination procedures, refer to [`docs/intragroup-supply-coordination.md`](./docs/intragroup-supply-coordination.md).*

@@ -204,6 +204,11 @@ See [`energy-profile.md`](./energy-profile.md) for full analysis.
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry, sensor coverage, simulation use cases |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
+| [`docs/ai-platform-status.md`](./docs/ai-platform-status.md) | AI platform endpoint status, gas safety AI, stub contract |
+| [`docs/pentest-scoping.md`](./docs/pentest-scoping.md) | Penetration test scoping including OT/gas zone rules of engagement |
+| [`docs/intragroup-supply-coordination.md`](./docs/intragroup-supply-coordination.md) | Intra-group supply volumes and coordination (Plastics Factory, Garage Power Electronics) |
+| [`docs/gap-closure-report.md`](./docs/gap-closure-report.md) | Gate 3 gap closure status, traceability, and machine-dependent open items |
+| [`implementation-plan.md`](./implementation-plan.md) | Phase 1 workstreams: MES, SON/NESREA regulatory, DT, workforce, supply chain, EMS |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*
