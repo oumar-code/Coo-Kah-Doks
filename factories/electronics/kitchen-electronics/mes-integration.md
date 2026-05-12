@@ -182,3 +182,5 @@ Unit Released to IPQC (Z9) — full trace chain complete
 
 *For digital twin integration, refer to [`digital-twin.md`](./digital-twin.md).*
 *For regulatory compliance links, refer to [`regulatory.md`](./regulatory.md).*
+*For AI platform endpoint status and stub contract, refer to [`docs/ai-platform-status.md`](./docs/ai-platform-status.md).*
+*For penetration test scoping covering MES and OT interfaces, refer to [`docs/pentest-scoping.md`](./docs/pentest-scoping.md).*
