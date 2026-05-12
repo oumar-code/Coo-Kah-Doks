@@ -177,3 +177,4 @@ The Coo-Cah Personal Electronics Factory operates a hybrid supply chain: critica
 *For regulatory compliance requirements affecting supply chain, refer to [`regulatory.md`](./regulatory.md).*
 *For MES supply chain integration, refer to [`mes-integration.md`](./mes-integration.md).*
 *For CapEx and working capital analysis, refer to [`capex-opex.md`](./capex-opex.md).*
+*For intra-group supply volume commitments (Coo-Cah Plastics casing volumes and Garage Power Electronics BMS PCB sign-off), refer to [`docs/intragroup-supply-coordination.md`](./docs/intragroup-supply-coordination.md).*
