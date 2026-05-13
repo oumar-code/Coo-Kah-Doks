@@ -15,6 +15,11 @@ Asset anchor points used to place all registered assets in the 3D digital twin. 
 - Coordinate system: Local factory grid (origin = SW corner of building at slab level). X = East, Y = North, Z = Up. Units: metres.
 - IFC GUID format: 22-character base-64 IFC GlobalId string.
 
+### Gate 3 Required Header Mapping
+
+- **Orientation (Yaw/Pitch/Roll):** represented by the table columns `Yaw (°)`, `Pitch (°)`, and `Roll (°)`.
+- **Coordinate System:** Local factory grid (origin = SW corner of building at slab level). X = East, Y = North, Z = Up.
+
 ---
 
 ## IFC GUID Status Control
@@ -177,4 +182,3 @@ The following table maps DT manifest IDs (from `digital-twin.md`) to BIM anchor 
 | [`../sensor-map.md`](../sensor-map.md) | Sensor registry referencing Anchor IDs from this file |
 | [`../../floor-plan.md`](../../floor-plan.md) | Physical zone layout — source for zone IDs |
 | [`../gap-closure-report.md`](../gap-closure-report.md) | Gap closure status for BIM anchor readiness |
-
