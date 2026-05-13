@@ -204,6 +204,11 @@ See [`energy-profile.md`](./energy-profile.md) for full analysis.
 | [`digital-twin.md`](./digital-twin.md)           | Asset registry, sensor coverage, simulation use cases |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
+| [`implementation-plan.md`](./implementation-plan.md) | Phase 1 implementation plan across MES, certifications, digital twin, workforce, supply chain, and EMS workstreams |
+| [`docs/ai-platform-status.md`](./docs/ai-platform-status.md) | AI Platform endpoint registry and stub deployment status |
+| [`docs/intragroup-supply-coordination.md`](./docs/intragroup-supply-coordination.md) | Intra-group supply commitments: Plastics casings, Garage Power inverter/UPS energy hardware |
+| [`docs/pentest-scoping.md`](./docs/pentest-scoping.md) | Penetration test scope, rules of engagement, and remediation SLAs |
+| [`docs/gap-closure-report.md`](./docs/gap-closure-report.md) | Gate 3 gap closure matrix and pass-by-pass evidence register |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*

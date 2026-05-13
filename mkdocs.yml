@@ -91,7 +91,27 @@ nav:
         - BIM Zone Boundaries: factories/electronics/personal-electronics/docs/bim/zone-boundaries.md
         - BIM Asset Anchors: factories/electronics/personal-electronics/docs/bim/asset-anchors.md
       - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
+      - Kitchen Electronics Implementation Plan: factories/electronics/kitchen-electronics/implementation-plan.md
+      - Kitchen Electronics — Factory Docs:
+        - AI Platform Status: factories/electronics/kitchen-electronics/docs/ai-platform-status.md
+        - Intra-Group Supply Coordination: factories/electronics/kitchen-electronics/docs/intragroup-supply-coordination.md
+        - Penetration Test Scoping: factories/electronics/kitchen-electronics/docs/pentest-scoping.md
+        - Gap Closure Report: factories/electronics/kitchen-electronics/docs/gap-closure-report.md
+        - Sensor Map: factories/electronics/kitchen-electronics/docs/sensor-map.md
+        - BIM Index: factories/electronics/kitchen-electronics/docs/bim/README.md
+        - BIM Zone Boundaries: factories/electronics/kitchen-electronics/docs/bim/zone-boundaries.md
+        - BIM Asset Anchors: factories/electronics/kitchen-electronics/docs/bim/asset-anchors.md
       - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
+      - Garage & Power Electronics Implementation Plan: factories/electronics/garage-power-electronics/implementation-plan.md
+      - Garage & Power Electronics — Factory Docs:
+        - AI Platform Status: factories/electronics/garage-power-electronics/docs/ai-platform-status.md
+        - Intra-Group Supply Coordination: factories/electronics/garage-power-electronics/docs/intragroup-supply-coordination.md
+        - Penetration Test Scoping: factories/electronics/garage-power-electronics/docs/pentest-scoping.md
+        - Gap Closure Report: factories/electronics/garage-power-electronics/docs/gap-closure-report.md
+        - Sensor Map: factories/electronics/garage-power-electronics/docs/sensor-map.md
+        - BIM Index: factories/electronics/garage-power-electronics/docs/bim/README.md
+        - BIM Zone Boundaries: factories/electronics/garage-power-electronics/docs/bim/zone-boundaries.md
+        - BIM Asset Anchors: factories/electronics/garage-power-electronics/docs/bim/asset-anchors.md
       - Smart Home & Office: factories/electronics/smart-home-office/README.md
       - Security Electronics: factories/electronics/security-electronics/README.md
       - Smart Estate & City: factories/electronics/smart-estate-city/README.md
