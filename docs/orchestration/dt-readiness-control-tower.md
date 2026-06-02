@@ -9,7 +9,7 @@
 
 ## Objective
 
-Use **Coo-Kah-Doks** as the single control tower for Digital Twin readiness while executing factory-specific detail through guided per-factory agent runs and central QA gates.
+Use **Coo-Cah-Doks** as the single control tower for Digital Twin readiness while executing factory-specific detail through guided per-factory agent runs and central QA gates.
 
 This playbook applies to the current portfolio of **17 factory blueprints plus the master template**. The master template is not counted as a factory in programme totals; it is the control-tower standard source.
 
@@ -100,24 +100,24 @@ These are **DT readiness authoring waves** from the master repo. They do not ove
 Use this prompt template when handing work to an agent for a specific factory:
 
 ```text
-You are preparing Digital Twin readiness content for [FACTORY NAME] in the Coo-Kah-Doks master blueprint.
+You are preparing Digital Twin readiness content for [FACTORY NAME] in the Coo-Cah-Doks master blueprint.
 
 Use the master standards from:
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/docs/orchestration/dt-readiness-control-tower.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/docs/orchestration/post-gate-4-dt-execution.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/docs/orchestration/dt-pilot-standards-and-templates.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/platform/digital-twin-platform-architecture.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/_template/digital-twin.md
+- docs/orchestration/dt-readiness-control-tower.md
+- docs/orchestration/post-gate-4-dt-execution.md
+- docs/orchestration/dt-pilot-standards-and-templates.md
+- platform/digital-twin-platform-architecture.md
+- factories/_template/digital-twin.md
 
 Factory source files:
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/README.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/machinery.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/floor-plan.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/mes-integration.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/digital-twin.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/docs/sensor-map.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/docs/bim/zone-boundaries.md
-- /tmp/workspace/oumar-code/Coo-Kah-Doks/factories/[VERTICAL]/[FACTORY]/docs/bim/asset-anchors.md
+- factories/[VERTICAL]/[FACTORY]/README.md
+- factories/[VERTICAL]/[FACTORY]/machinery.md
+- factories/[VERTICAL]/[FACTORY]/floor-plan.md
+- factories/[VERTICAL]/[FACTORY]/mes-integration.md
+- factories/[VERTICAL]/[FACTORY]/digital-twin.md
+- factories/[VERTICAL]/[FACTORY]/docs/sensor-map.md
+- factories/[VERTICAL]/[FACTORY]/docs/bim/zone-boundaries.md
+- factories/[VERTICAL]/[FACTORY]/docs/bim/asset-anchors.md
 
 Do not invent new standards. Fill only factory-specific deltas.
 
