@@ -11,6 +11,7 @@
 This registry tracks the commissioning status of every Coo-Cah factory across all verticals and locations. It is the single source of truth for programme management, investor reporting, and cross-factory dependency planning.
 
 For Gate 1 → 2 execution ownership, KPI closure, and evidence governance, use the companion playbook: [Gate 1 Readiness Program](./gate-1-readiness.md).
+For DT gap closure sequencing, score definitions, prompt-pack governance, and central review rules, use [DT Readiness Control Tower](./dt-readiness-control-tower.md).
 
 ---
 
@@ -57,6 +58,33 @@ The Personal Electronics factory is formally designated as the **Phase 1 Digital
 - This designation is a Gate 4 decision and must not be changed without Group CTO approval and an updated ADR or formal change record.
 - Progress against milestones is reviewed monthly in the Group Programme Management review.
 - Evidence of pilot completion gates the Tier 1 rollout waves.
+
+---
+
+## DT Readiness Dashboard (Control-Tower Seed View)
+
+> **Scoring note:** The percentages below are seeded from current repository evidence only — required DT artifacts, linked support docs, and factory execution collateral already committed in this repo. They do **not** imply live telemetry readiness or production validation. Hard DT-ready status still requires live data connectivity and 3 reproducible simulations.
+
+| Factory | Wave | DT Readiness % | Primary Open Blocker | Next 2-Week Deliverable | Review Owner |
+|---------|------|----------------|----------------------|-------------------------|--------------|
+| Personal Electronics | Wave 0 / Pilot | 65% | Live telemetry and simulation evidence not yet proven | Lock pilot-critical asset list and run first 3 simulation dry-runs against the frozen KPI dictionary | DT Engineering Lead |
+| Kitchen Electronics | Wave 1 | 60% | Factory execution pack exists, but local delta review against pilot package is not frozen | Run factory DT prompt pack and convert outputs into a dated triage board | DT Programme Office |
+| Garage & Power Electronics | Wave 1 | 60% | Factory execution pack exists, but local delta review against pilot package is not frozen | Run factory DT prompt pack and convert outputs into a dated triage board | DT Programme Office |
+| Security Electronics | Wave 1 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Smart Home & Office | Wave 1 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Smart Estate / City | Wave 1 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Plastics & Polymers | Wave 2 / Contrast Benchmark | 45% | Non-electronics benchmark execution pack not started | Designate benchmark owner and run the factory DT prompt pack | DT Engineering Lead |
+| Heavy Chemicals | Wave 2 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Fine Chemicals | Wave 2 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Fertilizer | Wave 2 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Metallurgical & Minerals | Wave 2 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Food & Beverages | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Personal Care | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Household Cleaning | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Packaged Water | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Baby & Infant Products | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Fashion & Apparel | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
+| Furniture & Home Décor | Wave 3 | 40% | No factory execution pack yet beyond baseline DT artifacts | Assign owners and generate first DT gap triage pack from the master prompt | DT Programme Office |
 
 ### Status Codes
 
@@ -163,6 +191,7 @@ graph TD
 | 2025-05-01 | Programme Management | Initial registry — all factories set to `PLANNED` |
 | 2025-05-07 | Group CTO / Digital Twin Engineering Lead | Added Gate 4 DT Pilot Factory Designation section; Garage/Power Electronics formally confirmed as DT pilot factory |
 | 2026-05-07 | Group CTO / Digital Twin Engineering Lead | Updated DT pilot designation to Personal Electronics; added 90-day pilot execution and Tier 1 Wave 1/Wave 2 sequencing |
+| 2026-06-02 | Group CTO / DT Engineering Lead / PMO | Added cross-factory DT readiness dashboard with seeded control-tower scoring and 2-week deliverables |
 
 ---
 

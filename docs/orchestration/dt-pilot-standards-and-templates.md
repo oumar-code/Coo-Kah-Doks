@@ -90,9 +90,19 @@ If any item is not green, Tier 1 release remains blocked.
 
 ---
 
+## 7) Portfolio Rollout Companion
+
+These pilot templates are the auditable proof package for the pilot and Tier 1 replication path.
+
+For the **portfolio-wide operating model** — master-repo control tower, factory DT scorecard, prompt pack, wave sequencing, triage board, and cross-factory dashboard — use:
+
+- [DT Readiness Control Tower](./dt-readiness-control-tower.md)
+
+---
+
 ## Revision History
 
 | Version | Date | Author | Changes |
 |---|---|---|---|
 | 1.0 | 2026-05-07 | Group CTO / DT Engineering Lead / PMO | Initial standards and templates for DT pilot proof and rollout gates |
-
+| 1.1 | 2026-06-02 | Group CTO / DT Engineering Lead / PMO | Added reference to the portfolio DT readiness control-tower playbook |
