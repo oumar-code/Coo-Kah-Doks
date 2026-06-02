@@ -120,3 +120,13 @@ To send a blueprint-update notification without changing any template files:
 | [`coo-cah-factory-chemicals-plastics`](https://github.com/oumar-code/coo-cah-factory-chemicals-plastics) | Plastics & Polymers |
 | [`coo-cah-factory-electronics-power`](https://github.com/oumar-code/coo-cah-factory-electronics-power) | Garage & Power Electronics |
 | [`coo-cah-factory-chemicals-metallurgical`](https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical) | Metallurgical & Minerals |
+
+---
+
+## Priority 1 execution governance
+
+For active Phase 2 cross-repository blocker recovery, use the canonical runbook:
+
+- [Phase 2 Scorecard — Priority 1 Remediation Runbook](./phase-2-priority-1-remediation.md)
+
+This runbook defines merge order, ownership, per-repo exit criteria, and closure controls before any P2 promotion.
