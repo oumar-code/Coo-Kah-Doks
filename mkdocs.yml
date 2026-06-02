@@ -143,6 +143,7 @@ nav:
     - Gate 1 → 2 Readiness Program: orchestration/gate-1-readiness.md
     - Gate 4 Decisions & Evidence: orchestration/gate-4-decisions.md
     - Post-Gate 4 DT Execution Strategy: orchestration/post-gate-4-dt-execution.md
+    - DT Readiness Control Tower: orchestration/dt-readiness-control-tower.md
     - DT Value & Funding Demand Brief: orchestration/dt-value-funding-demand-brief.md
     - DT Pilot Standards & Templates: orchestration/dt-pilot-standards-and-templates.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md

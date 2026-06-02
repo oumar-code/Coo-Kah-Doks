@@ -60,6 +60,7 @@ All hypotheses must define locked formulas, baseline windows, confidence thresho
 
 Reference:
 - [Factory Status Registry — DT Pilot Designation](./factory-status-registry.md#digital-twin-pilot-factory-designation-gate-4-decision)
+- [DT Readiness Control Tower](./dt-readiness-control-tower.md)
 
 ---
 
@@ -144,6 +145,8 @@ To reduce rollout risk, produce a replication package during pilot execution:
 - Security baseline (network segmentation, auth, key/cert rotation controls)
 - Factory onboarding checklist (dependencies, acceptance sequence, evidence requirements)
 - Operations runbook (incident response, support model, escalation path)
+- DT readiness scorecard
+- Factory DT prompt pack
 - Pilot charter template
 - Experiment design template
 - KPI dictionary template
@@ -158,6 +161,7 @@ Rollout rule: **inherit standards + local delta only**.
 
 Reference:
 - [DT Pilot Standards and Templates](./dt-pilot-standards-and-templates.md)
+- [DT Readiness Control Tower](./dt-readiness-control-tower.md)
 
 ---
 
