@@ -16,4 +16,5 @@ This folder provides the minimum BIM/3D stub artifacts required before a full IF
 - Zone IDs MUST match [`floor-plan.md`](../../floor-plan.md).
 - Asset IDs MUST match [`digital-twin.md`](../../digital-twin.md).
 - Coordinate system naming MUST be consistent across all files in this folder.
+- For 3D render file references see [`../visualizations/digital-twin-renders.md`](../visualizations/digital-twin-renders.md).
 

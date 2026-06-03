@@ -192,6 +192,7 @@ All production staff undergo the Coo-Cah Manufacturing Academy onboarding progra
 | [`digital-twin.md`](./digital-twin.md)        | Asset registry, sensor map, simulation use cases      |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
+| [`docs/visualizations/README.md`](./docs/visualizations/README.md) | Visualization asset index: floor plan, process flow, and 3D render stubs |
 ---
 
 ## 11. Revision History

@@ -37,6 +37,7 @@ jobs:
               'docs/bim/README.md',
               'docs/bim/zone-boundaries.md',
               'docs/bim/asset-anchors.md',
+              'docs/visualizations/README.md',
           ]
 
           required_headers = {
@@ -66,6 +67,11 @@ jobs:
                   'Anchor Z',
                   'Orientation (Yaw/Pitch/Roll)',
                   'Coordinate System',
+              ],
+              'docs/visualizations/README.md': [
+                  'floor-plan-diagram',
+                  'process-flow-diagram',
+                  'digital-twin-renders',
               ],
           }
 
