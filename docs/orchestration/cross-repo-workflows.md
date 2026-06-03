@@ -15,15 +15,21 @@ sequenceDiagram
     participant P as coo-cah-factory-chemicals-plastics
     participant E as coo-cah-factory-electronics-power
     participant M as coo-cah-factory-chemicals-metallurgical
+    participant PE as coo-cah-factory-electronics-personal
+    participant KE as coo-cah-factory-electronics-kitchen
 
     Dev->>Master: push to main (factories/_template/** changed)
     Master->>Master: notify-factories.yml triggers
     Master->>P: repository_dispatch — blueprint-update
     Master->>E: repository_dispatch — blueprint-update
     Master->>M: repository_dispatch — blueprint-update
+    Master->>PE: repository_dispatch — blueprint-update
+    Master->>KE: repository_dispatch — blueprint-update
     P->>P: receive-blueprint-update.yml triggers → opens issue
     E->>E: receive-blueprint-update.yml triggers → opens issue
     M->>M: receive-blueprint-update.yml triggers → opens issue
+    PE->>PE: receive-blueprint-update.yml triggers → opens issue
+    KE->>KE: receive-blueprint-update.yml triggers → opens issue
 ```
 
 ---
@@ -40,10 +46,10 @@ sequenceDiagram
 **What it does:**
 
 Uses the GitHub API to fire a `repository_dispatch` event with type `blueprint-update` at each
-of the three active factory repos in parallel. The event payload carries the commit SHA, the
+of the five active baseline factory repos in parallel. The event payload carries the commit SHA, the
 actor who pushed, and a human-readable reason so the receiving issue is fully traceable.
 
-**Requires — secret `ORG_PAT`:**
+**Requires — secret `GH_PAT`:**
 
 The workflow uses a Personal Access Token (PAT) stored as a repository secret to authenticate
 cross-repo API calls. Without this secret the workflow will fail immediately.
@@ -51,13 +57,15 @@ cross-repo API calls. Without this secret the workflow will fail immediately.
 ### How to create and add the PAT
 
 1. Go to **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens** (or classic tokens with `repo` scope).
-2. Create a token with **write access to Contents and Issues** on the three factory repos:
+2. Create a token with **write access to Contents and Issues** on the five factory repos:
    - `oumar-code/coo-cah-factory-chemicals-plastics`
    - `oumar-code/coo-cah-factory-electronics-power`
    - `oumar-code/coo-cah-factory-chemicals-metallurgical`
+   - `oumar-code/coo-cah-factory-electronics-personal`
+   - `oumar-code/coo-cah-factory-electronics-kitchen`
 3. Copy the token value.
 4. Go to **Coo-Kah-Doks → Settings → Secrets and variables → Actions → New repository secret**.
-5. Name: `ORG_PAT` — paste the token value — click **Add secret**.
+5. Name: `GH_PAT` — paste the token value — click **Add secret**.
 
 ---
 
@@ -98,6 +106,12 @@ gh label create "blueprint-sync" --color "0075ca" --description "Blueprint sync 
 
 gh label create "blueprint-sync" --color "0075ca" --description "Blueprint sync from master repo" \
   --repo oumar-code/coo-cah-factory-chemicals-metallurgical
+
+gh label create "blueprint-sync" --color "0075ca" --description "Blueprint sync from master repo" \
+  --repo oumar-code/coo-cah-factory-electronics-personal
+
+gh label create "blueprint-sync" --color "0075ca" --description "Blueprint sync from master repo" \
+  --repo oumar-code/coo-cah-factory-electronics-kitchen
 ```
 
 ---
@@ -120,3 +134,5 @@ To send a blueprint-update notification without changing any template files:
 | [`coo-cah-factory-chemicals-plastics`](https://github.com/oumar-code/coo-cah-factory-chemicals-plastics) | Plastics & Polymers |
 | [`coo-cah-factory-electronics-power`](https://github.com/oumar-code/coo-cah-factory-electronics-power) | Garage & Power Electronics |
 | [`coo-cah-factory-chemicals-metallurgical`](https://github.com/oumar-code/coo-cah-factory-chemicals-metallurgical) | Metallurgical & Minerals |
+| [`coo-cah-factory-electronics-personal`](https://github.com/oumar-code/coo-cah-factory-electronics-personal) | Personal Electronics |
+| [`coo-cah-factory-electronics-kitchen`](https://github.com/oumar-code/coo-cah-factory-electronics-kitchen) | Kitchen Electronics |
