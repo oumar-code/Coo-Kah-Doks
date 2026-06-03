@@ -74,6 +74,11 @@ nav:
       - CapEx / OpEx Model: capex-opex.md
       - Digital Twin: digital-twin.md
       - MES Integration: mes-integration.md
+  - Visualizations:
+    - Overview: visualizations/README.md
+    - Floor Plan Diagram: visualizations/floor-plan-diagram.md
+    - Process Flow Diagram: visualizations/process-flow-diagram.md
+    - Digital Twin Renders: visualizations/digital-twin-renders.md
 
 extra:
   social:

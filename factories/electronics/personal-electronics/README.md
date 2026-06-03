@@ -229,6 +229,7 @@ All production staff complete the Coo-Cah Manufacturing Academy 6-week onboardin
 | [DT Value & Funding Demand Brief](https://oumar-code.github.io/Coo-Kah-Doks/orchestration/dt-value-funding-demand-brief/) | Investor-facing baseline → simulation → outcomes narrative and capex funding ask map |
 | [`docs/sensor-map.md`](./docs/sensor-map.md) | Standalone physical sensor registry (model, zone, protocol, calibration) |
 | [`docs/bim/README.md`](./docs/bim/README.md) | BIM/3D model stub index, zone boundaries, and asset anchors |
+| [`docs/visualizations/README.md`](./docs/visualizations/README.md) | Visualization asset index: floor plan, process flow, and 3D render stubs |
 ---
 
 *This document is part of the Coo-Cah Manufacturing Ecosystem documentation suite.*
