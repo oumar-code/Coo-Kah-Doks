@@ -82,7 +82,7 @@ Before wider rollout:
 - [ ] Audit reproducibility signed by an independent reviewer
 - [ ] Governance approvals complete (Group CTO + PMO go/no-go sign-off)
 
-Reference: [Post-Gate 4 DT Execution Strategy](./post-gate-4-dt-execution.md#5-hard-pilot-exit-criteria-go-no-go)
+Reference: [Post-Gate 4 DT Execution Strategy](./post-gate-4-dt-execution.md)
 
 ---
 
@@ -90,4 +90,3 @@ Reference: [Post-Gate 4 DT Execution Strategy](./post-gate-4-dt-execution.md#5-h
 
 - **GO:** All sections above are fully green.
 - **NO-GO:** Any unresolved item blocks expansion beyond the current 5 baseline repos.
-
