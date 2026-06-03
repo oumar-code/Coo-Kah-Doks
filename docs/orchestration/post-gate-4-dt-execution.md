@@ -162,6 +162,7 @@ Rollout rule: **inherit standards + local delta only**.
 Reference:
 - [DT Pilot Standards and Templates](./dt-pilot-standards-and-templates.md)
 - [DT Readiness Control Tower](./dt-readiness-control-tower.md)
+- [Tier 1 Baseline Go/No-Go Checklist (5-Repo Lock)](./tier-1-baseline-go-no-go-checklist.md)
 
 ---
 
