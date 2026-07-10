@@ -148,6 +148,12 @@ nav:
     - DT Value & Funding Demand Brief: orchestration/dt-value-funding-demand-brief.md
     - DT Pilot Standards & Templates: orchestration/dt-pilot-standards-and-templates.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
+  - External Factory Traction:
+    - Strategy Overview: 11-external-factories/index.md
+    - Pilot Offer: 11-external-factories/pilot-offer.md
+    - Target List: 11-external-factories/target-list.md
+    - Outreach Playbook: 11-external-factories/outreach-playbook.md
+    - 90-Day Tracker: 11-external-factories/90-day-tracker.md
   - Architecture Decisions:
     - ADR Index: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
