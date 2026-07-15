@@ -21,52 +21,123 @@ All factories share a common technology platform — MES, digital twin, AMR flee
 
 ---
 
-## How to Navigate This Documentation
+## Explore the Blueprint
 
-```mermaid
-mindmap
-  root((Coo-Kah-Doks))
-    Vision & Strategy
-      Mission & Values
-      Corporate Structure
-      Energy Strategy
-      Finance
-    Factory Blueprints
-      Electronics
-      Chemicals
-      Consumer Goods
-      Lifestyle
-    Technology
-      Semiconductor (Baobab)
-      Smart Factory Core
-      Automation Phases
-      AI Platform
-      Supply Chain
-    Compliance
-      Regulatory Overview
-    ADRs
-      Architecture Decisions
-    Reference
-      Glossary
-```
+<div class="grid cards" markdown>
 
-### Quick Links
+-   :material-compass-outline:{ .lg .middle } **Vision & Strategy**
 
-| Section | Description |
-|---------|-------------|
-| [Vision & Strategy](00-vision/index.md) | Mission, values, 10-year milestones, market opportunity |
-| [Corporate Structure](01-corporate-structure/index.md) | Legal entities, governance, Holdings + OpCo model |
-| [Energy Strategy](02-energy-strategy/index.md) | Solar, wind, BESS, hybrid systems, EMS |
-| [Factory Blueprints](03-factories/index.md) | All factory verticals, tiers, dependency map |
-| [Semiconductor — Baobab](04-semiconductor/index.md) | ASIC design, chip strategy, Project Baobab |
-| [Smart Factory Core](05-smart-factory-core/index.md) | MES, OEE, quality, 5S principles |
-| [Automation Phases](06-automation-phases/index.md) | Phase 1 → 3 roadmap, KPIs, milestones |
-| [AI Platform](08-ai-platform/index.md) | Central AI architecture, use cases, data flows |
-| [Supply Chain](07-supply-chain/index.md) | Procurement, logistics, cross-factory flows |
-| [Compliance](09-compliance-regulatory/index.md) | Regulatory overview, certifications, permits |
-| [Finance](10-finance/index.md) | CapEx/OpEx framework, investor materials |
-| [ADRs](adrs/README.md) | Architecture Decision Records index |
-| [Glossary](glossary.md) | Terms, abbreviations, and definitions |
+    ---
+
+    Mission, values, 10-year milestones, and market opportunity across Africa.
+
+    [:octicons-arrow-right-24: Explore](00-vision/index.md)
+
+-   :material-office-building-outline:{ .lg .middle } **Corporate Structure**
+
+    ---
+
+    Legal entities, governance model, Holdings + OpCo architecture.
+
+    [:octicons-arrow-right-24: Explore](01-corporate-structure/index.md)
+
+-   :material-lightning-bolt-outline:{ .lg .middle } **Energy Strategy**
+
+    ---
+
+    Solar, wind, BESS, hybrid systems, and energy management systems.
+
+    [:octicons-arrow-right-24: Explore](02-energy-strategy/index.md)
+
+-   :material-factory:{ .lg .middle } **Factory Blueprints**
+
+    ---
+
+    All 18 factory verticals — Electronics, Chemicals, Consumer Goods, Lifestyle.
+
+    [:octicons-arrow-right-24: Explore](03-factories/index.md)
+
+-   :material-chip:{ .lg .middle } **Semiconductor — Baobab**
+
+    ---
+
+    ASIC design, chip strategy, and the Project Baobab foundry roadmap.
+
+    [:octicons-arrow-right-24: Explore](04-semiconductor/index.md)
+
+-   :material-cog-outline:{ .lg .middle } **Smart Factory Core**
+
+    ---
+
+    MES, OEE monitoring, quality management, and 5S principles.
+
+    [:octicons-arrow-right-24: Explore](05-smart-factory-core/index.md)
+
+-   :material-robot-industrial-outline:{ .lg .middle } **Automation Phases**
+
+    ---
+
+    Phase 1 → 3 roadmap, KPI gates, and milestone targets.
+
+    [:octicons-arrow-right-24: Explore](06-automation-phases/index.md)
+
+-   :material-brain:{ .lg .middle } **AI Platform**
+
+    ---
+
+    Central AI architecture, use cases, model governance, and data flows.
+
+    [:octicons-arrow-right-24: Explore](08-ai-platform/index.md)
+
+-   :material-truck-outline:{ .lg .middle } **Supply Chain**
+
+    ---
+
+    Procurement strategy, intra-factory logistics, and cross-factory flows.
+
+    [:octicons-arrow-right-24: Explore](07-supply-chain/index.md)
+
+-   :material-shield-check-outline:{ .lg .middle } **Compliance**
+
+    ---
+
+    Regulatory overview, gate readiness programmes, and DT execution.
+
+    [:octicons-arrow-right-24: Explore](09-compliance-regulatory/index.md)
+
+-   :material-currency-usd:{ .lg .middle } **Finance**
+
+    ---
+
+    CapEx/OpEx framework, funding model, and investor materials.
+
+    [:octicons-arrow-right-24: Explore](10-finance/index.md)
+
+-   :material-handshake-outline:{ .lg .middle } **External Factory Traction**
+
+    ---
+
+    Pilot offer, target factory list, outreach playbook, and 90-day tracker.
+
+    [:octicons-arrow-right-24: Explore](11-external-factories/index.md)
+
+-   :material-file-document-check-outline:{ .lg .middle } **Architecture Decisions**
+
+    ---
+
+    All ADRs — energy source, MES, digital twin, AMR, ERP, and AI platform.
+
+    [:octicons-arrow-right-24: Explore](adrs/README.md)
+
+-   :material-book-open-outline:{ .lg .middle } **Glossary**
+
+    ---
+
+    Terms, abbreviations, and definitions used across all documentation.
+
+    [:octicons-arrow-right-24: Explore](glossary.md)
+
+</div>
 
 ---
 
