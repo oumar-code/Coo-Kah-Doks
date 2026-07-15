@@ -20,7 +20,7 @@ An 8-year internal-only roadmap risks:
 
 **External-first is not a pivot — it is the only logical move given our current build stage.**
 
-Our Edge AI predictive maintenance platform is deployable today on third-party factory floors. We carry our core competitive advantage — offline-first Edge AI that runs on $300 hardware in dust, heat, and unstable power — into factories that Siemens, SAP, and Honeywell cannot serve economically.
+Our Edge AI predictive maintenance platform is deployable today on third-party factory floors. We carry our core competitive advantage — offline-first Edge AI that runs on a **$250–$350 pilot edge kit** in dust, heat, and unstable power — into factories that Siemens, SAP, and Honeywell cannot serve economically.
 
 ---
 
@@ -52,7 +52,7 @@ At **MVP Refinement** stage, the offer is narrow and low-risk for the customer:
 2. **6-Month Paid Pilot** — ₦2M–₦5M to instrument 1–3 production lines with Edge AI monitoring, weekly reports, and alert-to-maintenance workflow.
 3. **Outcome guarantee** — if we don't demonstrate measurable downtime reduction, the customer pays nothing for the trial phase.
 
-See [Pilot Offer](pilot-offer.md) for full commercial terms.
+See [Pilot Offer](pilot-offer.md) for full commercial terms and [Raspberry Pi Pilot Deployment Profile](raspberry-pi-pilot-deployment-profile.md) for implementation details.
 
 ---
 
@@ -80,4 +80,4 @@ Pitch in one sentence:
 
 ---
 
-*See also: [Pilot Offer](pilot-offer.md) · [Target List](target-list.md) · [Outreach Playbook](outreach-playbook.md) · [90-Day Tracker](90-day-tracker.md)*
+*See also: [Pilot Offer](pilot-offer.md) · [Raspberry Pi Pilot Deployment Profile](raspberry-pi-pilot-deployment-profile.md) · [Target List](target-list.md) · [Outreach Playbook](outreach-playbook.md) · [90-Day Tracker](90-day-tracker.md)*

@@ -15,7 +15,7 @@ At this stage, we deploy a **narrow, high-confidence offer** — not a full fact
 | Component | Description |
 |-----------|-------------|
 | **Sensor Kit** | 2–4 vibration + temperature sensors mounted on target machine |
-| **Edge Device** | Android tablet or low-power compute unit running Coo-Cah Edge AI |
+| **Edge Device** | Raspberry Pi pilot edge kit (preferred) or Android tablet / low-power compute unit running Coo-Cah Edge AI |
 | **Dashboard** | Local dashboard (offline-capable) showing machine health, anomaly scores, and alert history |
 | **Alerts** | Push notifications to Plant Manager / Maintenance Lead via SMS or WhatsApp |
 | **Weekly Report** | PDF report: machine health score, anomaly events, estimated downtime prevented, recommended maintenance actions |
@@ -122,4 +122,4 @@ Document every KPI in the end-of-pilot report. This becomes the case study for T
 
 ---
 
-*See also: [Strategy Overview](index.md) · [Target List](target-list.md) · [Outreach Playbook](outreach-playbook.md)*
+*See also: [Strategy Overview](index.md) · [Raspberry Pi Pilot Deployment Profile](raspberry-pi-pilot-deployment-profile.md) · [Target List](target-list.md) · [Outreach Playbook](outreach-playbook.md)*
