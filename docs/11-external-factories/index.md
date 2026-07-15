@@ -20,7 +20,7 @@ An 8-year internal-only roadmap risks:
 
 **External-first is not a pivot — it is the only logical move given our current build stage.**
 
-Our Edge AI predictive maintenance platform is deployable today on third-party factory floors. We carry our core competitive advantage — offline-first Edge AI that runs on low-cost hardware in dust, heat, and unstable power — into factories that Siemens, SAP, and Honeywell cannot serve economically.
+Our Edge AI predictive maintenance platform is deployable today on third-party factory floors. We carry our core competitive advantage — offline-first Edge AI that runs on a **$250–$350 pilot edge kit** in dust, heat, and unstable power — into factories that Siemens, SAP, and Honeywell cannot serve economically.
 
 ---
 

@@ -17,7 +17,7 @@ This profile applies only to the **external-factory MVP offer**:
 This is a **pilot deployment profile**, not the full Coo-Cah factory-standard DT stack.
 
 When scope grows to multi-line, many assets, or full-factory orchestration, transition to the heavier edge-node architecture in:
-- [`platform/digital-twin-platform-architecture.md`](../../platform/digital-twin-platform-architecture.md)
+- [`platform/digital-twin-platform-architecture.md`](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/digital-twin-platform-architecture.md)
 
 ---
 
@@ -132,7 +132,7 @@ Coo-Cah internal operations view includes:
   - Cross-site benchmarking and analytics
 
 Access remains **factory-scoped by default**, with group-level visibility by explicit grant, aligned with:
-- [`platform/data-governance-policy.md`](../../platform/data-governance-policy.md)
+- [`platform/data-governance-policy.md`](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/data-governance-policy.md)
 
 ---
 
@@ -167,9 +167,9 @@ Sync rule:
 
 Where applicable, pilot telemetry and events should align with:
 
-- Asset IDs: [`platform/asset-id-naming-convention.md`](../../platform/asset-id-naming-convention.md)
-- Topics: [`platform/mqtt-topic-schema.md`](../../platform/mqtt-topic-schema.md)
-- Data model: [`platform/digital-twin-data-model.md`](../../platform/digital-twin-data-model.md)
+- Asset IDs: [`platform/asset-id-naming-convention.md`](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/asset-id-naming-convention.md)
+- Topics: [`platform/mqtt-topic-schema.md`](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/mqtt-topic-schema.md)
+- Data model: [`platform/digital-twin-data-model.md`](https://github.com/oumar-code/Coo-Kah-Doks/blob/main/platform/digital-twin-data-model.md)
 
 Pilot implementations may use reduced subsets of these standards, but should not violate canonical field conventions (`factory_id`, `asset_id`, UTC timestamps).
 
