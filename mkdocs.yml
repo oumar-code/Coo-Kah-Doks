@@ -27,14 +27,21 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
+    - navigation.indexes
     - navigation.path
+    - navigation.prune
     - navigation.top
+    - navigation.footer
     - search.highlight
     - search.share
+    - search.suggest
+    - toc.follow
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
@@ -64,11 +71,13 @@ plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - minify:
+      minify_html: true
 
 nav:
   - Home: index.md
   - Vision & Strategy:
-    - Overview: 00-vision/index.md
+    - Vision & Strategy: 00-vision/index.md
     - Corporate Structure: 01-corporate-structure/index.md
     - Energy Strategy: 02-energy-strategy/index.md
     - Energy Infrastructure:
@@ -77,41 +86,44 @@ nav:
       - Hybrid Systems: energy/hybrid-systems/README.md
     - Finance: 10-finance/index.md
   - Factory Blueprints:
-    - All Factories: 03-factories/index.md
+    - Factory Blueprints: 03-factories/index.md
     - Electronics Vertical:
-      - Personal Electronics: factories/electronics/personal-electronics/README.md
-      - Personal Electronics Implementation Plan: factories/electronics/personal-electronics/implementation-plan.md
-      - Personal Electronics — Factory Docs:
+      - Personal Electronics:
+        - Personal Electronics: factories/electronics/personal-electronics/README.md
+        - Implementation Plan: factories/electronics/personal-electronics/implementation-plan.md
         - AI Platform Status: factories/electronics/personal-electronics/docs/ai-platform-status.md
         - Intra-Group Supply Coordination: factories/electronics/personal-electronics/docs/intragroup-supply-coordination.md
         - Penetration Test Scoping: factories/electronics/personal-electronics/docs/pentest-scoping.md
         - Gap Closure Report: factories/electronics/personal-electronics/docs/gap-closure-report.md
         - Sensor Map: factories/electronics/personal-electronics/docs/sensor-map.md
-        - BIM Index: factories/electronics/personal-electronics/docs/bim/README.md
-        - BIM Zone Boundaries: factories/electronics/personal-electronics/docs/bim/zone-boundaries.md
-        - BIM Asset Anchors: factories/electronics/personal-electronics/docs/bim/asset-anchors.md
-      - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
-      - Kitchen Electronics Implementation Plan: factories/electronics/kitchen-electronics/implementation-plan.md
-      - Kitchen Electronics — Factory Docs:
+        - BIM:
+          - BIM Index: factories/electronics/personal-electronics/docs/bim/README.md
+          - Zone Boundaries: factories/electronics/personal-electronics/docs/bim/zone-boundaries.md
+          - Asset Anchors: factories/electronics/personal-electronics/docs/bim/asset-anchors.md
+      - Kitchen Electronics:
+        - Kitchen Electronics: factories/electronics/kitchen-electronics/README.md
+        - Implementation Plan: factories/electronics/kitchen-electronics/implementation-plan.md
         - AI Platform Status: factories/electronics/kitchen-electronics/docs/ai-platform-status.md
         - Intra-Group Supply Coordination: factories/electronics/kitchen-electronics/docs/intragroup-supply-coordination.md
         - Penetration Test Scoping: factories/electronics/kitchen-electronics/docs/pentest-scoping.md
         - Gap Closure Report: factories/electronics/kitchen-electronics/docs/gap-closure-report.md
         - Sensor Map: factories/electronics/kitchen-electronics/docs/sensor-map.md
-        - BIM Index: factories/electronics/kitchen-electronics/docs/bim/README.md
-        - BIM Zone Boundaries: factories/electronics/kitchen-electronics/docs/bim/zone-boundaries.md
-        - BIM Asset Anchors: factories/electronics/kitchen-electronics/docs/bim/asset-anchors.md
-      - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
-      - Garage & Power Electronics Implementation Plan: factories/electronics/garage-power-electronics/implementation-plan.md
-      - Garage & Power Electronics — Factory Docs:
+        - BIM:
+          - BIM Index: factories/electronics/kitchen-electronics/docs/bim/README.md
+          - Zone Boundaries: factories/electronics/kitchen-electronics/docs/bim/zone-boundaries.md
+          - Asset Anchors: factories/electronics/kitchen-electronics/docs/bim/asset-anchors.md
+      - Garage & Power Electronics:
+        - Garage & Power Electronics: factories/electronics/garage-power-electronics/README.md
+        - Implementation Plan: factories/electronics/garage-power-electronics/implementation-plan.md
         - AI Platform Status: factories/electronics/garage-power-electronics/docs/ai-platform-status.md
         - Intra-Group Supply Coordination: factories/electronics/garage-power-electronics/docs/intragroup-supply-coordination.md
         - Penetration Test Scoping: factories/electronics/garage-power-electronics/docs/pentest-scoping.md
         - Gap Closure Report: factories/electronics/garage-power-electronics/docs/gap-closure-report.md
         - Sensor Map: factories/electronics/garage-power-electronics/docs/sensor-map.md
-        - BIM Index: factories/electronics/garage-power-electronics/docs/bim/README.md
-        - BIM Zone Boundaries: factories/electronics/garage-power-electronics/docs/bim/zone-boundaries.md
-        - BIM Asset Anchors: factories/electronics/garage-power-electronics/docs/bim/asset-anchors.md
+        - BIM:
+          - BIM Index: factories/electronics/garage-power-electronics/docs/bim/README.md
+          - Zone Boundaries: factories/electronics/garage-power-electronics/docs/bim/zone-boundaries.md
+          - Asset Anchors: factories/electronics/garage-power-electronics/docs/bim/asset-anchors.md
       - Smart Home & Office: factories/electronics/smart-home-office/README.md
       - Security Electronics: factories/electronics/security-electronics/README.md
       - Smart Estate & City: factories/electronics/smart-estate-city/README.md
@@ -149,14 +161,14 @@ nav:
     - DT Pilot Standards & Templates: orchestration/dt-pilot-standards-and-templates.md
     - Cross-Repo Workflows: orchestration/cross-repo-workflows.md
   - External Factory Traction:
-    - Strategy Overview: 11-external-factories/index.md
+    - External Factory Traction: 11-external-factories/index.md
     - Pilot Offer: 11-external-factories/pilot-offer.md
     - Raspberry Pi Pilot Deployment Profile: 11-external-factories/raspberry-pi-pilot-deployment-profile.md
     - Target List: 11-external-factories/target-list.md
     - Outreach Playbook: 11-external-factories/outreach-playbook.md
     - 90-Day Tracker: 11-external-factories/90-day-tracker.md
   - Architecture Decisions:
-    - ADR Index: adrs/README.md
+    - Architecture Decisions: adrs/README.md
     - ADR-001 Energy Source: adrs/ADR-001-energy-source-selection.md
     - ADR-002 MES Platform: adrs/ADR-002-mes-platform-selection.md
     - ADR-003 Digital Twin Platform: adrs/ADR-003-digital-twin-platform.md
