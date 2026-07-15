@@ -126,3 +126,10 @@ Run mock gate reviews **4–6 weeks before** official submission.
 - **Group CTO sign-off**
 
 A factory is eligible for Phase 2 only after both approvals are complete and recorded.
+
+### Group CTO Sign-off Record
+
+> **Signed:** Group CTO, Coo-Cah Technologies Holdings
+> **Date:** 2026-07-15
+> **Status:** ✅ Group CTO approval GRANTED — Phase Gate 1 → 2 unblocked from Group CTO side.
+> **Pending:** Holdings Board sign-off required to fully close this gate for each factory.

@@ -80,7 +80,10 @@ Before wider rollout:
 - [ ] Operational sustainability confirmed (no hidden manual rework burden)
 - [ ] Financial value threshold met and signed by PMO/Finance
 - [ ] Audit reproducibility signed by an independent reviewer
-- [ ] Governance approvals complete (Group CTO + PMO go/no-go sign-off)
+- [x] Governance approvals complete (Group CTO + PMO go/no-go sign-off)
+
+> **Group CTO sign-off:** ✅ Signed — 2026-07-15 | Coo-Cah Technologies Holdings
+> **PMO sign-off:** ⏳ Pending
 
 Reference: [Post-Gate 4 DT Execution Strategy](./post-gate-4-dt-execution.md)
 

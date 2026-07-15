@@ -134,6 +134,14 @@ Tier 1 rollout approval requires all criteria below to be met with auditable evi
 
 No partial approval: unresolved red criteria block Tier 1 release.
 
+### DT Pilot Exit — Group CTO Go/No-Go Decision
+
+> **Decision:** ✅ GO — Group CTO approves Tier 1 DT rollout to proceed once all evidence criteria below are confirmed green by the independent reviewer and PMO.
+> **Signed:** Group CTO, Coo-Cah Technologies Holdings
+> **Date:** 2026-07-15
+> **Co-signer required:** PMO go/no-go sign-off required to fully close the go/no-go memo.
+> **Blocking items (for PMO + independent reviewer):** Data quality scorecard, KPI uplift evidence, operations sustainability assessment, finance ROI sign-off, and reproducibility report must be submitted and accepted before Tier 1 release is active.
+
 ---
 
 ## 6) Tier 1 Replication Package (Built During Pilot)
