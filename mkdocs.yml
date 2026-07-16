@@ -175,6 +175,10 @@ nav:
     - ADR-004 AMR Fleet Platform: adrs/ADR-004-amr-fleet-platform.md
     - ADR-005 ERP Platform: adrs/ADR-005-erp-platform.md
     - ADR-006 AI Platform Architecture: adrs/ADR-006-ai-platform-architecture.md
+  - Hackathon:
+    - Arm AI Challenge Strategy: hackathon/index.md
+    - Submission Concept Note: hackathon/submission-concept.md
+    - Demo Architecture Plan: hackathon/demo-architecture.md
   - Reference:
     - Glossary: glossary.md
 
