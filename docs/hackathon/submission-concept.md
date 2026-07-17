@@ -119,6 +119,9 @@ This is not a generic AI demo. It is a system designed for:
 
 ## 8. Open-Source and Arm Ecosystem Alignment
 
+**Implementation repository:** [oumar-code/arm-ai-optimizer](https://github.com/oumar-code/arm-ai-optimizer) — full source code, pre-trained ONNX models, Docker Compose stack, and benchmarks.  
+**Architecture and strategy documentation:** [oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)
+
 | Component | Technology | Arm Relevance |
 |-----------|-----------|---------------|
 | Edge inference runtime | ONNX Runtime (Arm64 build) | Native Arm64 execution path |
