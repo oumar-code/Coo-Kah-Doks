@@ -226,10 +226,12 @@ All configurations satisfy the < 50 ms target on Jetson and Graviton.
 
 ## 5. Repository Structure (Demo Repo)
 
-The demo will live in a dedicated GitHub repository linked from this master repo:
+The demo lives in the dedicated GitHub repository: **[oumar-code/arm-ai-optimizer](https://github.com/oumar-code/arm-ai-optimizer)**
+
+> This master documentation repo is **[oumar-code/Coo-Kah-Doks](https://github.com/oumar-code/Coo-Kah-Doks)**.
 
 ```
-coo-cah-edge-twin-arm/
+arm-ai-optimizer/
 ├── README.md                        ← Quick start guide
 ├── docker-compose.yml               ← One-command demo stack
 ├── simulator/

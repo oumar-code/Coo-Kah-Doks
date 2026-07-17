@@ -102,6 +102,7 @@ To stay buildable within the hackathon window:
 |----------|---------|
 | [Submission Concept Note](./submission-concept.md) | Full concept note for submission form |
 | [Demo Architecture Plan](./demo-architecture.md) | Technical architecture for the demo |
+| **[arm-ai-optimizer (GitHub)](https://github.com/oumar-code/arm-ai-optimizer)** | **Demo implementation repo — runnable code, models, Docker stack** |
 | [AI Platform Architecture](../08-ai-platform/index.md) | Group AI platform reference |
 | [Digital Twin Architecture](../05-smart-factory-core/index.md) | Edge + cloud DT stack |
 | [Personal Electronics Factory](../factories/electronics/personal-electronics/README.md) | Pilot factory reference |
